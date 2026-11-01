@@ -2,7 +2,7 @@
 // Company X-Ray. Plain JS, no libraries. Data: data/companies.json (SEC EDGAR + curated filings),
 // data/prices.json (Yahoo snapshot refreshed by GitHub Actions). Live prices are attempted in the browser.
 const $ = s => document.querySelector(s);
-const state = { companies: [], prices: {}, snapshot: null, id: null, market: ['All', 'US', 'India', 'Global'].includes(localStorage.getItem('xray_market')) ? localStorage.getItem('xray_market') : 'All', sort: ['growth', 'rev'].includes(localStorage.getItem('xray_sort')) ? localStorage.getItem('xray_sort') : 'growth', range: [21, 126, 252].includes(+localStorage.getItem('xray_range')) ? +localStorage.getItem('xray_range') : 252, live: {}, q: '' };
+const state = { companies: [], prices: {}, snapshot: null, id: null, market: ['All', 'US', 'India', 'Global'].includes(localStorage.getItem('xray_market')) ? localStorage.getItem('xray_market') : 'All', sort: ['growth', 'rev'].includes(localStorage.getItem('xray_sort')) ? localStorage.getItem('xray_sort') : 'growth', range: (r => r === 'ytd' ? 'ytd' : [21, 126, 252].includes(+r) ? +r : 252)(localStorage.getItem('xray_range')), live: {}, q: '' };
 const YAHOO = { AAPL: 'AAPL', MSFT: 'MSFT', AMZN: 'AMZN', GOOGL: 'GOOGL', TSLA: 'TSLA', NVDA: 'NVDA', META: 'META', DIS: 'DIS', NKE: 'NKE', WMT: 'WMT', KO: 'KO', RELIANCE: 'RELIANCE.NS', HUL: 'HINDUNILVR.NS', NESTLE: 'NESN.SW' };
 const SYM = { USD: '$', INR: 'Rs ', CHF: 'CHF ' };
 
@@ -100,8 +100,11 @@ function renderTop() {
 function renderChart() {
   const c = cur(), s = series(c.id), el = $('#chartCard');
   if (!s) { el.innerHTML = '<h2>Share price</h2><p class="err">No price series for this company.</p>'; return; }
-  let pts = s.pts.slice(-state.range).map(p => [p[0], p[1]]);
+  let pts = (state.range === 'ytd'
+    ? s.pts.filter(p => new Date(p[0] * 1000).getFullYear() === new Date().getFullYear())
+    : s.pts.slice(-state.range)).map(p => [p[0], p[1]]);
   const l = latest(c.id); if (l && l.live) pts.push([l.time, l.price]);
+  if (pts.length < 2) { el.innerHTML = '<h2>Share price</h2><p class="err">Not enough price history for this window yet.</p>'; return; }
   const W = 900, H = 260, P = { l: 52, r: 14, t: 12, b: 24 };
   const ys = pts.map(p => p[1]), mn = Math.min(...ys), mx = Math.max(...ys), pad = (mx - mn) * .08 || 1;
   const x = i => P.l + i / (pts.length - 1) * (W - P.l - P.r), y = v => P.t + (1 - (v - (mn - pad)) / (mx - mn + 2 * pad)) * (H - P.t - P.b);
@@ -111,7 +114,7 @@ function renderChart() {
   const dl = i => new Date(pts[i][0] * 1000).toLocaleDateString([], { month: 'short', year: '2-digit' });
   const xl = [0, .33, .66, 1].map(f => { const i = Math.round(f * (pts.length - 1)); return `<text x="${x(i)}" y="${H - 6}" text-anchor="${f === 0 ? 'start' : f === 1 ? 'end' : 'middle'}">${dl(i)}</text>`; }).join('');
   const ret = (pts.at(-1)[1] / pts[0][1] - 1) * 100;
-  el.innerHTML = `<div class="rng">${[[21, '1M'], [126, '6M'], [252, '1Y']].map(([n, t]) => `<button data-r="${n}" class="${state.range === n ? 'on' : ''}">${t}</button>`).join('')}</div>
+  el.innerHTML = `<div class="rng">${[[21, '1M'], [126, '6M'], [252, '1Y'], ['ytd', 'YTD']].map(([n, t]) => `<button data-r="${n}" class="${state.range === n ? 'on' : ''}">${t}</button>`).join('')}</div>
   <h2>Share price trend</h2><p class="sub">${ret >= 0 ? 'Up' : 'Down'} <b class="${ret >= 0 ? 'up' : 'dn'}">${pct(ret)}</b> over the selected window &middot; daily closes from Yahoo Finance</p>
   <svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Price chart">${ticks}${xl}<defs><linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="${col}" stop-opacity=".25"/><stop offset="1" stop-color="${col}" stop-opacity="0"/></linearGradient></defs>
   <path d="${d} L${x(pts.length - 1)} ${H - P.b} L${P.l} ${H - P.b}Z" fill="url(#g)"/><path d="${d}" fill="none" stroke="${col}" stroke-width="2" stroke-linejoin="round"/><circle cx="${x(pts.length - 1)}" cy="${y(pts.at(-1)[1])}" r="4" fill="${col}"/><circle class="mk" r="5" fill="#0b1220" stroke="${col}" stroke-width="2" style="display:none"/></svg><div class="chartTip" style="display:none;position:absolute;top:8px;left:0;background:#0b1220;border:1px solid #1c2b3d;color:#dbe7f3;padding:4px 10px;border-radius:6px;font:12px 'JetBrains Mono',monospace;pointer-events:none;white-space:nowrap;z-index:2"></div>`;
@@ -207,7 +210,7 @@ document.addEventListener('click', e => {
   const t = e.target.closest('[data-m],[data-id],[data-r],[data-s]'); if (!t) return;
   if (t.dataset.m) { state.market = t.dataset.m; localStorage.setItem('xray_market', state.market); renderTabs(); renderList(); }
   else if (t.dataset.id) { state.id = t.dataset.id; location.hash = state.id; renderAll(); refreshLive(state.id); window.scrollTo({ top: 0, behavior: 'smooth' }); }
-  else if (t.dataset.r) { state.range = +t.dataset.r; localStorage.setItem('xray_range', state.range); renderChart(); }
+  else if (t.dataset.r) { state.range = t.dataset.r === 'ytd' ? 'ytd' : +t.dataset.r; localStorage.setItem('xray_range', state.range); renderChart(); }
   else if (t.dataset.s) { state.sort = t.dataset.s; localStorage.setItem('xray_sort', state.sort); renderLadder(); }
 });
 // keyboard: / focuses search, ArrowUp/ArrowDown or j/k steps through the visible companies
