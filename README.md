@@ -2,7 +2,7 @@
 
 Pick a listed company (US, India or global). The page shows its share price, ranks its products from weakest to strongest using real filings, and writes an acquisition pitch built on the weakest one.
 
-**Live site:** https://kanishksaini-007.github.io/company-xray/
+**Live site:** https://kanishk-saini-007.github.io/company-xray/
 
 I started this as a Power BI idea, then rebuilt it as a web page so anyone can open it with no software. It is a learning project: I wanted to see how far public data can go.
 
