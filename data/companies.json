@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03T07:35:25.867Z",
+ "generated": "2026-11-03T13:28:41.020Z",
  "companies": [
   {
    "id": "AAPL",
@@ -8,42 +8,42 @@
    "exchange": "Nasdaq",
    "currency": "USD",
    "unit": "USD million",
-   "period": "Fiscal year ended 2025-09-27, revenue by product / service line",
+   "period": "Fiscal year ended 2026-09-26, revenue by product / service line",
    "periodType": "year",
    "source": "Apple Inc. Form 10-K (SEC EDGAR)",
-   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
-   "filed": "2025-10-31",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+   "filed": "2026-11-03",
    "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
    "segments": [
     {
      "name": "iPhone",
-     "cur": 209586,
-     "prev": 201183,
-     "growth": 4.2
+     "cur": 254098,
+     "prev": 209586,
+     "growth": 21.2
     },
     {
      "name": "Mac",
-     "cur": 33708,
-     "prev": 29984,
-     "growth": 12.4
+     "cur": 37929,
+     "prev": 33708,
+     "growth": 12.5
     },
     {
      "name": "IPad",
-     "cur": 28023,
-     "prev": 26694,
-     "growth": 5
+     "cur": 27929,
+     "prev": 28023,
+     "growth": -0.3
     },
     {
      "name": "Wearables, Home & Accessories",
-     "cur": 35686,
-     "prev": 37005,
-     "growth": -3.6
+     "cur": 35577,
+     "prev": 35686,
+     "growth": -0.3
     },
     {
      "name": "Services",
-     "cur": 109158,
-     "prev": 96169,
-     "growth": 13.5
+     "cur": 123301,
+     "prev": 109158,
+     "growth": 13
     }
    ]
   },
