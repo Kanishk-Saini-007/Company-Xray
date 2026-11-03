@@ -191,7 +191,19 @@ function renderPitch() {
   el.innerHTML = `<span class="tag">AUTO-WRITTEN FROM THE NUMBERS ABOVE</span><h3>Why a buyer should look at ${esc(c.name)}: the case built on ${esc(p.w.name)}</h3>
   <ol>${p.items.map(i => `<li>${i}</li>`).join('')}</ol><h4>Risks and honest limits</h4><ul>${p.risks.map(r => `<li>${esc(r)}</li>`).join('')}</ul>
   <div class="acts"><button class="ghost" id="copyP">Copy pitch</button><button class="ghost" onclick="window.print()">Print / save PDF</button></div>`;
-  $('#copyP').onclick = e => { navigator.clipboard.writeText(p.text); e.target.textContent = 'Copied'; setTimeout(() => e.target.textContent = 'Copy pitch', 1400); };
+  $('#copyP').onclick = async e => {
+    const button = e.currentTarget;
+    button.disabled = true;
+    try {
+      await navigator.clipboard.writeText(p.text);
+      button.textContent = 'Copied';
+    } catch (error) {
+      button.textContent = 'Copy failed - try again';
+    } finally {
+      button.disabled = false;
+      setTimeout(() => { button.textContent = 'Copy pitch'; }, 2000);
+    }
+  };
 }
 function renderHonest() {
   const g = state.generated ? new Date(state.generated).toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' }) : 'unknown';
