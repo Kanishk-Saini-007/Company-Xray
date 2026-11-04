@@ -150,10 +150,16 @@ function renderSrc() {
   <dl class="kv"><dt>Source</dt><dd>${esc(c.source)}</dd><dt>Filed</dt><dd>${esc(c.filed)}</dd><dt>Period</dt><dd>${esc(c.periodType === 'quarter' ? 'Quarterly' : 'Annual')}</dd><dt>Link</dt><dd><a href="${esc(c.sourceUrl)}" target="_blank" rel="noopener">open filing</a></dd></dl>
   <p class="sub" style="margin-top:12px">${esc(c.note)}</p>`;
 }
+// A flat or unavailable 52-week range has no meaningful percentage position.
+function rangePosition(quote) {
+  if (!quote || !Number.isFinite(quote.price) || !Number.isFinite(quote.hi) ||
+      !Number.isFinite(quote.lo) || quote.hi <= quote.lo) return null;
+  return (quote.price - quote.lo) / (quote.hi - quote.lo) * 100;
+}
 function renderStats() {
   const c = cur(), l = latest(c.id), s = series(c.id);
   if (!l || !s) { $('#statsCard').innerHTML = ''; return; }
-  const pos = l.hi && l.lo ? (l.price - l.lo) / (l.hi - l.lo) * 100 : null;
+  const pos = rangePosition(l);
   const first = s.pts[0]?.[1], r1 = first ? (l.price / first - 1) * 100 : null;
   $('#statsCard').innerHTML = `<h2>Share snapshot</h2><p class="sub">${esc(s.exchange || c.exchange)} &middot; ${esc(c.currency)}</p>
   <dl class="kv"><dt>Price</dt><dd>${px(l.price, c.currency)}</dd><dt>52-week high</dt><dd>${l.hi ? px(l.hi, c.currency) : '-'}</dd><dt>52-week low</dt><dd>${l.lo ? px(l.lo, c.currency) : '-'}</dd><dt>Position in range</dt><dd>${pos != null ? pos.toFixed(0) + '%' : '-'}</dd><dt>1-year return</dt><dd class="${r1 != null ? (r1 >= 0 ? 'up' : 'dn') : ''}">${r1 != null ? pct(r1) : '-'}</dd></dl>`;
@@ -166,7 +172,7 @@ function pitch(c) {
   const atAvg = a.avg != null && w.prev ? w.prev * (1 + a.avg / 100) - w.cur : null; // revenue missing vs growing at company pace
   const atBest = w.prev ? w.prev * (1 + st.growth / 100) - w.cur : null;
   const shrink = w.growth < 0;
-  const pos = l && l.hi && l.lo ? (l.price - l.lo) / (l.hi - l.lo) * 100 : null;
+  const pos = rangePosition(l);
   const r1 = l && s?.pts[0] ? (l.price / s.pts[0][1] - 1) * 100 : null;
   const items = [];
   items.push(a.biggest.name === st.name
