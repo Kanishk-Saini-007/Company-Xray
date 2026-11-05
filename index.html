@@ -3,18 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Company X-Ray - find the weak product, build the acquisition case</title>
-<meta name="description" content="Pick a listed company (US, India, global). See live share price, product revenue ranked from weakest to strongest from real filings, and an auto-written acquisition pitch built on the weak spot.">
+<title>Company X-Ray - reported revenue changes and research notes</title>
+<meta name="description" content="Compare source-linked reported revenue, inspect price snapshots and keep a company-specific research thesis. A student learning project, not investment advice.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23070b11'/%3E%3Cpath d='M6 22l6-8 5 5 9-11' stroke='%237dd3fc' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='26' cy='8' r='3' fill='%23ff6b57'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="research.css">
 </head>
 <body>
 <div class="app">
   <aside class="side">
-    <div class="brand"><span class="logo"></span><div><b>Company X-Ray</b><small>find the weak spot</small></div></div>
-    <input id="q" class="search" placeholder="Search company or ticker" autocomplete="off">
+    <div class="brand"><span class="logo"></span><div><b>Company X-Ray</b><small>read the business</small></div></div>
+    <input id="q" aria-label="Search company or ticker" class="search" placeholder="Search company or ticker" autocomplete="off">
     <div class="tabs" id="tabs"></div>
     <nav id="list" class="list"></nav>
     <div class="sidefoot">
@@ -28,6 +29,7 @@
     <header class="top" id="top"></header>
     <section class="grid">
       <div class="card span2" id="chartCard"></div>
+      <div class="card span2" id="researchCard"></div>
       <div class="card span2" id="ladderCard"></div>
       <div class="card" id="srcCard"></div>
       <div class="card" id="statsCard"></div>
@@ -46,6 +48,7 @@
   </form>
 </dialog>
 
+<script src="research.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
