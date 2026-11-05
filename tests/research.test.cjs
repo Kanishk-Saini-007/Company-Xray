@@ -1,0 +1,10 @@
+'use strict';
+const assert = require('node:assert/strict');
+const { compareSegments } = require('../research.js');
+let r = compareSegments([{name:'A',cur:120,prev:100},{name:'B',cur:70,prev:90}]);
+assert.equal(r.delta,0);assert.equal(r.growth,0);assert.equal(r.rows[0].growth,20);
+r=compareSegments([{name:'Zero',cur:10,prev:0}]);assert.equal(r.rows[0].growth,null);assert.equal(r.delta,10);
+r=compareSegments([{name:'Missing',cur:10,prev:null},{name:'Decline',cur:0,prev:100}]);assert.equal(r.missing,1);assert.equal(r.current,0);assert.equal(r.prior,100);assert.equal(r.growth,-100);assert.equal(r.rows[0].delta,null);
+r=compareSegments([]);assert.equal(r.comparable,0);assert.equal(r.growth,null);
+r=compareSegments([{name:'Invalid',cur:NaN,prev:Infinity}]);assert.equal(r.missing,1);
+console.log('PASS: comparable totals, offsets, growth, decline, zero, missing, empty, invalid');
