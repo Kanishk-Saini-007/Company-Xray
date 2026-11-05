@@ -221,7 +221,7 @@ function renderHonest() {
   <li><b>Coverage:</b> ${state.companies.length} companies for now. Adding a US company is one entry in <code>scripts/config.mjs</code>.</li></ul>`;
 }
 const cur = () => state.companies.find(c => c.id === state.id);
-function renderAll() { localStorage.setItem('xray_last', state.id); renderTabs(); renderList(); renderTop(); renderChart(); renderLadder(); renderSrc(); renderStats(); renderPitch(); renderHonest(); }
+function renderAll() { localStorage.setItem('xray_last', state.id); renderTabs(); renderList(); renderTop(); renderChart(); renderLadder(); renderSrc(); renderStats(); renderPitch(); renderHonest(); renderResearch(cur()); }
 
 // ---------- events ----------
 document.addEventListener('click', e => {
@@ -233,7 +233,7 @@ document.addEventListener('click', e => {
 });
 // keyboard: / focuses search, ArrowUp/ArrowDown or j/k steps through the visible companies
 document.addEventListener('keydown', e => {
-  if ($('#keyDlg').open) return;
+  if ($('#keyDlg').open || document.activeElement?.matches('input, textarea, select, [contenteditable="true"]')) return;
   if (e.key === '/' && document.activeElement !== $('#q')) { e.preventDefault(); $('#q').focus(); return; }
   if (document.activeElement === $('#q') || document.activeElement === $('#keyIn')) return;
   const down = e.key === 'ArrowDown' || e.key === 'j', up = e.key === 'ArrowUp' || e.key === 'k';
