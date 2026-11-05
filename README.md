@@ -1,12 +1,19 @@
 # Company X-Ray
 
-Pick a listed company (US, India or global). The page shows its share price, ranks its products from weakest to strongest using real filings, and writes an acquisition pitch built on the weakest one.
+Pick a listed company (US, India or global). Compare reported revenue changes with the cited filing, keep a company-specific research thesis and export a source-linked note. Price charts and the older acquisition-pitch exercise remain as supporting learning tools.
 
 **Live site:** https://kanishk-saini-007.github.io/company-xray/
 
 I started this as a Power BI idea, then rebuilt it as a web page so anyone can open it with no software. It is a learning project: I wanted to see how far public data can go.
 
-## What it does
+## Research workflow
+1. Open a company and read its reporting period and units. Most records are annual, not quarterly.
+2. Use the reported-line comparison to see current revenue, prior revenue, absolute change and growth. Totals include only lines with both values present. Zero and missing are different; a zero prior value has no percentage growth.
+3. Open the filing and check segment definitions before interpreting the arithmetic. Changes are not causal explanations.
+4. Record a thesis, assumptions, evidence that would weaken it, and the next source to check. Notes are separate for each company and saved only in this browser, with no cloud sync.
+5. Export a plain-text copy before clearing browser data. Clear requires confirmation and affects only the selected company's notes.
+
+## Supporting tools
 1. **Share price** - 1 year chart, 52-week range, day change. Tries a live Yahoo Finance quote in the browser every minute and falls back to a saved snapshot (the badge says LIVE or SNAPSHOT).
 2. **Product ranking** - each company's revenue by product or segment, sorted by growth (or by size). The slowest-growing line with at least 3% of revenue is flagged as the weak spot.
 3. **Pitch** - a written case for why a buyer should look at the company, using only the numbers on the page: weak spot, size of the prize if it grew at the company's pace, price timing, and risks.
@@ -43,3 +50,6 @@ Add a US company: one entry in `scripts/config.mjs` (pick the axis and member na
 - Not investment advice.
 
 Data: SEC EDGAR, Yahoo Finance, company results releases. Built by Kanishk Saini.
+
+## Testing the research module
+Run `node tests/research.test.cjs`. The calculation tests cover growth, decline, offsets, zero baselines, missing values and empty input. Manual browser checks should cover company switching, note persistence, export, clear/cancel, keyboard entry and small-screen table scrolling. No framework or build step is needed.
