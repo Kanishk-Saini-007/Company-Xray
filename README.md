@@ -2,7 +2,7 @@
 
 Pick a listed company (US, India or global). Compare reported revenue changes with the cited filing, keep a company-specific research thesis and export a source-linked note. Price charts and the older acquisition-pitch exercise remain as supporting learning tools.
 
-**Live site:** https://kanishk-saini-007.github.io/company-xray/
+**Live site:** https://kanishk-saini-007.github.io/Company-Xray/
 
 I started this as a Power BI idea, then rebuilt it as a web page so anyone can open it with no software. It is a learning project: I wanted to see how far public data can go.
 
