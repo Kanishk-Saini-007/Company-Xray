@@ -65,7 +65,7 @@ async function fetchLive(id) {
 async function refreshLive(id) {
   const r = await fetchLive(id);
   if (r) state.live[id] = r; else delete state.live[id];
-  renderList(); if (state.id === id) { renderTop(); renderChart(); renderStats(); renderPitch(); }
+  renderList(); renderTrending(); if (state.id === id) { renderTop(); renderChart(); renderStats(); renderPitch(); }
 }
 
 // ---------- render ----------
@@ -73,16 +73,40 @@ function visible() {
   const q = state.q.toLowerCase();
   return state.companies.filter(c => (state.market === 'All' || c.market === state.market) && (!q || (c.name + ' ' + c.id).toLowerCase().includes(q)));
 }
+function spark(id, w = 56, h = 20) {
+  const s = series(id); if (!s || !s.pts || s.pts.length < 10) return '';
+  const vs = s.pts.slice(-60).map(p => p[1]);
+  const mn = Math.min(...vs), mx = Math.max(...vs), rg = mx - mn || 1;
+  const up = vs[vs.length - 1] >= vs[0];
+  const d = vs.map((v, i) => (i ? 'L' : 'M') + (i / (vs.length - 1) * w).toFixed(1) + ' ' + (2 + (1 - (v - mn) / rg) * (h - 4)).toFixed(1)).join(' ');
+  return `<svg class="spark" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" aria-hidden="true"><path d="${d}" fill="none" stroke="${up ? '#3ed598' : '#ff6a5c'}" stroke-width="1.4" stroke-linejoin="round"/></svg>`;
+}
 function renderTabs() {
   $('#tabs').innerHTML = ['All', 'US', 'India', 'Global'].map(m => `<button class="${state.market === m ? 'on' : ''}" data-m="${m}">${m}</button>`).join('');
 }
 function renderList() {
   const vis = visible();
-  const count = state.q ? `<p class="sub" style="padding:2px 2px 8px">${vis.length} of ${state.companies.length} companies</p>` : '';
+  const count = `<p class="count">${vis.length}${state.q ? ' of ' + state.companies.length : ''} companies</p>`;
   $('#list').innerHTML = count + (vis.map(c => {
     const l = latest(c.id); const ch = l && l.prev ? (l.price / l.prev - 1) * 100 : null;
-    return `<button class="item ${c.id === state.id ? 'on' : ''}" data-id="${c.id}"><span><b>${esc(c.name)}</b><small>${esc(YAHOO[c.id])} &middot; ${esc(c.exchange)}</small></span><span class="px">${l ? px(l.price, c.currency) : '-'}${ch != null ? `<i class="${ch >= 0 ? 'up' : 'dn'}">${pct(ch, 2)}</i>` : ''}</span></button>`;
+    return `<button class="item ${c.id === state.id ? 'on' : ''}" data-id="${c.id}"><span class="nm"><b>${esc(c.name)}</b><small>${esc(YAHOO[c.id])} &middot; ${esc(c.exchange)}</small></span><span class="rt">${spark(c.id)}<span class="px">${l ? px(l.price, c.currency) : '-'}${ch != null ? `<i class="${ch >= 0 ? 'up' : 'dn'}">${pct(ch, 2)}</i>` : ''}</span></span></button>`;
   }).join('') || '<p class="err">No match.</p>');
+}
+// Biggest 1-day moves across covered companies, computed from the two latest saved Yahoo closes.
+function movers() {
+  return state.companies.map(c => {
+    const l = latest(c.id);
+    if (!l || !l.prev) return null;
+    return { c, l, chg: (l.price / l.prev - 1) * 100 };
+  }).filter(Boolean).sort((a, b) => Math.abs(b.chg) - Math.abs(a.chg)).slice(0, 5);
+}
+function renderTrending() {
+  const el = $('#trending'); if (!el || !state.companies.length) return;
+  const m = movers();
+  const g = state.generated ? new Date(state.generated).toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' }) : 'unknown';
+  el.innerHTML = `<span class="trend-label">In discussion today</span>` + m.map(({ c, l, chg }) =>
+    `<button class="trend-chip ${c.id === state.id ? 'on' : ''}" data-id="${c.id}" title="${esc(c.name)}"><b>${esc(c.id)}</b><span class="tp">${px(l.price, c.currency)}</span><i class="${chg >= 0 ? 'up' : 'dn'}">${chg >= 0 ? '&#9650;' : '&#9660;'} ${Math.abs(chg).toFixed(2)}%</i></button>`
+  ).join('') + `<span class="trend-note" title="The five covered companies with the biggest move between the two latest saved Yahoo Finance daily closes (saved ${esc(g)}). Computed in your browser. Not a recommendation.">biggest 1-day moves &middot; latest Yahoo closes</span>`;
 }
 function badge(id) {
   const l = latest(id); if (!l) return '';
@@ -90,12 +114,22 @@ function badge(id) {
   if (l.live) return `<span class="badge live" title="${esc(state.live[id].via)}">LIVE &middot; ${esc(state.live[id].via)} &middot; ${when.toLocaleTimeString()}</span>`;
   return `<span class="badge" title="${esc(UA_NOTE)}">SNAPSHOT &middot; ${when.toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' })}</span>`;
 }
+// A flat or unavailable 52-week range has no meaningful percentage position.
+function rangePosition(quote) {
+  if (!quote || !Number.isFinite(quote.price) || !Number.isFinite(quote.hi) ||
+      !Number.isFinite(quote.lo) || quote.hi <= quote.lo) return null;
+  return (quote.price - quote.lo) / (quote.hi - quote.lo) * 100;
+}
 function renderTop() {
-  const c = cur(); const l = latest(c.id);
+  const c = cur(); const l = latest(c.id); const s = series(c.id);
   document.title = c.name + (l ? ' - ' + px(l.price, c.currency) : '') + ' - Company X-Ray';
   const ch = l && l.prev ? l.price - l.prev : null, chp = ch != null ? ch / l.prev * 100 : null;
-  $('#top').innerHTML = `<div><h1>${esc(c.name)}</h1><div class="chips"><span class="chip">${esc(YAHOO[c.id])}</span><span class="chip">${esc(c.exchange)}</span><span class="chip">${esc(c.market)}</span><span class="chip">${esc(c.currency)}</span></div></div>
-  <div class="bigpx">${l ? `<div class="n">${px(l.price, c.currency)}</div><div class="d ${ch >= 0 ? 'up' : 'dn'}">${ch != null ? `${ch >= 0 ? '+' : ''}${ch.toFixed(2)} (${pct(chp, 2)}) vs previous close` : 'Previous close unavailable'}</div>${badge(c.id)}` : '<div class="err">No price data</div>'}</div>`;
+  const pos = rangePosition(l);
+  const first = s?.pts[0]?.[1], r1 = l && first ? (l.price / first - 1) * 100 : null;
+  const stat = (label, inner) => `<div class="stat"><small>${label}</small><b>${inner}</b></div>`;
+  $('#top').innerHTML = `<div class="th-row"><div><h1>${esc(c.name)}</h1><div class="chips"><span class="chip">${esc(YAHOO[c.id])}</span><span class="chip">${esc(c.exchange)}</span><span class="chip">${esc(c.market)}</span><span class="chip">${esc(c.currency)}</span></div></div>
+  <div class="bigpx">${l ? `<div class="n">${px(l.price, c.currency)}</div><div class="chgrow">${ch != null ? `<span class="chgpill ${ch >= 0 ? 'up' : 'dn'}">${ch >= 0 ? '+' : ''}${ch.toFixed(2)} (${pct(chp, 2)})</span><span class="vs">vs previous close</span>` : '<span class="vs">Previous close unavailable</span>'}</div>${badge(c.id)}` : '<div class="err">No price data</div>'}</div></div>
+  ${l ? `<div class="statstrip">${stat('Previous close', l.prev ? px(l.prev, c.currency) : '-')}${stat('52-week high', l.hi ? px(l.hi, c.currency) : '-')}${stat('52-week low', l.lo ? px(l.lo, c.currency) : '-')}${stat('1-year return', r1 != null ? `<span class="${r1 >= 0 ? 'up' : 'dn'}">${pct(r1)}</span>` : '-')}<div class="stat"><small>Position in 52w range</small><b>${pos != null ? pos.toFixed(0) + '%' : '-'}</b>${pos != null ? `<div class="meter"><i style="left:${Math.max(2, Math.min(98, pos))}%"></i></div>` : ''}</div>${stat('Exchange', `${esc(c.exchange)} &middot; ${esc(c.currency)}`)}</div>` : ''}`;
 }
 function renderChart() {
   const c = cur(), s = series(c.id), el = $('#chartCard');
@@ -105,19 +139,19 @@ function renderChart() {
     : s.pts.slice(-state.range)).map(p => [p[0], p[1]]);
   const l = latest(c.id); if (l && l.live) pts.push([l.time, l.price]);
   if (pts.length < 2) { el.innerHTML = '<h2>Share price</h2><p class="err">Not enough price history for this window yet.</p>'; return; }
-  const W = 900, H = 260, P = { l: 52, r: 14, t: 12, b: 24 };
+  const W = 900, H = 300, P = { l: 56, r: 16, t: 14, b: 26 };
   const ys = pts.map(p => p[1]), mn = Math.min(...ys), mx = Math.max(...ys), pad = (mx - mn) * .08 || 1;
   const x = i => P.l + i / (pts.length - 1) * (W - P.l - P.r), y = v => P.t + (1 - (v - (mn - pad)) / (mx - mn + 2 * pad)) * (H - P.t - P.b);
   const d = pts.map((p, i) => (i ? 'L' : 'M') + x(i).toFixed(1) + ' ' + y(p[1]).toFixed(1)).join(' ');
-  const up = pts.at(-1)[1] >= pts[0][1], col = up ? '#5eead4' : '#ff6b57';
-  const ticks = [0, .25, .5, .75, 1].map(f => { const v = mn - pad + f * (mx - mn + 2 * pad); return `<line x1="${P.l}" x2="${W - P.r}" y1="${y(v)}" y2="${y(v)}" stroke="#16222f"/><text x="${P.l - 6}" y="${y(v) + 3}" text-anchor="end">${v >= 1000 ? Math.round(v) : v.toFixed(1)}</text>`; }).join('');
+  const up = pts.at(-1)[1] >= pts[0][1], col = up ? '#3ed598' : '#ff6a5c';
+  const ticks = [0, .25, .5, .75, 1].map(f => { const v = mn - pad + f * (mx - mn + 2 * pad); return `<line x1="${P.l}" x2="${W - P.r}" y1="${y(v)}" y2="${y(v)}" stroke="#152130"/><text x="${P.l - 7}" y="${y(v) + 3}" text-anchor="end">${v >= 1000 ? Math.round(v).toLocaleString('en-US') : v.toFixed(1)}</text>`; }).join('');
   const dl = i => new Date(pts[i][0] * 1000).toLocaleDateString([], { month: 'short', year: '2-digit' });
-  const xl = [0, .33, .66, 1].map(f => { const i = Math.round(f * (pts.length - 1)); return `<text x="${x(i)}" y="${H - 6}" text-anchor="${f === 0 ? 'start' : f === 1 ? 'end' : 'middle'}">${dl(i)}</text>`; }).join('');
+  const xl = [0, .33, .66, 1].map(f => { const i = Math.round(f * (pts.length - 1)); return `<text x="${x(i)}" y="${H - 7}" text-anchor="${f === 0 ? 'start' : f === 1 ? 'end' : 'middle'}">${dl(i)}</text>`; }).join('');
   const ret = (pts.at(-1)[1] / pts[0][1] - 1) * 100;
   el.innerHTML = `<div class="rng">${[[21, '1M'], [126, '6M'], [252, '1Y'], ['ytd', 'YTD']].map(([n, t]) => `<button data-r="${n}" class="${state.range === n ? 'on' : ''}">${t}</button>`).join('')}</div>
   <h2>Share price trend</h2><p class="sub">${ret >= 0 ? 'Up' : 'Down'} <b class="${ret >= 0 ? 'up' : 'dn'}">${pct(ret)}</b> over the selected window &middot; daily closes from Yahoo Finance</p>
-  <svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Price chart">${ticks}${xl}<defs><linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="${col}" stop-opacity=".25"/><stop offset="1" stop-color="${col}" stop-opacity="0"/></linearGradient></defs>
-  <path d="${d} L${x(pts.length - 1)} ${H - P.b} L${P.l} ${H - P.b}Z" fill="url(#g)"/><path d="${d}" fill="none" stroke="${col}" stroke-width="2" stroke-linejoin="round"/><circle cx="${x(pts.length - 1)}" cy="${y(pts.at(-1)[1])}" r="4" fill="${col}"/><circle class="mk" r="5" fill="#0b1220" stroke="${col}" stroke-width="2" style="display:none"/></svg><div class="chartTip" style="display:none;position:absolute;top:8px;left:0;background:#0b1220;border:1px solid #1c2b3d;color:#dbe7f3;padding:4px 10px;border-radius:6px;font:12px 'JetBrains Mono',monospace;pointer-events:none;white-space:nowrap;z-index:2"></div>`;
+  <svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Price chart">${ticks}${xl}<defs><linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="${col}" stop-opacity=".22"/><stop offset="1" stop-color="${col}" stop-opacity="0"/></linearGradient></defs>
+  <path d="${d} L${x(pts.length - 1)} ${H - P.b} L${P.l} ${H - P.b}Z" fill="url(#g)"/><path d="${d}" fill="none" stroke="${col}" stroke-width="2" stroke-linejoin="round"/><circle cx="${x(pts.length - 1)}" cy="${y(pts.at(-1)[1])}" r="4" fill="${col}"/><circle class="mk" r="5" fill="#0b1220" stroke="${col}" stroke-width="2" style="display:none"/></svg><div class="chartTip" style="display:none;position:absolute;top:8px;left:0;background:#0d1622;border:1px solid #223145;color:#dbe7f3;padding:5px 11px;border-radius:7px;font:12px 'JetBrains Mono',monospace;pointer-events:none;white-space:nowrap;z-index:2"></div>`;
   el.style.position = 'relative';
   const svgEl = el.querySelector('svg'), tip = el.querySelector('.chartTip'), mkEl = el.querySelector('.mk');
   svgEl.addEventListener('mousemove', e => {
@@ -126,7 +160,7 @@ function renderChart() {
     const i = Math.max(0, Math.min(pts.length - 1, Math.round((fx - P.l) / (W - P.l - P.r) * (pts.length - 1))));
     const [t, v] = pts[i];
     tip.style.display = 'block';
-    tip.style.left = Math.max(4, Math.min(r.width - 160, e.clientX - r.left + 12)) + 'px';
+    tip.style.left = Math.max(4, Math.min(r.width - 170, e.clientX - r.left + 12)) + 'px';
     tip.textContent = new Date(t * 1000).toLocaleDateString([], { day: 'numeric', month: 'short', year: 'numeric' }) + '  ' + px(v, c.currency);
     mkEl.style.display = ''; mkEl.setAttribute('cx', x(i)); mkEl.setAttribute('cy', y(v));
   });
@@ -136,32 +170,27 @@ function renderLadder() {
   const c = cur(), a = analyse(c);
   const rows = [...a.segs].sort(state.sort === 'growth' ? (p, q) => (p.growth ?? 1e9) - (q.growth ?? 1e9) : (p, q) => p.cur - q.cur);
   const mx = Math.max(...a.segs.map(s => s.cur));
-  $('#ladderCard').innerHTML = `<div class="seg" style="float:right"><button data-s="growth" class="${state.sort === 'growth' ? 'on' : ''}">By growth</button><button data-s="rev" class="${state.sort === 'rev' ? 'on' : ''}">By revenue</button></div>
-  <h2>Products ranked weakest to strongest</h2><p class="sub">${esc(c.period)} &middot; ${esc(c.unit)}${c.periodType === 'quarter' ? ' &middot; growth = YoY % reported for the quarter' : ' &middot; growth = vs previous year'}</p>
+  $('#ladderCard').innerHTML = `<div class="seg"><button data-s="growth" class="${state.sort === 'growth' ? 'on' : ''}">By growth</button><button data-s="rev" class="${state.sort === 'rev' ? 'on' : ''}">By revenue</button></div>
+  <h2>Reported lines ranked weakest to strongest</h2><p class="sub">${esc(c.period)} &middot; ${esc(c.unit)}${c.periodType === 'quarter' ? ' &middot; growth = YoY % reported for the quarter' : ' &middot; growth = vs previous year'}</p>
   <div class="ladder">${rows.map((s, i) => {
     const isW = a.weak && s.name === a.weak.name, isS = a.strong && s.name === a.strong.name;
-    return `<div class="lrow ${isW ? 'weak' : isS ? 'strong' : ''}"><span class="rk">#${i + 1}</span><span>${esc(s.name)}${isW ? ' <small class="dn">weak spot</small>' : isS ? ' <small class="up">engine</small>' : ''}</span><div class="bar"><i style="width:${Math.max(3, s.cur / mx * 66)}%"></i><em style="left:calc(${Math.max(3, s.cur / mx * 66)}% + 8px)">${money(s.cur, c)} &middot; ${s.share.toFixed(1)}%</em></div><span class="gr ${s.growth == null ? '' : s.growth >= 0 ? 'up' : 'dn'}">${s.growth == null ? 'n/a' : pct(s.growth)}</span></div>`;
+    return `<div class="lrow ${isW ? 'weak' : isS ? 'strong' : ''}"><span class="rk">${String(i + 1).padStart(2, '0')}</span><span>${esc(s.name)}${isW ? ' <small class="dn">weak spot</small>' : isS ? ' <small class="up">engine</small>' : ''}</span><div class="bar"><i style="width:${Math.max(3, s.cur / mx * 66)}%"></i><em style="left:calc(${Math.max(3, s.cur / mx * 66)}% + 8px)">${money(s.cur, c)} &middot; ${s.share.toFixed(1)}%</em></div><span class="gr ${s.growth == null ? '' : s.growth >= 0 ? 'up' : 'dn'}">${s.growth == null ? 'n/a' : pct(s.growth)}</span></div>`;
   }).join('')}</div>
-  ${a.avg != null ? `<p class="sub" style="margin-top:12px">Whole company, these lines combined: <b>${money(a.tot, c)}</b>, ${pct(a.avg)} vs prior period. The weak spot is the slowest-growing line with at least 3% of revenue.</p>` : ''}`;
+  ${a.avg != null ? `<p class="sub" style="margin-top:14px">Whole company, these lines combined: <b>${money(a.tot, c)}</b>, ${pct(a.avg)} vs prior period. The weak spot is the slowest-growing line with at least 3% of revenue.</p>` : ''}`;
 }
 function renderSrc() {
   const c = cur();
   $('#srcCard').innerHTML = `<h2>Where the product numbers come from</h2><p class="sub">Official filing, not a data vendor</p>
   <dl class="kv"><dt>Source</dt><dd>${esc(c.source)}</dd><dt>Filed</dt><dd>${esc(c.filed)}</dd><dt>Period</dt><dd>${esc(c.periodType === 'quarter' ? 'Quarterly' : 'Annual')}</dd><dt>Link</dt><dd><a href="${esc(c.sourceUrl)}" target="_blank" rel="noopener">open filing</a></dd></dl>
-  <p class="sub" style="margin-top:12px">${esc(c.note)}</p>`;
-}
-// A flat or unavailable 52-week range has no meaningful percentage position.
-function rangePosition(quote) {
-  if (!quote || !Number.isFinite(quote.price) || !Number.isFinite(quote.hi) ||
-      !Number.isFinite(quote.lo) || quote.hi <= quote.lo) return null;
-  return (quote.price - quote.lo) / (quote.hi - quote.lo) * 100;
+  <p class="sub" style="margin-top:14px">${esc(c.note)}</p>`;
 }
 function renderStats() {
+  const el = $('#statsCard'); if (!el) return;
   const c = cur(), l = latest(c.id), s = series(c.id);
-  if (!l || !s) { $('#statsCard').innerHTML = ''; return; }
+  if (!l || !s) { el.innerHTML = ''; return; }
   const pos = rangePosition(l);
   const first = s.pts[0]?.[1], r1 = first ? (l.price / first - 1) * 100 : null;
-  $('#statsCard').innerHTML = `<h2>Share snapshot</h2><p class="sub">${esc(s.exchange || c.exchange)} &middot; ${esc(c.currency)}</p>
+  el.innerHTML = `<h2>Share snapshot</h2><p class="sub">${esc(s.exchange || c.exchange)} &middot; ${esc(c.currency)}</p>
   <dl class="kv"><dt>Price</dt><dd>${px(l.price, c.currency)}</dd><dt>52-week high</dt><dd>${l.hi ? px(l.hi, c.currency) : '-'}</dd><dt>52-week low</dt><dd>${l.lo ? px(l.lo, c.currency) : '-'}</dd><dt>Position in range</dt><dd>${pos != null ? pos.toFixed(0) + '%' : '-'}</dd><dt>1-year return</dt><dd class="${r1 != null ? (r1 >= 0 ? 'up' : 'dn') : ''}">${r1 != null ? pct(r1) : '-'}</dd></dl>`;
 }
 function pitch(c) {
@@ -215,19 +244,22 @@ function renderHonest() {
   const g = state.generated ? new Date(state.generated).toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' }) : 'unknown';
   $('#honest').className = 'card span2 honest';
   $('#honest').innerHTML = `<h2>What is live and what is not</h2><ul>
-  <li><b>Share price:</b> tries a live Yahoo Finance quote in your browser every minute. If that is blocked, it shows the last saved price and says so in the badge (saved ${esc(g)}).</li>
+  <li><b>Share price:</b> tries a live Yahoo Finance quote in your browser every minute. If that is blocked, it shows the last saved price and says so in the badge (saved ${esc(g)}). The "in discussion today" strip is computed from the two latest saved closes - it changes when the daily price snapshot changes, and it is not a recommendation.</li>
   <li><b>Product revenue:</b> companies only publish this when they report (quarterly or yearly), so it cannot be live. US data is read straight from SEC EDGAR 10-K filings by a script; India and global companies are copied by hand from their official results releases.</li>
   <li><b>Pitch:</b> the numbers and ranking are computed, the wording is a template. It finds the weak spot, it does not know why the product is weak.</li>
   <li><b>Coverage:</b> ${state.companies.length} companies for now. Adding a US company is one entry in <code>scripts/config.mjs</code>.</li></ul>`;
 }
 const cur = () => state.companies.find(c => c.id === state.id);
-function renderAll() { localStorage.setItem('xray_last', state.id); renderTabs(); renderList(); renderTop(); renderChart(); renderLadder(); renderSrc(); renderStats(); renderPitch(); renderHonest(); renderResearch(cur()); }
+function renderAll() { localStorage.setItem('xray_last', state.id); renderTabs(); renderList(); renderTrending(); renderTop(); renderChart(); renderLadder(); renderSrc(); renderStats(); renderPitch(); renderHonest(); renderResearch(cur()); }
 
 // ---------- events ----------
+function closeNav() { document.body.classList.remove('nav-open'); }
+$('#menuBtn').addEventListener('click', () => document.body.classList.toggle('nav-open'));
+$('#backdrop').addEventListener('click', closeNav);
 document.addEventListener('click', e => {
   const t = e.target.closest('[data-m],[data-id],[data-r],[data-s]'); if (!t) return;
   if (t.dataset.m) { state.market = t.dataset.m; localStorage.setItem('xray_market', state.market); renderTabs(); renderList(); }
-  else if (t.dataset.id) { state.id = t.dataset.id; location.hash = state.id; renderAll(); refreshLive(state.id); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  else if (t.dataset.id) { state.id = t.dataset.id; location.hash = state.id; closeNav(); renderAll(); refreshLive(state.id); window.scrollTo({ top: 0, behavior: 'smooth' }); }
   else if (t.dataset.r) { state.range = t.dataset.r === 'ytd' ? 'ytd' : +t.dataset.r; localStorage.setItem('xray_range', state.range); renderChart(); }
   else if (t.dataset.s) { state.sort = t.dataset.s; localStorage.setItem('xray_sort', state.sort); renderLadder(); }
 });
@@ -266,6 +298,8 @@ window.addEventListener('hashchange', () => { const h = location.hash.slice(1); 
     const [co, pr] = await Promise.all([fetch('data/companies.json').then(r => r.json()), fetch('data/prices.json').then(r => r.json())]);
     state.companies = co.companies; state.generated = pr.generated || co.generated;
     for (const [k, v] of Object.entries(pr.series)) state.prices[k] = v;
+    const chip = $('#statusChip');
+    if (chip) chip.textContent = `Prices: Yahoo closes · saved ${state.generated ? new Date(state.generated).toLocaleString([], { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) : 'unknown'}`;
     const h = location.hash.slice(1), last = localStorage.getItem('xray_last');
     state.id = state.companies.some(c => c.id === h) ? h : state.companies.some(c => c.id === last) ? last : 'AAPL';
     renderAll(); refreshLive(state.id);

@@ -12,18 +12,32 @@
 <link rel="stylesheet" href="research.css">
 </head>
 <body>
-<div class="app">
-  <aside class="side">
-    <div class="brand"><span class="logo"></span><div><b>Company X-Ray</b><small>read the business</small></div></div>
+<header class="topbar">
+  <button id="menuBtn" class="menu-btn" aria-label="Open company list"><span></span><span></span><span></span></button>
+  <a class="brand" href="#AAPL"><span class="logo"></span><span class="brand-tx"><b>Company X-Ray</b><small>read the business</small></span></a>
+  <div class="searchwrap">
+    <svg class="sicon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 11l3.2 3.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
     <input id="q" aria-label="Search company or ticker" class="search" placeholder="Search company or ticker" autocomplete="off">
+    <kbd>/</kbd>
+  </div>
+  <div class="topbar-right">
+    <span class="status-chip" id="statusChip" title="Prices are the latest saved Yahoo Finance daily closes unless the badge on a company page says LIVE">Prices: Yahoo daily closes</span>
+    <button id="keyBtn" class="ghost small">Live price settings</button>
+  </div>
+</header>
+
+<div class="trend" id="trending" aria-label="Companies in discussion today"></div>
+
+<div class="app">
+  <aside class="side" id="side">
     <div class="tabs" id="tabs"></div>
     <nav id="list" class="list"></nav>
     <div class="sidefoot">
-      <button id="keyBtn" class="ghost">Live price settings</button>
       <p>Learning project. Not investment advice.</p>
       <p class="hint">Keys: / search, &uarr;&darr; move between companies</p>
     </div>
   </aside>
+  <div class="backdrop" id="backdrop"></div>
 
   <main class="main" id="main">
     <header class="top" id="top"></header>
@@ -31,8 +45,7 @@
       <div class="card span2" id="chartCard"></div>
       <div class="card span2" id="researchCard"></div>
       <div class="card span2" id="ladderCard"></div>
-      <div class="card" id="srcCard"></div>
-      <div class="card" id="statsCard"></div>
+      <div class="card span2" id="srcCard"></div>
       <div class="card span2 memo" id="pitchCard"></div>
       <div class="card span2" id="honest"></div>
     </section>
