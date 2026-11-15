@@ -13,7 +13,7 @@ export const US = {
   WMT: { name: 'Walmart', axis: 'us-gaap:StatementBusinessSegmentsAxis', members: ['WalmartUS', 'WalmartInternational', 'SamsClubUS'], labels: { WalmartUS: 'Walmart U.S.', WalmartInternational: 'Walmart International', SamsClubUS: "Sam's Club U.S." } },
   KO: { name: 'Coca-Cola', axis: 'srt:ProductOrServiceAxis', members: ['ConcentrateOperations', 'FinishedProductOperations'], labels: { ConcentrateOperations: 'Concentrate operations', FinishedProductOperations: 'Finished product operations (bottling)' } },
 };
-export const YAHOO = { AAPL: 'AAPL', MSFT: 'MSFT', AMZN: 'AMZN', GOOGL: 'GOOGL', TSLA: 'TSLA', NVDA: 'NVDA', META: 'META', DIS: 'DIS', NKE: 'NKE', WMT: 'WMT', KO: 'KO', RELIANCE: 'RELIANCE.NS', HUL: 'HINDUNILVR.NS', NESTLE: 'NESN.SW' };
+export const YAHOO = { AAPL: 'AAPL', MSFT: 'MSFT', AMZN: 'AMZN', GOOGL: 'GOOGL', TSLA: 'TSLA', NVDA: 'NVDA', META: 'META', DIS: 'DIS', NKE: 'NKE', WMT: 'WMT', KO: 'KO', RELIANCE: 'RELIANCE.NS', HUL: 'HINDUNILVR.NS', NESTLE: 'NESN.SW', TCS: 'TCS.NS' };
 export const META = { // market metadata
   AAPL: ['US', 'Nasdaq', 'USD'], MSFT: ['US', 'Nasdaq', 'USD'], AMZN: ['US', 'Nasdaq', 'USD'], GOOGL: ['US', 'Nasdaq', 'USD'], TSLA: ['US', 'Nasdaq', 'USD'], NVDA: ['US', 'Nasdaq', 'USD'], META: ['US', 'Nasdaq', 'USD'],
   DIS: ['US', 'NYSE', 'USD'], NKE: ['US', 'NYSE', 'USD'], WMT: ['US', 'Nasdaq', 'USD'], KO: ['US', 'NYSE', 'USD'],
