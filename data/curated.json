@@ -148,41 +148,49 @@
    {
     "name": "BFSI",
     "cur": 24006,
+    "prev": 21207,
     "growth": 13.2
    },
    {
     "name": "Consumer Business",
     "cur": 10905,
+    "prev": 10116,
     "growth": 7.8
    },
    {
     "name": "Life Sciences & Healthcare",
     "cur": 7538,
+    "prev": 6909,
     "growth": 9.1
    },
    {
     "name": "Manufacturing",
     "cur": 6587,
+    "prev": 5829,
     "growth": 13.0
    },
    {
     "name": "Technology & Services",
     "cur": 6294,
+    "prev": 5585,
     "growth": 12.7
    },
    {
     "name": "Communication & Media",
     "cur": 4245,
+    "prev": 3870,
     "growth": 9.7
    },
    {
     "name": "Energy, Resources & Utilities",
     "cur": 4538,
+    "prev": 3912,
     "growth": 16.0
    },
    {
     "name": "Regional Markets & Others",
     "cur": 9075,
+    "prev": 8364,
     "growth": 8.5
    }
   ]
