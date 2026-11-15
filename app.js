@@ -3,7 +3,7 @@
 // data/prices.json (Yahoo snapshot refreshed by GitHub Actions). Live prices are attempted in the browser.
 const $ = s => document.querySelector(s);
 const state = { companies: [], prices: {}, snapshot: null, id: null, market: ['All', 'US', 'India', 'Global'].includes(localStorage.getItem('xray_market')) ? localStorage.getItem('xray_market') : 'All', sort: ['growth', 'rev'].includes(localStorage.getItem('xray_sort')) ? localStorage.getItem('xray_sort') : 'growth', range: (r => r === 'ytd' ? 'ytd' : [21, 126, 252].includes(+r) ? +r : 252)(localStorage.getItem('xray_range')), live: {}, q: '' };
-const YAHOO = { AAPL: 'AAPL', MSFT: 'MSFT', AMZN: 'AMZN', GOOGL: 'GOOGL', TSLA: 'TSLA', NVDA: 'NVDA', META: 'META', DIS: 'DIS', NKE: 'NKE', WMT: 'WMT', KO: 'KO', RELIANCE: 'RELIANCE.NS', HUL: 'HINDUNILVR.NS', NESTLE: 'NESN.SW' };
+const YAHOO = { AAPL: 'AAPL', MSFT: 'MSFT', AMZN: 'AMZN', GOOGL: 'GOOGL', TSLA: 'TSLA', NVDA: 'NVDA', META: 'META', DIS: 'DIS', NKE: 'NKE', WMT: 'WMT', KO: 'KO', RELIANCE: 'RELIANCE.NS', HUL: 'HINDUNILVR.NS', NESTLE: 'NESN.SW', TCS: 'TCS.NS' };
 const SYM = { USD: '$', INR: 'Rs ', CHF: 'CHF ' };
 
 // ---------- formatting ----------
