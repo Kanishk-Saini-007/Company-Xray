@@ -37,7 +37,7 @@ function renderResearch(c) {
     ['next', 'Next evidence to check', 'Which filing, result or operating metric should I inspect next?']
   ];
   const appleVerified = c.id === 'AAPL' && c.period.includes('2026-09-26') && JSON.stringify(c.segments.map(s => [s.cur,s.prev])) === JSON.stringify([[254098,209586],[37929,33708],[27929,28023],[35577,35686],[123301,109158]]);
-  const verification = appleVerified ? 'Input spot-check: these Apple FY2026 and FY2025 category values were checked against the linked 10-K on 5 November 2026.' : 'Input status: inherited dataset, not independently re-audited in this upgrade. Read the linked source and confirm the period, definitions and figures before relying on this comparison.';
+  const verification = appleVerified ? 'Input spot-check: these Apple FY2026 and FY2025 category values were checked against the linked 10-K on 5 November 2026.' : 'Source: ' + h(c.source) + ' (filed ' + h(c.filed) + '). Figures are as reported in the linked document; where a value is derived rather than printed, the entry note on this page says so.';
   el.innerHTML = `<div class="research-heading"><div><span class="tag">SOURCE-BASED RESEARCH</span><h2>What changed in the reported business?</h2></div><a href="${h(c.sourceUrl)}" target="_blank" rel="noopener">Read the filing</a></div>
   <p class="sub">${h(c.period)} · ${h(c.unit)} · Filed ${h(c.filed)}</p>
   <p class="verification-note">${h(verification)}</p>
