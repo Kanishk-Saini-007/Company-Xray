@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T06:47:20.589Z",
+ "generated": "2026-11-16T14:42:51.005Z",
  "companies": [
   {
    "id": "AAPL",
@@ -510,12 +510,14 @@
     {
      "name": "Products (aircraft, defense, space)",
      "cur": 75356,
-     "prev": 53227
+     "prev": 53227,
+     "growth": 41.6
     },
     {
      "name": "Services",
      "cur": 14107,
-     "prev": 13290
+     "prev": 13290,
+     "growth": 6.1
     }
    ]
   },
@@ -700,12 +702,14 @@
     {
      "name": "Recurring revenue",
      "cur": 20127,
-     "prev": 19366
+     "prev": 19366,
+     "growth": 3.9
     },
     {
      "name": "Nonrecurring revenue",
      "cur": 4441,
-     "prev": 4509
+     "prev": 4509,
+     "growth": -1.5
     }
    ]
   },
@@ -942,12 +946,14 @@
     {
      "name": "Services",
      "cur": 30163,
-     "prev": 24847
+     "prev": 24847,
+     "growth": 21.4
     },
     {
      "name": "Equipment & products",
      "cur": 12159,
-     "prev": 10274
+     "prev": 10274,
+     "growth": 18.3
     }
    ]
   },
@@ -996,12 +1002,14 @@
     {
      "name": "Products",
      "cur": 24515,
-     "prev": 22841
+     "prev": 22841,
+     "growth": 7.3
     },
     {
      "name": "Services",
      "cur": 12927,
-     "prev": 11876
+     "prev": 11876,
+     "growth": 8.8
     }
    ]
   },
@@ -1158,12 +1166,14 @@
     {
      "name": "Products",
      "cur": 62654,
-     "prev": 59277
+     "prev": 59277,
+     "growth": 5.7
     },
     {
      "name": "Services",
      "cur": 12394,
-     "prev": 11766
+     "prev": 11766,
+     "growth": 5.3
     }
    ]
   },
@@ -1184,17 +1194,20 @@
     {
      "name": "Passenger",
      "cur": 25535,
-     "prev": 24980
+     "prev": 24980,
+     "growth": 2.2
     },
     {
      "name": "Other revenue",
      "cur": 2600,
-     "prev": 2200
+     "prev": 2200,
+     "growth": 18.2
     },
     {
      "name": "Other",
      "cur": 2357,
-     "prev": 2328
+     "prev": 2328,
+     "growth": 1.2
     }
    ]
   },
@@ -1525,12 +1538,14 @@
     {
      "name": "Collaboration revenue",
      "cur": 7331,
-     "prev": 6058
+     "prev": 6058,
+     "growth": 21
     },
     {
      "name": "Product sales",
      "cur": 6309,
-     "prev": 7629
+     "prev": 7629,
+     "growth": -17.3
     }
    ]
   },
@@ -1551,17 +1566,20 @@
     {
      "name": "Vehicles",
      "cur": 3639,
-     "prev": 4161
+     "prev": 4161,
+     "growth": -12.5
     },
     {
      "name": "Regulatory credits",
      "cur": 197,
-     "prev": 333
+     "prev": 333,
+     "growth": -40.8
     },
     {
      "name": "Software & services",
      "cur": 1557,
-     "prev": 484
+     "prev": 484,
+     "growth": 221.7
     }
    ]
   },
@@ -1712,12 +1730,14 @@
     {
      "name": "Merchant solutions",
      "cur": 8804,
-     "prev": 6530
+     "prev": 6530,
+     "growth": 34.8
     },
     {
      "name": "Subscription solutions",
      "cur": 2752,
-     "prev": 2350
+     "prev": 2350,
+     "growth": 17.1
     }
    ]
   },
@@ -1790,12 +1810,14 @@
     {
      "name": "Product revenue",
      "cur": 4472,
-     "prev": 3462
+     "prev": 3462,
+     "growth": 29.2
     },
     {
      "name": "Professional services & other",
      "cur": 212,
-     "prev": 164
+     "prev": 164,
+     "growth": 29.3
     }
    ]
   },
@@ -2210,6 +2232,1246 @@
      "cur": 1429,
      "prev": 1292,
      "growth": 10.6
+    }
+   ]
+  },
+  {
+   "id": "BKNG",
+   "name": "Booking Holdings",
+   "market": "US",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "Booking Holdings Inc. Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1075531/000107553126000009/bkng-20251231.htm",
+   "filed": "2026-02-18",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Merchant",
+     "cur": 17755,
+     "prev": 14142,
+     "growth": 25.5
+    },
+    {
+     "name": "Agency",
+     "cur": 7968,
+     "prev": 8524,
+     "growth": -6.5
+    },
+    {
+     "name": "Advertising & other",
+     "cur": 1194,
+     "prev": 1073,
+     "growth": 11.3
+    }
+   ]
+  },
+  {
+   "id": "CME",
+   "name": "CME Group",
+   "market": "US",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "CME GROUP INC. Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1156375/000115637526000009/cme-20251231.htm",
+   "filed": "2026-02-26",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Clearing & transaction fees",
+     "cur": 5281,
+     "prev": 4988,
+     "growth": 5.9
+    },
+    {
+     "name": "Market data",
+     "cur": 803,
+     "prev": 710,
+     "growth": 13.1
+    },
+    {
+     "name": "Other",
+     "cur": 436,
+     "prev": 432,
+     "growth": 0.9
+    }
+   ]
+  },
+  {
+   "id": "DAL",
+   "name": "Delta Air Lines",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "DELTA AIR LINES, INC. Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/27904/000002790426000013/dal-20251231.htm",
+   "filed": "2026-02-11",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Passenger",
+     "cur": 51768,
+     "prev": 50894,
+     "growth": 1.7
+    },
+    {
+     "name": "Cargo",
+     "cur": 900,
+     "prev": 822,
+     "growth": 9.5
+    },
+    {
+     "name": "Other (loyalty, refinery, ancillaries)",
+     "cur": 10696,
+     "prev": 9927,
+     "growth": 7.7
+    }
+   ]
+  },
+  {
+   "id": "UAL",
+   "name": "United Airlines",
+   "market": "US",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "United Airlines Holdings, Inc. Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/100517/000010051726000023/ual-20251231.htm",
+   "filed": "2026-02-12",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Passenger",
+     "cur": 53438,
+     "prev": 51829,
+     "growth": 3.1
+    },
+    {
+     "name": "Cargo",
+     "cur": 1779,
+     "prev": 1743,
+     "growth": 2.1
+    },
+    {
+     "name": "Other",
+     "cur": 3853,
+     "prev": 3491,
+     "growth": 10.4
+    }
+   ]
+  },
+  {
+   "id": "DG",
+   "name": "Dollar General",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2026-01-30, revenue by product / service line",
+   "periodType": "year",
+   "source": "DOLLAR GENERAL CORP Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/29534/000110465926032325/dg-20260130x10k.htm",
+   "filed": "2026-03-20",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Consumables",
+     "cur": 35053,
+     "prev": 33371,
+     "growth": 5
+    },
+    {
+     "name": "Seasonal",
+     "cur": 4327,
+     "prev": 4073,
+     "growth": 6.2
+    },
+    {
+     "name": "Home products",
+     "cur": 2214,
+     "prev": 2074,
+     "growth": 6.8
+    },
+    {
+     "name": "Apparel",
+     "cur": 1130,
+     "prev": 1094,
+     "growth": 3.3
+    }
+   ]
+  },
+  {
+   "id": "CRM",
+   "name": "Salesforce",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2026-01-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "Salesforce, Inc. Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm",
+   "filed": "2026-03-02",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Subscription & support",
+     "cur": 39388,
+     "prev": 35679,
+     "growth": 10.4
+    },
+    {
+     "name": "Professional services & other",
+     "cur": 2137,
+     "prev": 2216,
+     "growth": -3.6
+    }
+   ]
+  },
+  {
+   "id": "COST",
+   "name": "Costco",
+   "market": "US",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2026-08-30, revenue by product / service line",
+   "periodType": "year",
+   "source": "COSTCO WHOLESALE CORP /NEW Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000093/cost-20260830.htm",
+   "filed": "2026-10-07",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Net sales",
+     "cur": 297247,
+     "prev": 269912,
+     "growth": 10.1
+    },
+    {
+     "name": "Membership fees",
+     "cur": 5907,
+     "prev": 5323,
+     "growth": 11
+    }
+   ]
+  },
+  {
+   "id": "TXN",
+   "name": "Texas Instruments",
+   "market": "US",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by reportable segment",
+   "periodType": "year",
+   "source": "TEXAS INSTRUMENTS INC Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/97476/000009747626000059/txn-20251231.htm",
+   "filed": "2026-02-06",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Analog",
+     "cur": 14006,
+     "prev": 12161,
+     "growth": 15.2
+    },
+    {
+     "name": "Embedded processing",
+     "cur": 2697,
+     "prev": 2533,
+     "growth": 6.5
+    },
+    {
+     "name": "Other",
+     "cur": 979,
+     "prev": 947,
+     "growth": 3.4
+    }
+   ]
+  },
+  {
+   "id": "MPC",
+   "name": "Marathon Petroleum",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by reportable segment",
+   "periodType": "year",
+   "source": "Marathon Petroleum Corp Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1510295/000151029526000009/mpc-20251231.htm",
+   "filed": "2026-02-26",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Refining & marketing",
+     "cur": 124252,
+     "prev": 131588,
+     "growth": -5.6
+    },
+    {
+     "name": "Midstream",
+     "cur": 5628,
+     "prev": 5197,
+     "growth": 8.3
+    },
+    {
+     "name": "Renewable diesel",
+     "cur": 2814,
+     "prev": 2079,
+     "growth": 35.4
+    }
+   ]
+  },
+  {
+   "id": "VLO",
+   "name": "Valero",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by reportable segment",
+   "periodType": "year",
+   "source": "VALERO ENERGY CORP/TX Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1035002/000162828026011499/vlo-20251231.htm",
+   "filed": "2026-02-25",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Refining",
+     "cur": 116158,
+     "prev": 123853,
+     "growth": -6.2
+    },
+    {
+     "name": "Renewable diesel",
+     "cur": 2508,
+     "prev": 2410,
+     "growth": 4.1
+    },
+    {
+     "name": "Ethanol",
+     "cur": 4021,
+     "prev": 3618,
+     "growth": 11.1
+    }
+   ]
+  },
+  {
+   "id": "VMC",
+   "name": "Vulcan Materials",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by reportable segment",
+   "periodType": "year",
+   "source": "Vulcan Materials CO Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1396009/000162828026009546/vmc-20251231.htm",
+   "filed": "2026-02-19",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Aggregates",
+     "cur": 5800,
+     "prev": 5519,
+     "growth": 5.1
+    },
+    {
+     "name": "Asphalt",
+     "cur": 1294,
+     "prev": 1246,
+     "growth": 3.9
+    },
+    {
+     "name": "Concrete",
+     "cur": 847,
+     "prev": 654,
+     "growth": 29.5
+    }
+   ]
+  },
+  {
+   "id": "MAR",
+   "name": "Marriott",
+   "market": "US",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "MARRIOTT INTERNATIONAL INC /MD/ Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000007/mar-20251231.htm",
+   "filed": "2026-02-10",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Franchise & management fees",
+     "cur": 5303,
+     "prev": 5067,
+     "growth": 4.7
+    },
+    {
+     "name": "Owned, leased & other",
+     "cur": 1679,
+     "prev": 1551,
+     "growth": 8.3
+    },
+    {
+     "name": "Cost reimbursements",
+     "cur": 19204,
+     "prev": 18482,
+     "growth": 3.9
+    }
+   ]
+  },
+  {
+   "id": "RCL",
+   "name": "Royal Caribbean",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "ROYAL CARIBBEAN CRUISES LTD Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/884887/000088488726000007/rcl-20251231.htm",
+   "filed": "2026-02-11",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Passenger tickets",
+     "cur": 17071,
+     "prev": 15696,
+     "growth": 8.8
+    },
+    {
+     "name": "Onboard & other",
+     "cur": 864,
+     "prev": 788,
+     "growth": 9.6
+    }
+   ]
+  },
+  {
+   "id": "PSX",
+   "name": "Phillips 66",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "Phillips 66 Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1534701/000153470126000006/psx-20251231.htm",
+   "filed": "2026-02-20",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Refined products & renewables",
+     "cur": 97359,
+     "prev": 103685,
+     "growth": -6.1
+    },
+    {
+     "name": "Crude oil",
+     "cur": 15183,
+     "prev": 22008,
+     "growth": -31
+    },
+    {
+     "name": "Natural gas liquids",
+     "cur": 17066,
+     "prev": 14548,
+     "growth": 17.3
+    },
+    {
+     "name": "Other",
+     "cur": 2768,
+     "prev": 2912,
+     "growth": -4.9
+    }
+   ]
+  },
+  {
+   "id": "HLT",
+   "name": "Hilton",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "Hilton Worldwide Holdings Inc. Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1585689/000158568926000007/hlt-20251231.htm",
+   "filed": "2026-02-11",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Franchise & licensing fees",
+     "cur": 2780,
+     "prev": 2600,
+     "growth": 6.9
+    },
+    {
+     "name": "Base management fees",
+     "cur": 376,
+     "prev": 369,
+     "growth": 1.9
+    },
+    {
+     "name": "Incentive management fees",
+     "cur": 313,
+     "prev": 290,
+     "growth": 7.9
+    },
+    {
+     "name": "Owned & leased hotels",
+     "cur": 1233,
+     "prev": 1255,
+     "growth": -1.8
+    },
+    {
+     "name": "Other hotel revenue",
+     "cur": 252,
+     "prev": 232,
+     "growth": 8.6
+    },
+    {
+     "name": "Cost reimbursements",
+     "cur": 7085,
+     "prev": 6428,
+     "growth": 10.2
+    }
+   ]
+  },
+  {
+   "id": "FCX",
+   "name": "Freeport-McMoRan",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "FREEPORT-MCMORAN INC Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/831259/000083125926000012/fcx-20251231.htm",
+   "filed": "2026-02-13",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Copper cathode",
+     "cur": 8147,
+     "prev": 8317,
+     "growth": -2
+    },
+    {
+     "name": "Copper in concentrates",
+     "cur": 6310,
+     "prev": 6734,
+     "growth": -6.3
+    },
+    {
+     "name": "Refined copper products",
+     "cur": 4419,
+     "prev": 3851,
+     "growth": 14.7
+    },
+    {
+     "name": "Purchased copper",
+     "cur": 449,
+     "prev": 684,
+     "growth": -34.4
+    },
+    {
+     "name": "Gold",
+     "cur": 3900,
+     "prev": 4446,
+     "growth": -12.3
+    },
+    {
+     "name": "Molybdenum",
+     "cur": 1966,
+     "prev": 1786,
+     "growth": 10.1
+    },
+    {
+     "name": "Other",
+     "cur": 749,
+     "prev": 646,
+     "growth": 15.9
+    }
+   ]
+  },
+  {
+   "id": "ZTS",
+   "name": "Zoetis",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "Zoetis Inc. Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1555280/000155528026000011/zts-20251231.htm",
+   "filed": "2026-02-12",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Companion animal",
+     "cur": 6587,
+     "prev": 6278,
+     "growth": 4.9
+    },
+    {
+     "name": "Livestock",
+     "cur": 2764,
+     "prev": 2898,
+     "growth": -4.6
+    },
+    {
+     "name": "Contract manufacturing & human health diagnostics",
+     "cur": 116,
+     "prev": 80,
+     "growth": 45
+    }
+   ]
+  },
+  {
+   "id": "SPGI",
+   "name": "S&P Global",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "S&P Global Inc. Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/64040/000006404026000013/spgi-20251231.htm",
+   "filed": "2026-02-11",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Subscription",
+     "cur": 7865,
+     "prev": 7346,
+     "growth": 7.1
+    },
+    {
+     "name": "Non-subscription transaction",
+     "cur": 3144,
+     "prev": 2986,
+     "growth": 5.3
+    },
+    {
+     "name": "Non-transaction",
+     "cur": 2054,
+     "prev": 1858,
+     "growth": 10.5
+    },
+    {
+     "name": "Asset-linked fees",
+     "cur": 1206,
+     "prev": 1046,
+     "growth": 15.3
+    },
+    {
+     "name": "Sales- & usage-based royalties",
+     "cur": 444,
+     "prev": 393,
+     "growth": 13
+    },
+    {
+     "name": "Recurring variable revenue",
+     "cur": 623,
+     "prev": 579,
+     "growth": 7.6
+    }
+   ]
+  },
+  {
+   "id": "COP",
+   "name": "ConocoPhillips",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by reportable segment",
+   "periodType": "year",
+   "source": "CONOCOPHILLIPS Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000009/cop-20251231.htm",
+   "filed": "2026-02-17",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Alaska",
+     "cur": 5638,
+     "prev": 6553,
+     "growth": -14
+    },
+    {
+     "name": "Lower 48",
+     "cur": 41395,
+     "prev": 37026,
+     "growth": 11.8
+    },
+    {
+     "name": "Canada",
+     "cur": 3625,
+     "prev": 3514,
+     "growth": 3.2
+    },
+    {
+     "name": "Europe, Middle East & North Africa",
+     "cur": 6484,
+     "prev": 5788,
+     "growth": 12
+    },
+    {
+     "name": "Asia Pacific",
+     "cur": 1770,
+     "prev": 1847,
+     "growth": -4.2
+    },
+    {
+     "name": "Corporate & other",
+     "cur": 32,
+     "prev": 17,
+     "growth": 88.2
+    }
+   ]
+  },
+  {
+   "id": "WM",
+   "name": "Waste Management",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by reportable segment",
+   "periodType": "year",
+   "source": "WASTE MANAGEMENT INC Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/823768/000110465926012049/wm-20251231x10k.htm",
+   "filed": "2026-02-09",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "East Tier (collection & disposal)",
+     "cur": 9037,
+     "prev": 8703,
+     "growth": 3.8
+    },
+    {
+     "name": "West Tier (collection & disposal)",
+     "cur": 8718,
+     "prev": 8285,
+     "growth": 5.2
+    },
+    {
+     "name": "All other collection & disposal",
+     "cur": 2949,
+     "prev": 2728,
+     "growth": 8.1
+    },
+    {
+     "name": "Recycling processing & sales",
+     "cur": 1492,
+     "prev": 1603,
+     "growth": -6.9
+    },
+    {
+     "name": "Renewable energy",
+     "cur": 478,
+     "prev": 318,
+     "growth": 50.3
+    },
+    {
+     "name": "Healthcare solutions",
+     "cur": 2508,
+     "prev": 403,
+     "growth": 522.3
+    },
+    {
+     "name": "Corporate & other",
+     "cur": 22,
+     "prev": 23,
+     "growth": -4.3
+    }
+   ]
+  },
+  {
+   "id": "ICE",
+   "name": "Intercontinental Exchange",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by reportable segment",
+   "periodType": "year",
+   "source": "Intercontinental Exchange, Inc. Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1571949/000157194926000004/ice-20251231.htm",
+   "filed": "2026-02-05",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Exchanges",
+     "cur": 8120,
+     "prev": 7441,
+     "growth": 9.1
+    },
+    {
+     "name": "Fixed income & data services",
+     "cur": 2419,
+     "prev": 2298,
+     "growth": 5.3
+    },
+    {
+     "name": "Mortgage technology",
+     "cur": 2101,
+     "prev": 2022,
+     "growth": 3.9
+    }
+   ]
+  },
+  {
+   "id": "CSCO",
+   "name": "Cisco",
+   "market": "US",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2026-07-25, revenue by product / service line",
+   "periodType": "year",
+   "source": "CISCO SYSTEMS, INC. Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/csco-20260725.htm",
+   "filed": "2026-09-02",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Networking",
+     "cur": 34668,
+     "prev": 28304,
+     "growth": 22.5
+    },
+    {
+     "name": "Security",
+     "cur": 8232,
+     "prev": 8094,
+     "growth": 1.7
+    },
+    {
+     "name": "Collaboration",
+     "cur": 4300,
+     "prev": 4154,
+     "growth": 3.5
+    },
+    {
+     "name": "Observability",
+     "cur": 1095,
+     "prev": 1055,
+     "growth": 3.8
+    },
+    {
+     "name": "Services",
+     "cur": 15030,
+     "prev": 15046,
+     "growth": -0.1
+    }
+   ]
+  },
+  {
+   "id": "GILD",
+   "name": "Gilead Sciences",
+   "market": "US",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "GILEAD SCIENCES, INC. Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000006/gild-20251231.htm",
+   "filed": "2026-02-24",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "HIV",
+     "cur": 20752,
+     "prev": 19612,
+     "growth": 5.8
+    },
+    {
+     "name": "Liver disease",
+     "cur": 3217,
+     "prev": 3021,
+     "growth": 6.5
+    },
+    {
+     "name": "Veklury",
+     "cur": 911,
+     "prev": 1799,
+     "growth": -49.4
+    },
+    {
+     "name": "Cell therapy",
+     "cur": 1839,
+     "prev": 1973,
+     "growth": -6.8
+    },
+    {
+     "name": "Trodelvy",
+     "cur": 1397,
+     "prev": 1315,
+     "growth": 6.2
+    },
+    {
+     "name": "Other products",
+     "cur": 799,
+     "prev": 889,
+     "growth": -10.1
+    },
+    {
+     "name": "Royalty, contract & other",
+     "cur": 527,
+     "prev": 144,
+     "growth": 266
+    }
+   ]
+  },
+  {
+   "id": "COIN",
+   "name": "Coinbase",
+   "market": "US",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "Coinbase Global, Inc. Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000015/coin-20251231.htm",
+   "filed": "2026-02-12",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Transaction revenue",
+     "cur": 4055,
+     "prev": 3986,
+     "growth": 1.7
+    },
+    {
+     "name": "Subscription & services",
+     "cur": 2828,
+     "prev": 2307,
+     "growth": 22.6
+    },
+    {
+     "name": "Other revenue",
+     "cur": 298,
+     "prev": 271,
+     "growth": 10
+    }
+   ]
+  },
+  {
+   "id": "AMGN",
+   "name": "Amgen",
+   "market": "US",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "AMGEN INC Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/318154/000031815426000010/amgn-20251231.htm",
+   "filed": "2026-02-13",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Prolia",
+     "cur": 4414,
+     "prev": 4374,
+     "growth": 0.9
+    },
+    {
+     "name": "Repatha",
+     "cur": 3016,
+     "prev": 2222,
+     "growth": 35.7
+    },
+    {
+     "name": "Otezla",
+     "cur": 2265,
+     "prev": 2126,
+     "growth": 6.5
+    },
+    {
+     "name": "Enbrel",
+     "cur": 2226,
+     "prev": 3316,
+     "growth": -32.9
+    },
+    {
+     "name": "EVENITY",
+     "cur": 2100,
+     "prev": 1563,
+     "growth": 34.4
+    },
+    {
+     "name": "Xgeva",
+     "cur": 2084,
+     "prev": 2225,
+     "growth": -6.3
+    },
+    {
+     "name": "TEPEZZA",
+     "cur": 1903,
+     "prev": 1851,
+     "growth": 2.8
+    },
+    {
+     "name": "BLINCYTO",
+     "cur": 1559,
+     "prev": 1216,
+     "growth": 28.2
+    },
+    {
+     "name": "Nplate",
+     "cur": 1524,
+     "prev": 1456,
+     "growth": 4.7
+    },
+    {
+     "name": "TEZSPIRE",
+     "cur": 1478,
+     "prev": 972,
+     "growth": 52.1
+    },
+    {
+     "name": "KYPROLIS",
+     "cur": 1412,
+     "prev": 1503,
+     "growth": -6.1
+    },
+    {
+     "name": "Aranesp",
+     "cur": 1389,
+     "prev": 1342,
+     "growth": 3.5
+    },
+    {
+     "name": "KRYSTEXXA",
+     "cur": 1340,
+     "prev": 1185,
+     "growth": 13.1
+    },
+    {
+     "name": "Vectibix",
+     "cur": 1175,
+     "prev": 1045,
+     "growth": 12.4
+    },
+    {
+     "name": "Other products",
+     "cur": 7263,
+     "prev": 5630,
+     "growth": 29
+    }
+   ]
+  },
+  {
+   "id": "ADP",
+   "name": "Automatic Data Processing",
+   "market": "US",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2026-06-30, revenue by product / service line",
+   "periodType": "year",
+   "source": "AUTOMATIC DATA PROCESSING INC Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/8670/000000867026000030/adp-20260630.htm",
+   "filed": "2026-08-05",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Employer Services & other",
+     "cur": 13477,
+     "prev": 12692,
+     "growth": 6.2
+    },
+    {
+     "name": "Interest on funds held for clients",
+     "cur": 1355,
+     "prev": 1189,
+     "growth": 14
+    },
+    {
+     "name": "PEO revenues",
+     "cur": 7116,
+     "prev": 6680,
+     "growth": 6.5
+    }
+   ]
+  },
+  {
+   "id": "LLY",
+   "name": "Eli Lilly",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "ELI LILLY & Co Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm",
+   "filed": "2026-02-12",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Product sales",
+     "cur": 60958,
+     "prev": 40748,
+     "growth": 49.6
+    },
+    {
+     "name": "Collaboration & other",
+     "cur": 4221,
+     "prev": 4295,
+     "growth": -1.7
+    }
+   ]
+  },
+  {
+   "id": "VZ",
+   "name": "Verizon",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "VERIZON COMMUNICATIONS INC Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/732712/000073271226000007/vz-20251231.htm",
+   "filed": "2026-02-17",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Service & other",
+     "cur": 112721,
+     "prev": 111571,
+     "growth": 1
+    },
+    {
+     "name": "Wireless equipment & products",
+     "cur": 25470,
+     "prev": 23217,
+     "growth": 9.7
+    }
+   ]
+  },
+  {
+   "id": "OKE",
+   "name": "ONEOK",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "ONEOK INC /NEW/ Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1039684/000103968426000006/oke-20251231.htm",
+   "filed": "2026-02-24",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Commodity sales",
+     "cur": 28878,
+     "prev": 17780,
+     "growth": 62.4
+    },
+    {
+     "name": "Services",
+     "cur": 4751,
+     "prev": 3918,
+     "growth": 21.3
+    }
+   ]
+  },
+  {
+   "id": "WMB",
+   "name": "Williams Companies",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "WILLIAMS COMPANIES, INC. Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/107263/000010726326000006/wmb-20251231.htm",
+   "filed": "2026-02-24",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Service revenue",
+     "cur": 8440,
+     "prev": 7663,
+     "growth": 10.1
+    },
+    {
+     "name": "Product revenue",
+     "cur": 6459,
+     "prev": 4969,
+     "growth": 30
+    }
+   ]
+  },
+  {
+   "id": "KMI",
+   "name": "Kinder Morgan",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "KINDER MORGAN, INC. Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1506307/000150630726000011/kmi-20251231.htm",
+   "filed": "2026-02-13",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Oil & gas services",
+     "cur": 9490,
+     "prev": 8916,
+     "growth": 6.4
+    },
+    {
+     "name": "Products",
+     "cur": 7141,
+     "prev": 5929,
+     "growth": 20.4
+    },
+    {
+     "name": "Other products & services",
+     "cur": 192,
+     "prev": 227,
+     "growth": -15.4
+    },
+    {
+     "name": "Other commodity",
+     "cur": 129,
+     "prev": 103,
+     "growth": 25.2
     }
    ]
   },
