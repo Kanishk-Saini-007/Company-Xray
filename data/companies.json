@@ -494,6 +494,32 @@
    ]
   },
   {
+   "id": "BA",
+   "name": "Boeing",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "BOEING CO Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/12927/000162828026004357/ba-20251231.htm",
+   "filed": "2026-01-30",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Products (aircraft, defense, space)",
+     "cur": 75356,
+     "prev": 53227
+    },
+    {
+     "name": "Services",
+     "cur": 14107,
+     "prev": 13290
+    }
+   ]
+  },
+  {
    "id": "BBY",
    "name": "Best Buy",
    "market": "US",
@@ -654,6 +680,32 @@
      "cur": 5748,
      "prev": 5759,
      "growth": -0.2
+    }
+   ]
+  },
+  {
+   "id": "DHR",
+   "name": "Danaher",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "DANAHER CORP /DE/ Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/313616/000031361626000062/dhr-20251231.htm",
+   "filed": "2026-02-24",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Recurring revenue",
+     "cur": 20127,
+     "prev": 19366
+    },
+    {
+     "name": "Nonrecurring revenue",
+     "cur": 4441,
+     "prev": 4509
     }
    ]
   },
@@ -874,6 +926,32 @@
    ]
   },
   {
+   "id": "GE",
+   "name": "GE Aerospace",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "GENERAL ELECTRIC CO Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/40545/000004054526000008/ge-20251231.htm",
+   "filed": "2026-01-29",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Services",
+     "cur": 30163,
+     "prev": 24847
+    },
+    {
+     "name": "Equipment & products",
+     "cur": 12159,
+     "prev": 10274
+    }
+   ]
+  },
+  {
    "id": "HAL",
    "name": "Halliburton",
    "market": "US",
@@ -898,6 +976,32 @@
      "cur": 9402,
      "prev": 9693,
      "growth": -3
+    }
+   ]
+  },
+  {
+   "id": "HON",
+   "name": "Honeywell",
+   "market": "US",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "HONEYWELL INTERNATIONAL INC Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/773840/000077384026000013/hon-20251231.htm",
+   "filed": "2026-02-17",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Products",
+     "cur": 24515,
+     "prev": 22841
+    },
+    {
+     "name": "Services",
+     "cur": 12927,
+     "prev": 11876
     }
    ]
   },
@@ -1034,6 +1138,63 @@
      "cur": 1318,
      "prev": 1257,
      "growth": 4.9
+    }
+   ]
+  },
+  {
+   "id": "LMT",
+   "name": "Lockheed Martin",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "LOCKHEED MARTIN CORP Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/936468/000162828026004195/lmt-20251231.htm",
+   "filed": "2026-01-29",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Products",
+     "cur": 62654,
+     "prev": 59277
+    },
+    {
+     "name": "Services",
+     "cur": 12394,
+     "prev": 11766
+    }
+   ]
+  },
+  {
+   "id": "LUV",
+   "name": "Southwest Airlines",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "SOUTHWEST AIRLINES CO Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/92380/000009238026000004/luv-20251231.htm",
+   "filed": "2026-02-05",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Passenger",
+     "cur": 25535,
+     "prev": 24980
+    },
+    {
+     "name": "Other revenue",
+     "cur": 2600,
+     "prev": 2200
+    },
+    {
+     "name": "Other",
+     "cur": 2357,
+     "prev": 2328
     }
    ]
   },
@@ -1348,6 +1509,63 @@
    ]
   },
   {
+   "id": "REGN",
+   "name": "Regeneron",
+   "market": "US",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "REGENERON PHARMACEUTICALS, INC. Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000008/regn-20251231.htm",
+   "filed": "2026-02-04",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Collaboration revenue",
+     "cur": 7331,
+     "prev": 6058
+    },
+    {
+     "name": "Product sales",
+     "cur": 6309,
+     "prev": 7629
+    }
+   ]
+  },
+  {
+   "id": "RIVN",
+   "name": "Rivian",
+   "market": "US",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "Rivian Automotive, Inc. / DE Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1874178/000187417826000008/rivn-20251231.htm",
+   "filed": "2026-02-12",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Vehicles",
+     "cur": 3639,
+     "prev": 4161
+    },
+    {
+     "name": "Regulatory credits",
+     "cur": 197,
+     "prev": 333
+    },
+    {
+     "name": "Software & services",
+     "cur": 1557,
+     "prev": 484
+    }
+   ]
+  },
+  {
    "id": "ROK",
    "name": "Rockwell Automation",
    "market": "US",
@@ -1478,6 +1696,32 @@
    ]
   },
   {
+   "id": "SHOP",
+   "name": "Shopify",
+   "market": "US",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2025-12-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "SHOPIFY INC. Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1594805/000159480526000007/shop-20251231.htm",
+   "filed": "2026-02-11",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Merchant solutions",
+     "cur": 8804,
+     "prev": 6530
+    },
+    {
+     "name": "Subscription solutions",
+     "cur": 2752,
+     "prev": 2350
+    }
+   ]
+  },
+  {
    "id": "SLB",
    "name": "SLB (Schlumberger)",
    "market": "US",
@@ -1526,6 +1770,32 @@
      "cur": -940,
      "prev": -736,
      "growth": 27.7
+    }
+   ]
+  },
+  {
+   "id": "SNOW",
+   "name": "Snowflake",
+   "market": "US",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "unit": "USD million",
+   "period": "Fiscal year ended 2026-01-31, revenue by product / service line",
+   "periodType": "year",
+   "source": "Snowflake Inc. Form 10-K (SEC EDGAR)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1640147/000164014726000008/snow-20260131.htm",
+   "filed": "2026-03-20",
+   "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Lines are the ones the company tags itself; sub-lines that would double count were left out.",
+   "segments": [
+    {
+     "name": "Product revenue",
+     "cur": 4472,
+     "prev": 3462
+    },
+    {
+     "name": "Professional services & other",
+     "cur": 212,
+     "prev": 164
     }
    ]
   },

@@ -4,6 +4,10 @@ import fs from 'node:fs';
 import { segments } from './edgar_segments.mjs';
 import { US, YAHOO, META } from './config.mjs';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
+// Never shrink the dataset on a transient fetch failure: fall back to the previously committed data.
+const prevCompanies = JSON.parse(fs.readFileSync(new URL('../data/companies.json', import.meta.url)));
+const prevById = new Map(prevCompanies.companies.map(c => [c.id, c]));
+const prevPrices = JSON.parse(fs.readFileSync(new URL('../data/prices.json', import.meta.url)));
 const out = [];
 for (const [t, cfg] of Object.entries(US)) {
   try {
@@ -22,7 +26,7 @@ for (const [t, cfg] of Object.entries(US)) {
     out.push({ id: t, name: cfg.name, market: m, exchange: ex, currency: cur, unit: 'USD million', period: `Fiscal year ended ${r.report}, revenue by ${cfg.axis.includes('Segments') ? 'reportable segment' : 'product / service line'}`, periodType: 'year',
       source: `${r.name} Form 10-K (SEC EDGAR)`, sourceUrl: r.url, filed: r.filed, note: 'Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.', segments: rows });
     console.log('ok', t, rows.length);
-  } catch (e) { console.log('FAIL', t, e.message); }
+  } catch (e) { const old = prevById.get(t); if (old) { out.push(old); console.log('KEEP', t, '- previous entry kept after fetch failure:', e.message); } else { console.log('FAIL', t, e.message); } }
   await sleep(400);
 }
 const cur = JSON.parse(fs.readFileSync(new URL('../data/curated.json', import.meta.url)));
@@ -41,7 +45,7 @@ for (const [id, y] of Object.entries(YAHOO)) {
     const pts = j.timestamp.map((t, i) => [t, q.close[i]]).filter(p => p[1] != null).map(p => [p[0], +p[1].toFixed(2)]);
     prices.series[id] = { symbol: y, currency: m.currency, price: m.regularMarketPrice, time: m.regularMarketTime, prevClose: m.chartPreviousClose, hi52: m.fiftyTwoWeekHigh, lo52: m.fiftyTwoWeekLow, exchange: m.fullExchangeName, pts };
     console.log('px', id, m.regularMarketPrice);
-  } catch (e) { console.log('PXFAIL', id, e.message); }
+  } catch (e) { const old = prevPrices.series[id]; if (old) { prices.series[id] = old; console.log('PXKEEP', id, '- previous series kept after fetch failure:', e.message); } else { console.log('PXFAIL', id, e.message); } }
   await sleep(500);
 }
 if (Object.keys(prices.series).length) fs.writeFileSync(new URL('../data/prices.json', import.meta.url), JSON.stringify(prices));
