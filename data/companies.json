@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T13:49:49.656461Z",
+ "generated": "2026-11-17T21:05:06.245Z",
  "companies": [
   {
    "id": "AAPL",
@@ -336,30 +336,30 @@
    "exchange": "NYSE",
    "currency": "USD",
    "unit": "USD million",
-   "period": "Fiscal year ended 2025-09-27, revenue by reportable segment",
+   "period": "Fiscal year ended 2026-10-03, revenue by reportable segment",
    "periodType": "year",
    "source": "Walt Disney Co Form 10-K (SEC EDGAR)",
-   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1744489/000174448925000155/dis-20250927.htm",
-   "filed": "2025-11-13",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000066/dis-20261003.htm",
+   "filed": "2026-11-17",
    "note": "Pulled automatically from the 10-K inline XBRL tags on SEC EDGAR. Segment lines are the ones the company tags itself; sub-lines that would double count were left out.",
    "segments": [
     {
      "name": "Entertainment",
-     "cur": 42466,
-     "prev": 41186,
-     "growth": 3.1
+     "cur": 46562,
+     "prev": 42466,
+     "growth": 9.6
     },
     {
      "name": "Sports (ESPN)",
-     "cur": 17672,
-     "prev": 17619,
-     "growth": 0.3
+     "cur": 18632,
+     "prev": 17672,
+     "growth": 5.4
     },
     {
      "name": "Experiences (parks, cruises)",
-     "cur": 36156,
-     "prev": 34151,
-     "growth": 5.9
+     "cur": 39566,
+     "prev": 36156,
+     "growth": 9.4
     }
    ]
   },
