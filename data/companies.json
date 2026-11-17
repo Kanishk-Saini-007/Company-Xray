@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T08:07:31.762Z",
+ "generated": "2026-11-17T13:49:49.656461Z",
  "companies": [
   {
    "id": "AAPL",
@@ -3482,40 +3482,40 @@
    "exchange": "NSE",
    "currency": "INR",
    "unit": "Rs crore",
-   "period": "Q1 FY2026-27 (Apr-Jun 2026), revenue by segment",
+   "period": "Q2 FY2026-27 (Jul-Sep 2026), revenue by segment",
    "periodType": "quarter",
-   "source": "RIL media release, Q1 FY2026-27",
-   "sourceUrl": "https://www.ril.com",
-   "filed": "2026-07-17",
-   "note": "Curated by hand from the company's results release. Growth is the YoY % the company reports for the quarter. Oil & Gas EBITDA margin and Jio margin are far above the group; revenue size and margin are different things.",
+   "source": "RIL media release, Q2 FY2026-27 (Oct 30, 2026)",
+   "sourceUrl": "https://www.ril.com/sites/default/files/2026-10/30102026_Media%20Release_RIL_Q2_FY2026-27_Financial_and_Operational_Performance.pdf",
+   "filed": "2026-10-30",
+   "note": "Curated by hand from the company's results release. Growth is the YoY % the company reports for the quarter (Oil and Gas revenue was 'stable Y-o-Y' per the company; -0.6% computed from the segment table). Oil & Gas EBITDA margin and Jio margin are far above the group; revenue size and margin are different things.",
    "segments": [
     {
      "name": "Oil to Chemicals (O2C)",
-     "cur": 201803,
-     "growth": 30.4,
-     "margin": 8.4,
-     "prev": 154757
+     "cur": 231601,
+     "growth": 44.2,
+     "margin": 10.9,
+     "prev": 160611
     },
     {
      "name": "Retail (RRVL)",
-     "cur": 90408,
-     "growth": 7.4,
-     "margin": 7.9,
-     "prev": 84179
+     "cur": 91716,
+     "growth": 6.4,
+     "margin": 7.8,
+     "prev": 86199
     },
     {
      "name": "Digital Services (Jio Platforms)",
-     "cur": 45961,
-     "growth": 12,
-     "margin": 53.3,
-     "prev": 41037
+     "cur": 47485,
+     "growth": 11.3,
+     "margin": 54.1,
+     "prev": 42664
     },
     {
      "name": "Oil and Gas",
-     "cur": 6298,
-     "growth": 3.2,
-     "margin": 79,
-     "prev": 6103
+     "cur": 6020,
+     "growth": -0.6,
+     "margin": 81.4,
+     "prev": 6056
     }
    ]
   },
