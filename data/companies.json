@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18T07:43:02.635Z",
+ "generated": "2026-11-18T13:49:45.832645Z",
  "companies": [
   {
    "id": "AAPL",
@@ -4214,6 +4214,46 @@
     {
      "name": "IT Products",
      "cur": 15.8
+    }
+   ]
+  },
+  {
+   "id": "ICICIBANK",
+   "name": "ICICI Bank",
+   "market": "India",
+   "exchange": "NSE",
+   "currency": "INR",
+   "unit": "Rs crore",
+   "period": "Q2 FY2026-27 (Jul-Sep 2026), standalone segment revenue",
+   "periodType": "quarter",
+   "source": "ICICI Bank Q2 FY2026-27 financial results, standalone segmental results (NSE filing)",
+   "sourceUrl": "https://nsearchives.nseindia.com/corporate/ICICI2022_17102026152608_NSEBSE17102026.pdf",
+   "filed": "2026-10-17",
+   "note": "Curated by hand from the bank's official Q2 FY27 standalone segmental results (RBI/SEBI format). Bank segment revenue includes interest income; segments are stated before Rs 56,705 cr of inter-segment revenue (mainly treasury funds transfer pricing), after which income from operations is Rs 57,157 cr. Retail includes credit cards and third-party distribution; Treasury is the investment and derivative portfolio. Standalone excludes subsidiaries (ICICI Prudential Life, ICICI Lombard, etc.).",
+   "segments": [
+    {
+     "name": "Retail Banking",
+     "cur": 43724,
+     "prev": 40759,
+     "growth": 7.3
+    },
+    {
+     "name": "Treasury",
+     "cur": 39533,
+     "prev": 33913,
+     "growth": 16.6
+    },
+    {
+     "name": "Wholesale Banking",
+     "cur": 27035,
+     "prev": 21112,
+     "growth": 28.1
+    },
+    {
+     "name": "Other Banking",
+     "cur": 3571,
+     "prev": 958,
+     "growth": 272.6
     }
    ]
   }
