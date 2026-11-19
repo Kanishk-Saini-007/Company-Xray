@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19T07:38:57.456Z",
+ "generated": "2026-11-19T13:50:10.729616Z",
  "companies": [
   {
    "id": "AAPL",
@@ -4254,6 +4254,58 @@
      "cur": 3571,
      "prev": 958,
      "growth": 272.6
+    }
+   ]
+  },
+  {
+   "id": "HDFCBANK",
+   "name": "HDFC Bank",
+   "market": "India",
+   "exchange": "NSE",
+   "currency": "INR",
+   "unit": "Rs crore",
+   "period": "Q2 FY2026-27 (Jul-Sep 2026), consolidated segment revenue",
+   "periodType": "quarter",
+   "source": "HDFC Bank unaudited consolidated financial results Q2 FY2026-27 (SEC 6-K exhibit)",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1144967/000119312526424680/d166042dex99.htm",
+   "filed": "2026-10-17",
+   "note": "Curated by hand from the bank's official Q2 FY27 consolidated results (RBI segment format). Bank segment revenue includes interest income; segments are stated before Rs 63,449 cr of inter-segment revenue (mainly treasury funds transfer pricing). Consolidated includes subsidiaries: Insurance Business is HDFC Life and HDFC Ergo premium and other income; Others covers HDB Financial, HDFC Securities and other subsidiaries. Treasury revenue fell YoY as the prior-year quarter had larger investment gains.",
+   "segments": [
+    {
+     "name": "Retail Banking",
+     "cur": 79112,
+     "prev": 75585,
+     "growth": 4.7
+    },
+    {
+     "name": "Wholesale Banking",
+     "cur": 52744,
+     "prev": 42308,
+     "growth": 24.7
+    },
+    {
+     "name": "Insurance Business",
+     "cur": 26820,
+     "prev": 22799,
+     "growth": 17.6
+    },
+    {
+     "name": "Treasury",
+     "cur": 19150,
+     "prev": 20609,
+     "growth": -7.1
+    },
+    {
+     "name": "Other Banking Operations",
+     "cur": 9700,
+     "prev": 9334,
+     "growth": 3.9
+    },
+    {
+     "name": "Others (subsidiaries)",
+     "cur": 5281,
+     "prev": 4721,
+     "growth": 11.9
     }
    ]
   }
