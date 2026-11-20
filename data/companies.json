@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T07:29:46.574Z",
+ "generated": "2026-11-20T13:52:41.392408Z",
  "companies": [
   {
    "id": "AAPL",
@@ -4306,6 +4306,40 @@
      "cur": 5281,
      "prev": 4721,
      "growth": 11.9
+    }
+   ]
+  },
+  {
+   "id": "TMPV",
+   "name": "Tata Motors Passenger Vehicles",
+   "market": "India",
+   "exchange": "NSE",
+   "currency": "INR",
+   "unit": "Rs crore",
+   "period": "Q2 FY2026-27 (Jul-Sep 2026), segment revenue",
+   "periodType": "quarter",
+   "source": "Tata Motors Passenger Vehicles Q2 FY2026-27 results, segment note (BSE/NSE filing)",
+   "sourceUrl": "https://www.bseindia.com/xml-data/corpfiling/AttachLive/5d9296fe-407a-4fad-b953-47e48a88e94c.pdf",
+   "filed": "2026-11-13",
+   "note": "Curated by hand from TMPV's official Q2 FY27 segment note. This is the passenger-vehicles company after the 2025 demerger (commercial vehicles is separately listed as TMCV). JLR is reported in GBP and converted by the company; its prior-year quarter was depressed by the cyber incident, which inflates YoY growth. Automotive corporate/unallocable revenue of Rs 54 cr is not shown; inter-segment eliminations of Rs 675 cr bridge the segment total to revenue from operations of Rs 96,920 cr (+34.0% YoY).",
+   "segments": [
+    {
+     "name": "Jaguar Land Rover",
+     "cur": 75420,
+     "prev": 57877,
+     "growth": 30.3
+    },
+    {
+     "name": "Tata Passenger Vehicles",
+     "cur": 20422,
+     "prev": 13529,
+     "growth": 50.9
+    },
+    {
+     "name": "Others (IT services)",
+     "cur": 1699,
+     "prev": 1325,
+     "growth": 28.2
     }
    ]
   }
