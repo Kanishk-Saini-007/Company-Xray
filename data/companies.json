@@ -4342,6 +4342,52 @@
      "growth": 28.2
     }
    ]
+  },
+  {
+   "id": "SBIN",
+   "name": "State Bank of India",
+   "market": "India",
+   "exchange": "NSE",
+   "currency": "INR",
+   "unit": "Rs crore",
+   "period": "Q2 FY2026-27 (Jul-Sep 2026), consolidated segment revenue",
+   "periodType": "quarter",
+   "source": "State Bank of India unaudited consolidated financial results Q2 FY2026-27 (NSE integrated filing)",
+   "sourceUrl": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_BANKING_208686_03112026152317_iXBRL_WEB.html",
+   "filed": "2026-11-03",
+   "note": "Curated by hand from SBI's official Q2 FY27 consolidated results (RBI segment format). Bank segment revenue includes interest income. Retail Banking includes the Digital Banking sub-segment (Rs 826 cr current quarter, Rs 1,126 cr prior-year quarter) reported separately under AS 17. Segments are stated before Rs 2,285 cr of inter-segment revenue (funds transfer pricing); the segment total of Rs 1,90,041 cr less inter-segment bridges to consolidated income from operations of Rs 1,87,756 cr (+6.7% YoY). Insurance Business covers SBI Life and SBI General; Other Banking covers SBI Cards, SBI Funds Management and other subsidiaries. Treasury revenue fell YoY on lower investment gains, matching the bank's earnings commentary.",
+   "segments": [
+    {
+     "name": "Retail Banking",
+     "cur": 73397,
+     "prev": 64885,
+     "growth": 13.1
+    },
+    {
+     "name": "Corporate/Wholesale Banking",
+     "cur": 41226,
+     "prev": 37523,
+     "growth": 9.9
+    },
+    {
+     "name": "Insurance Business",
+     "cur": 35757,
+     "prev": 33309,
+     "growth": 7.3
+    },
+    {
+     "name": "Treasury",
+     "cur": 30551,
+     "prev": 33601,
+     "growth": -9.1
+    },
+    {
+     "name": "Other Banking Operations",
+     "cur": 9109,
+     "prev": 8703,
+     "growth": 4.7
+    }
+   ]
   }
  ]
 }
