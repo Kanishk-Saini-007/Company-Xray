@@ -4388,6 +4388,46 @@
      "growth": 4.7
     }
    ]
+  },
+  {
+   "id": "AXISBANK",
+   "name": "Axis Bank",
+   "market": "India",
+   "exchange": "NSE",
+   "currency": "INR",
+   "unit": "Rs crore",
+   "period": "Q2 FY2026-27 (Jul-Sep 2026), standalone segment revenue",
+   "periodType": "quarter",
+   "source": "Axis Bank unaudited standalone financial results Q2 FY2026-27 (BSE integrated filing)",
+   "sourceUrl": "https://www.bseindia.com/XBRLFILES/IFBankingDuplicateUploadDocument/IFBanking_532215_17102026161838_IFBanking.html",
+   "filed": "2026-10-17",
+   "note": "Curated by hand from Axis Bank's official Q2 FY27 standalone results (RBI segment format). Bank segment revenue includes interest income. Retail Banking includes the Digital Banking sub-segment (Rs 11,165 cr current quarter, Rs 9,804 cr prior-year quarter) reported separately under the RBI Master Direction. Segments are stated before Rs 22,958 cr of inter-segment revenue (funds transfer pricing) and exclude Rs 13 cr of unallocated revenue; together these bridge the segment total of Rs 65,907 cr to standalone income from operations of Rs 42,949 cr (+8.0% YoY). Other Banking Business covers para-banking income such as third-party product distribution.",
+   "segments": [
+    {
+     "name": "Retail Banking",
+     "cur": 40975,
+     "prev": 36762,
+     "growth": 11.5
+    },
+    {
+     "name": "Corporate/Wholesale Banking",
+     "cur": 14717,
+     "prev": 12727,
+     "growth": 15.6
+    },
+    {
+     "name": "Treasury",
+     "cur": 8959,
+     "prev": 8116,
+     "growth": 10.4
+    },
+    {
+     "name": "Other Banking Business",
+     "cur": 1243,
+     "prev": 1524,
+     "growth": -18.4
+    }
+   ]
   }
  ]
 }
