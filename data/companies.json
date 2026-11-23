@@ -4428,6 +4428,76 @@
      "growth": -18.4
     }
    ]
+  },
+  {
+   "id": "KOTAKBANK",
+   "name": "Kotak Mahindra Bank",
+   "market": "India",
+   "exchange": "NSE",
+   "currency": "INR",
+   "unit": "Rs crore",
+   "period": "Q2 FY2026-27 (Jul-Sep 2026), consolidated segment revenue",
+   "periodType": "quarter",
+   "source": "Kotak Mahindra Bank unaudited consolidated financial results Q2 FY2026-27 (BSE integrated filing)",
+   "sourceUrl": "https://www.bseindia.com/XBRLFILES/IFBankingDuplicateUploadDocument/IFBanking_500247_2410202617346_IFBanking.html",
+   "filed": "2026-10-24",
+   "note": "Curated by hand from Kotak Mahindra Bank's official Q2 FY27 consolidated results (RBI segment format). Banking lines include interest income; the consolidated view adds subsidiaries: Vehicle Financing (retail vehicle finance and dealer trade finance), Other Lending Activities (securitisation and other loans), Broking (brokerage and distribution), Advisory and Transactional Services (investment banking and business correspondent services), Asset Management (fund management and investment distribution) and Insurance (life and general insurance subsidiaries). The nine lines sum exactly to total segment revenue of Rs 31,806 cr; Rs 2,379 cr of inter-segment revenue bridges to consolidated income from operations of Rs 29,427 cr (+18.2% YoY). In FY26 the bank split out a Digital Banking sub-segment inside Retail Banking (Rs 563 cr in Q2 FY26); prior-year Retail is shown combined to match the FY27 presentation.",
+   "segments": [
+    {
+     "name": "Retail Banking",
+     "cur": 9314,
+     "prev": 8344,
+     "growth": 11.6
+    },
+    {
+     "name": "Corporate/Wholesale Banking",
+     "cur": 8173,
+     "prev": 6700,
+     "growth": 22
+    },
+    {
+     "name": "Insurance",
+     "cur": 6361,
+     "prev": 5073,
+     "growth": 25.4
+    },
+    {
+     "name": "Treasury, BMU & Corporate Centre",
+     "cur": 3828,
+     "prev": 3133,
+     "growth": 22.2
+    },
+    {
+     "name": "Broking",
+     "cur": 1395,
+     "prev": 1128,
+     "growth": 23.7
+    },
+    {
+     "name": "Vehicle Financing",
+     "cur": 1125,
+     "prev": 1085,
+     "growth": 3.7
+    },
+    {
+     "name": "Asset Management",
+     "cur": 924,
+     "prev": 824,
+     "growth": 12.1
+    },
+    {
+     "name": "Other Lending Activities",
+     "cur": 345,
+     "prev": 570,
+     "growth": -39.5
+    },
+    {
+     "name": "Advisory & Transactional Services",
+     "cur": 341,
+     "prev": 230,
+     "growth": 48.2
+    }
+   ]
   }
  ]
 }
