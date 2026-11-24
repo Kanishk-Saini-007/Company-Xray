@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Company X-Ray - reported revenue changes and research notes</title>
+<meta name="description" content="Compare source-linked reported revenue, inspect price snapshots and keep a company-specific research thesis. A student learning project, not investment advice.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23070b11'/%3E%3Cpath d='M6 22l6-8 5 5 9-11' stroke='%237dd3fc' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='26' cy='8' r='3' fill='%23ff6b57'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="research.css">
+<link rel="stylesheet" href="bloomberg.css">
+<script>document.documentElement.dataset.theme=localStorage.getItem("xray_theme")||"dark"</script>
+</head>
+<body>
+<div class="bb-util"><a href="#news">News</a><a href="https://github.com/Kanishk-Saini-007/Company-Xray" target="_blank" rel="noopener">About this project</a><span>Learning project, not investment advice</span></div>
+<header class="topbar">
+  <button id="menuBtn" class="menu-btn" aria-label="Open company list"><span></span><span></span><span></span></button>
+  <a class="brand" href="#AAPL"><span class="logo"></span><span class="brand-tx"><b>Company X-Ray</b><small>read the business</small></span></a>
+  <div class="searchwrap">
+    <svg class="sicon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 11l3.2 3.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <input id="q" aria-label="Search company or ticker" class="search" placeholder="Search company or ticker" autocomplete="off">
+    <kbd>/</kbd>
+  </div>
+  <div class="topbar-right">
+    <span class="status-chip" id="statusChip" title="Prices are the latest saved Yahoo Finance daily closes unless the badge on a company page says LIVE">Prices: Yahoo daily closes</span>
+    <button id="themeBtn" class="theme-btn" type="button" aria-label="Switch between dark and light theme">Dark mode</button>
+    <button id="keyBtn" class="ghost small">Live price settings</button>
+  </div>
+</header>
+
+<nav class="bb-nav" aria-label="Sections"><a class="live" href="#top"><i></i>Markets</a><a data-nav="US">US</a><a data-nav="India">India</a><a data-nav="Global">Global</a><a data-nav="all">All companies</a><a href="#news">News</a><a href="#news">Screener</a><span class="bb-edition" id="bbDate"></span></nav>
+<div class="bb-ticker" id="ticker" aria-label="Top securities"><span class="tk-label">Top Securities</span><div class="tk-row" id="tkRow"></div><span class="tk-note" id="tkNote"></span></div>
+<div class="trend" id="trending" aria-label="Companies in discussion today"></div>
+<div class="app">
+  <aside class="side" id="side">
+    <div class="tabs" id="tabs"></div>
+    <nav id="list" class="list"></nav>
+    <div class="sidefoot">
+      <p>Learning project. Not investment advice.</p>
+      <p class="hint">Keys: / search, &uarr;&darr; move between companies</p>
+    </div>
+  </aside>
+  <div class="backdrop" id="backdrop"></div>
+
+  <main class="main" id="main">
+    <header class="top" id="top"></header>
+    <section class="grid">
+      <div class="card span2" id="chartCard"></div>
+      <div class="card span2" id="researchCard"></div>
+      <div class="card span2" id="ladderCard"></div>
+      <div class="card span2" id="srcCard"></div>
+      <div class="card span2 memo" id="pitchCard"></div>
+      <div class="card span2" id="honest"></div>
+    </section>
+  </main>
+</div>
+
+<section class="bb-below" id="news"><div class="bb-two"><div class="bb-box" id="bbMid"></div><div class="bb-box"><h3 class="bb-h">Latest news <span class="bb-subnav" id="newsTabs"></span></h3><div id="bbLead" hidden></div><div id="newsGrid" class="bb-list"></div></div></div></section>
+<dialog id="keyDlg">
+  <form method="dialog">
+    <h3>Make prices truly live</h3>
+    <p>The page tries Yahoo Finance first. Browsers often block that, so if the badge says SNAPSHOT you can paste a free <a href="https://twelvedata.com/pricing" target="_blank" rel="noopener">Twelve Data</a> API key. It stays in this browser only (localStorage). The free plan covers US stocks; India and Swiss tickers keep using the snapshot.</p>
+    <input id="keyIn" placeholder="Twelve Data API key" autocomplete="off">
+    <div class="row"><button value="save" id="keySave">Save</button><button value="cancel" class="ghost">Close</button></div>
+  </form>
+</dialog>
+
+<script src="research.js"></script>
+<script src="app.js"></script>
+<script src="bb.js"></script>
+</body>
+</html>
