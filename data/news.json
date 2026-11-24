@@ -1,14 +1,64 @@
 {
- "generated": "2026-11-24T16:24:31.153Z",
+ "generated": "2026-11-24T17:18:11.898Z",
  "items": [
+  {
+   "title": "Nvidia shares tumble 9% after biggest rally in over two decades as AI-related concerns return",
+   "link": "https://www.livemint.com/market/stock-market-news/nvidia-shares-tumble-9-after-biggest-rally-in-over-two-decades-as-ai-related-concerns-return-11795537721863.html",
+   "src": "Mint",
+   "region": "India",
+   "time": "2026-11-24T17:06:21.000Z",
+   "img": "https://www.livemint.com/lm-img/img/2026/11/24/1600x900/logo/NVIDIA_Stock_23_1795539906405_Fd7X_1795539913238_kt1v_37dfde18-f514-4af1-a708-1f592b81b8fe_8484.png",
+   "summary": "Nvidia shares fell 9% on Tuesday, surrendering some of their record rally after investors reassessed AI investment returns, regulatory risks and the prospect of higher interest rates.",
+   "tags": []
+  },
   {
    "title": "Anthropic sinks 12%, falling below $83 IPO price, but analysts are still largely positive",
    "link": "https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html",
    "src": "CNBC Markets",
    "region": "US",
-   "time": "2026-11-24T16:11:58.000Z",
+   "time": "2026-11-24T16:48:49.000Z",
    "img": null,
    "summary": "Anthropic has been sinking steadily since the stock opened at $111.50 on the Nasdaq on Nov. 19.",
+   "tags": []
+  },
+  {
+   "title": "Jensen Huang to face DC grilling the same day Nvidia releases new products at GTC",
+   "link": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-congress-gtc.html",
+   "src": "CNBC Markets",
+   "region": "US",
+   "time": "2026-11-24T16:42:57.000Z",
+   "img": null,
+   "summary": "Jensen Huang is back as CEO of Nvidia and immediately faces the challenge of leading the chip giant and defending himself in Washington.",
+   "tags": []
+  },
+  {
+   "title": "Four generations of a family working in one factory",
+   "link": "https://www.bbc.co.uk/news/videos/ck7v2r6j1yl3o?at_medium=RSS&at_campaign=rss",
+   "src": "BBC News",
+   "region": "World",
+   "time": "2026-11-24T16:42:46.000Z",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/be8c/live/eae8fb80-e824-11f1-93d4-6d580946ad80.jpg",
+   "summary": "Four generations of the Avis family have now worked at Sweetnam & Bradley in Malmesbury.",
+   "tags": []
+  },
+  {
+   "title": "Beware! Fraudsters impersonating as Sebi-registered intermediaries: How can investors avoid traps - Experts explain",
+   "link": "https://www.livemint.com/market/stock-market-news/beware-fraudsters-impersonating-as-sebi-registered-intermediaries-how-can-investors-avoid-traps-experts-explain-11795535116795.html",
+   "src": "Mint",
+   "region": "India",
+   "time": "2026-11-24T16:39:36.000Z",
+   "img": "https://www.livemint.com/lm-img/img/2026/11/24/1600x900/logo/scam_1795537908859_I0fU_1795537932778_hGRN_8622039b-fa13-4559-900b-67e4e08e0d16_C6x6.jpg",
+   "summary": "Fraudsters impersonating Sebi-registered intermediaries are luring investors into unauthorised trading platforms and siphoning off money; regulator advises investors to verify intermediaries, avoid assured-return schemes",
+   "tags": []
+  },
+  {
+   "title": "Nvidia shares fall 8% as Huang comeback rally cools",
+   "link": "https://www.cnbc.com/2026/11/24/nvidia-stock-jensen-huang-return.html",
+   "src": "CNBC Markets",
+   "region": "US",
+   "time": "2026-11-24T16:38:21.000Z",
+   "img": null,
+   "summary": "Jensen Huang was reinstated as CEO of Nvidia after he resigned following an acknowledgement of an extramarital affair.",
    "tags": []
   },
   {
@@ -39,26 +89,6 @@
    "time": "2026-11-24T15:49:27.000Z",
    "img": null,
    "summary": "Sanofi faces a revenue drop toward the end of the decade as top-selling drugs lose exclusivity and open up for generic drugmakers to compete.",
-   "tags": []
-  },
-  {
-   "title": "Jensen Huang faces DC grilling the same day Nvidia releases new products at GTC",
-   "link": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-congress-gtc.html",
-   "src": "CNBC Markets",
-   "region": "US",
-   "time": "2026-11-24T15:47:17.000Z",
-   "img": null,
-   "summary": "Jensen Huang is back as CEO of Nvidia and immediately faces the challenge of leading the chip giant and defending himself in Washington.",
-   "tags": []
-  },
-  {
-   "title": "Nvidia shares fall over 5% after Huang comeback rally",
-   "link": "https://www.cnbc.com/2026/11/24/nvidia-stock-jensen-huang-return.html",
-   "src": "CNBC Markets",
-   "region": "US",
-   "time": "2026-11-24T15:36:34.000Z",
-   "img": null,
-   "summary": "Jensen Huang was reinstated as CEO of Nvidia after he resigned following an acknowledgement of an extramarital affair.",
    "tags": []
   },
   {
@@ -780,36 +810,6 @@
    "time": "2026-11-24T00:11:08.000Z",
    "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bbbd/live/db7cd3b0-e7d4-11f1-939f-471cde339c0e.jpg",
    "summary": "The breeder's rating was downgraded but he continued to advertise as five-star, investigation finds.",
-   "tags": []
-  },
-  {
-   "title": "I pay £250 a month for someone else to do my life admin - it's worth it",
-   "link": "https://www.bbc.co.uk/news/articles/c6zjr3g13zkno?at_medium=RSS&at_campaign=rss",
-   "src": "BBC News",
-   "region": "World",
-   "time": "2026-11-24T00:01:04.000Z",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a207/live/9dc35180-e378-11f1-b879-03485a55c082.jpg",
-   "summary": "Busy mothers on both sides of the Atlantic are paying companies to handle their to-do lists.",
-   "tags": []
-  },
-  {
-   "title": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens",
-   "link": "https://www.cnbc.com/2026/11/22/foundation-future-industries-health-benefits-payroll-base-group.html",
-   "src": "CNBC",
-   "region": "US",
-   "time": "2026-11-23T23:28:19.000Z",
-   "img": null,
-   "summary": "Foundation is pursuing an emergency bridge loan and has been in talks with VC firms as it waits for a $150 million investment from South Korea's Base Group.",
-   "tags": []
-  },
-  {
-   "title": "Nvidia sets options-trading record after CEO comeback. Here are the big trades",
-   "link": "https://www.cnbc.com/2026/11/23/nvidia-sets-options-trading-record-after-ceo-comeback-here-are-the-big-trades.html",
-   "src": "CNBC Markets",
-   "region": "US",
-   "time": "2026-11-23T23:24:02.000Z",
-   "img": null,
-   "summary": "Nvidia break record for single stock options volume",
    "tags": []
   }
  ]
