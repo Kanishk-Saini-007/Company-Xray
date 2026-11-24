@@ -10,8 +10,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="research.css">
+<link rel="stylesheet" href="bloomberg.css">
+<script>document.documentElement.dataset.theme=localStorage.getItem("xray_theme")||"dark"</script>
 </head>
 <body>
+<div class="bb-util"><a href="#news">News</a><a href="https://github.com/Kanishk-Saini-007/Company-Xray" target="_blank" rel="noopener">About this project</a><span>Learning project, not investment advice</span></div>
 <header class="topbar">
   <button id="menuBtn" class="menu-btn" aria-label="Open company list"><span></span><span></span><span></span></button>
   <a class="brand" href="#AAPL"><span class="logo"></span><span class="brand-tx"><b>Company X-Ray</b><small>read the business</small></span></a>
@@ -22,12 +25,14 @@
   </div>
   <div class="topbar-right">
     <span class="status-chip" id="statusChip" title="Prices are the latest saved Yahoo Finance daily closes unless the badge on a company page says LIVE">Prices: Yahoo daily closes</span>
+    <button id="themeBtn" class="theme-btn" type="button" aria-label="Switch between dark and light theme">Dark mode</button>
     <button id="keyBtn" class="ghost small">Live price settings</button>
   </div>
 </header>
 
+<nav class="bb-nav" aria-label="Sections"><a class="live" href="#top"><i></i>Markets</a><a data-nav="US">US</a><a data-nav="India">India</a><a data-nav="Global">Global</a><a data-nav="all">All companies</a><a href="#news">News</a><a href="#news">Screener</a><span class="bb-edition" id="bbDate"></span></nav>
+<div class="bb-ticker" id="ticker" aria-label="Top securities"><span class="tk-label">Top Securities</span><div class="tk-row" id="tkRow"></div><span class="tk-note" id="tkNote"></span></div>
 <div class="trend" id="trending" aria-label="Companies in discussion today"></div>
-
 <div class="app">
   <aside class="side" id="side">
     <div class="tabs" id="tabs"></div>
@@ -52,6 +57,7 @@
   </main>
 </div>
 
+<section class="bb-below" id="news"><div class="bb-two"><div class="bb-box" id="bbMid"></div><div class="bb-box"><h3 class="bb-h">Latest news <span class="bb-subnav" id="newsTabs"></span></h3><div id="bbLead" hidden></div><div id="newsGrid" class="bb-list"></div></div></div></section>
 <dialog id="keyDlg">
   <form method="dialog">
     <h3>Make prices truly live</h3>
@@ -63,5 +69,6 @@
 
 <script src="research.js"></script>
 <script src="app.js"></script>
+<script src="bb.js"></script>
 </body>
 </html>
