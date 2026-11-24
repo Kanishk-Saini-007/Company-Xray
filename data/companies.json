@@ -4498,6 +4498,46 @@
      "growth": 48.2
     }
    ]
+  },
+  {
+   "id": "TATAPOWER",
+   "name": "Tata Power",
+   "market": "India",
+   "exchange": "NSE",
+   "currency": "INR",
+   "unit": "Rs crore",
+   "period": "Q2 FY2026-27 (Jul-Sep 2026), consolidated segment revenue",
+   "periodType": "quarter",
+   "source": "Tata Power unaudited consolidated financial results Q2 FY2026-27 (NSE integrated filing)",
+   "sourceUrl": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_212451_11112026190341_iXBRL_WEB.html",
+   "filed": "2026-11-11",
+   "note": "Curated by hand from Tata Power's official Q2 FY27 consolidated results. Thermal & Hydro includes hydro pump storage, coal mining, trading, shipping and related infra; Renewables includes rooftop solar, EV charging, solar cell/module manufacturing and solar EPC; Transmission and Distribution includes the discoms and power trading; Others is project management services, property development and satellite communication. Prior-year Thermal & Hydro was depressed because the Mundra plant was suspended from 3 July 2025 for overhauling (company Note 2); it is now back at full capacity under the Section 11 directive, which inflates the YoY growth shown for that line. Rs 1,807 cr of inter-segment revenue bridges the segment total of Rs 21,673 cr to revenue from operations of Rs 19,636 cr plus Rs 250 cr of net regulatory deferral movement (Rs 19,867 cr total, +26.1% YoY).",
+   "segments": [
+    {
+     "name": "Transmission & Distribution",
+     "cur": 11937,
+     "prev": 10936,
+     "growth": 9.2
+    },
+    {
+     "name": "Thermal & Hydro",
+     "cur": 5883,
+     "prev": 2336,
+     "growth": 151.9
+    },
+    {
+     "name": "Renewables",
+     "cur": 3745,
+     "prev": 3613,
+     "growth": 3.7
+    },
+    {
+     "name": "Others",
+     "cur": 107,
+     "prev": 104,
+     "growth": 3.1
+    }
+   ]
   }
  ]
 }
