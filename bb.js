@@ -5,11 +5,10 @@ const nfmt = (v, n) => v == null ? '-' : v.toLocaleString('en-US', { minimumFrac
 function renderTicker() {
   const row = document.getElementById('tkRow'); if (!row) return;
   row.innerHTML = bb.markets.map(m => {
-    const ch = m.prev ? (m.price / m.prev - 1) * 100 : null, up = ch >= 0;
-    const d = /Bitcoin|Nifty|Sensex|S&P|Nasdaq|Dow|FTSE|Nikkei/.test(m.name) ? 2 : 2;
-    return `<span class="tk ${up ? 'up' : 'dn'}"><b>${m.name}</b> ${nfmt(m.price, d)} <i>${up ? '&#9650;' : '&#9660;'} ${ch == null ? '' : Math.abs(ch).toFixed(2) + '%'}</i></span>`;
+    const d = m.prev ? m.price - m.prev : null, ch = m.prev ? (m.price / m.prev - 1) * 100 : null, up = ch >= 0;
+    return `<div class="tk ${up ? 'up' : 'dn'}"><span class="tk-n">${m.name}</span><b>${nfmt(m.price, 2)}</b><i>${up ? '&#9650;' : '&#9660;'} ${ch == null ? '' : Math.abs(ch).toFixed(2) + '%'}<em>${d == null ? '' : (d >= 0 ? '+' : '-') + nfmt(Math.abs(d), 2)}</em></i></div>`;
   }).join('');
-  const g = bb.marketsAt; document.getElementById('tkNote').textContent = g ? 'Latest saved quotes, ' + new Date(g).toLocaleString([], { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) : '';
+  const g = bb.marketsAt; document.getElementById('tkNote').textContent = g ? 'Saved ' + new Date(g).toLocaleString([], { day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit' }) + ' \u00b7 refreshed about hourly' : '';
 }
 function newsCard(n, big) {
   const tags = (n.tags || []).map(t => `<a class="bb-tag" data-id="${t}">${t}</a>`).join('');
