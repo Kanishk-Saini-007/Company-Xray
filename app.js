@@ -104,9 +104,9 @@ function renderTrending() {
   const el = $('#trending'); if (!el || !state.companies.length) return;
   const m = movers();
   const g = state.generated ? new Date(state.generated).toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' }) : 'unknown';
-  el.innerHTML = `<span class="trend-label">In discussion today</span>` + m.map(({ c, l, chg }) =>
+  el.innerHTML = `<span class="trend-label">Biggest movers</span>` + m.map(({ c, l, chg }) =>
     `<button class="trend-chip ${c.id === state.id ? 'on' : ''}" data-id="${c.id}" title="${esc(c.name)}"><b>${esc(c.id)}</b><span class="tp">${px(l.price, c.currency)}</span><i class="${chg >= 0 ? 'up' : 'dn'}">${chg >= 0 ? '&#9650;' : '&#9660;'} ${Math.abs(chg).toFixed(2)}%</i></button>`
-  ).join('') + `<span class="trend-note" title="The five covered companies with the biggest move between the two latest saved Yahoo Finance daily closes (saved ${esc(g)}). Computed in your browser. Not a recommendation.">biggest 1-day moves &middot; latest Yahoo closes</span>`;
+  ).join('') + `<span class="trend-note" title="The five covered companies with the biggest move between the two latest saved Yahoo Finance daily closes (saved ${esc(g)}). Computed in your browser. Not a recommendation.">1-day move, saved Yahoo closes</span>`;
 }
 function badge(id) {
   const l = latest(id); if (!l) return '';
@@ -144,14 +144,14 @@ function renderChart() {
   const x = i => P.l + i / (pts.length - 1) * (W - P.l - P.r), y = v => P.t + (1 - (v - (mn - pad)) / (mx - mn + 2 * pad)) * (H - P.t - P.b);
   const d = pts.map((p, i) => (i ? 'L' : 'M') + x(i).toFixed(1) + ' ' + y(p[1]).toFixed(1)).join(' ');
   const up = pts.at(-1)[1] >= pts[0][1], col = up ? '#3ed598' : '#ff6a5c';
-  const ticks = [0, .25, .5, .75, 1].map(f => { const v = mn - pad + f * (mx - mn + 2 * pad); return `<line x1="${P.l}" x2="${W - P.r}" y1="${y(v)}" y2="${y(v)}" stroke="#152130"/><text x="${P.l - 7}" y="${y(v) + 3}" text-anchor="end">${v >= 1000 ? Math.round(v).toLocaleString('en-US') : v.toFixed(1)}</text>`; }).join('');
+  const ticks = [0, .25, .5, .75, 1].map(f => { const v = mn - pad + f * (mx - mn + 2 * pad); return `<line x1="${P.l}" x2="${W - P.r}" y1="${y(v)}" y2="${y(v)}" style="stroke:var(--line)"/><text x="${P.l - 7}" y="${y(v) + 3}" text-anchor="end">${v >= 1000 ? Math.round(v).toLocaleString('en-US') : v.toFixed(1)}</text>`; }).join('');
   const dl = i => new Date(pts[i][0] * 1000).toLocaleDateString([], { month: 'short', year: '2-digit' });
   const xl = [0, .33, .66, 1].map(f => { const i = Math.round(f * (pts.length - 1)); return `<text x="${x(i)}" y="${H - 7}" text-anchor="${f === 0 ? 'start' : f === 1 ? 'end' : 'middle'}">${dl(i)}</text>`; }).join('');
   const ret = (pts.at(-1)[1] / pts[0][1] - 1) * 100;
   el.innerHTML = `<div class="rng">${[[21, '1M'], [126, '6M'], [252, '1Y'], ['ytd', 'YTD']].map(([n, t]) => `<button data-r="${n}" class="${state.range === n ? 'on' : ''}">${t}</button>`).join('')}</div>
   <h2>Share price trend</h2><p class="sub">${ret >= 0 ? 'Up' : 'Down'} <b class="${ret >= 0 ? 'up' : 'dn'}">${pct(ret)}</b> over the selected window &middot; daily closes from Yahoo Finance</p>
   <svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Price chart">${ticks}${xl}<defs><linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="${col}" stop-opacity=".22"/><stop offset="1" stop-color="${col}" stop-opacity="0"/></linearGradient></defs>
-  <path d="${d} L${x(pts.length - 1)} ${H - P.b} L${P.l} ${H - P.b}Z" fill="url(#g)"/><path d="${d}" fill="none" stroke="${col}" stroke-width="2" stroke-linejoin="round"/><circle cx="${x(pts.length - 1)}" cy="${y(pts.at(-1)[1])}" r="4" fill="${col}"/><circle class="mk" r="5" fill="#0b1220" stroke="${col}" stroke-width="2" style="display:none"/></svg><div class="chartTip" style="display:none;position:absolute;top:8px;left:0;background:#0d1622;border:1px solid #223145;color:#dbe7f3;padding:5px 11px;border-radius:7px;font:12px 'JetBrains Mono',monospace;pointer-events:none;white-space:nowrap;z-index:2"></div>`;
+  <path d="${d} L${x(pts.length - 1)} ${H - P.b} L${P.l} ${H - P.b}Z" fill="url(#g)"/><path d="${d}" fill="none" stroke="${col}" stroke-width="2" stroke-linejoin="round"/><circle cx="${x(pts.length - 1)}" cy="${y(pts.at(-1)[1])}" r="4" fill="${col}"/><circle class="mk" r="5" style="fill:var(--panel)" stroke="${col}" stroke-width="2" style="display:none"/></svg><div class="chartTip" style="display:none;position:absolute;top:8px;left:0;background:var(--panel2);border:1px solid var(--line2);color:var(--tx);padding:5px 11px;border-radius:7px;font:12px Inter,sans-serif;pointer-events:none;white-space:nowrap;z-index:2"></div>`;
   el.style.position = 'relative';
   const svgEl = el.querySelector('svg'), tip = el.querySelector('.chartTip'), mkEl = el.querySelector('.mk');
   svgEl.addEventListener('mousemove', e => {
