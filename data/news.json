@@ -1,6 +1,480 @@
 {
- "generated": "2026-11-24T17:18:11.898Z",
+ "generated": "2026-11-25T01:19:47.947Z",
  "items": [
+  {
+   "title": "Jensen Huang's Nvidia return shows the U.S.-China AI race is about more than chips",
+   "link": "https://www.cnbc.com/2026/11/25/jensen-huang-nvidia-ai-talent-race.html",
+   "src": "CNBC",
+   "region": "US",
+   "time": "2026-11-25T01:13:56.000Z",
+   "img": null,
+   "summary": "Jensen Huang's return as Nvidia CEO demonstrates that the U.S.-China artificial intelligence race is not just about semiconductors, but tech talent too.",
+   "tags": []
+  },
+  {
+   "title": "Huawei found guilty of stealing trade secrets but acquitted of racketeering",
+   "link": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss",
+   "src": "BBC News",
+   "region": "World",
+   "time": "2026-11-25T01:11:57.000Z",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c0cb/live/da83bf80-e849-11f1-aa88-031e8213533d.jpg",
+   "summary": "The verdict follows a months-long trial in New York.",
+   "tags": []
+  },
+  {
+   "title": "Stock market outlook today,25 Nov:Sensex, Nifty prediction-DJIA, S&P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues",
+   "link": "https://www.livemint.com/market/stock-market-news/stock-market-outlook-today-25-nov-sensex-nifty-prediction-djia-s-p-nasdaq-gift-nifty-kospi-nikkei-taiwan-cues-11795566965791.html",
+   "src": "Mint",
+   "region": "India",
+   "time": "2026-11-25T01:10:55.000Z",
+   "img": "https://www.livemint.com/lm-img/img/2026/11/25/1600x900/logo/Stock_Market_Outlook_Today_wed_1795568555882_Oclk_1795568560962_VC1V_25d83daa-dbff-4dc1-8c8f-1a8f27b11bef_rcAU.png",
+   "summary": "Indian equities faced a weak outlook after the Sensex and Nifty suffered their steepest daily declines in months, closing down 1.77% and 1.75%. Profit-booking hit banking, financial and metal stocks, while analysts flagg",
+   "tags": []
+  },
+  {
+   "title": "SoftBank drops over 11% as Wall Street AI sell-off ripples across Asian tech names",
+   "link": "https://www.cnbc.com/2026/11/25/tech-stocks-softbank-group-advantest-sk-hynix-samsung.html",
+   "src": "CNBC Markets",
+   "region": "US",
+   "time": "2026-11-25T01:04:42.000Z",
+   "img": null,
+   "summary": "Asian technology stocks tumbled Wednesday, led by a rout in Japanese semiconductor stocks, as renewed concerns over the artificial intelligence trade rattled investors.",
+   "tags": []
+  },
+  {
+   "title": "The rising cost of putting food on the table in India",
+   "link": "https://www.bbc.co.uk/news/articles/cmy0xj41kl50o?at_medium=RSS&at_campaign=rss",
+   "src": "BBC News",
+   "region": "World",
+   "time": "2026-11-25T01:02:13.000Z",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e93a/live/237a32d0-e7d4-11f1-939f-471cde339c0e.jpg",
+   "summary": "India's food inflation is broadening, squeezing household budgets.",
+   "tags": []
+  },
+  {
+   "title": "Global Market Today: Asian stocks fall as AI trade doubts resurface",
+   "link": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-market-today-asian-stocks-fall-as-ai-trade-doubts-resurface/articleshow/136145030.cms",
+   "src": "Economic Times",
+   "region": "India",
+   "time": "2026-11-25T00:57:44.000Z",
+   "img": null,
+   "summary": "The MSCI Asia Pacific Index slipped 0.6%, losing ground after posting its biggest rally since July on Tuesday. The losses were led by South Korea’s Kospi index, which declined 3.7%.",
+   "tags": []
+  },
+  {
+   "title": "US preparing to unveil new tariffs on global trading partners",
+   "link": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
+   "src": "BBC News",
+   "region": "World",
+   "time": "2026-11-25T00:38:01.000Z",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/511d/live/da29c130-e860-11f1-a330-6153c8fb2fad.jpg",
+   "summary": "The new levies would hit many of America's biggest trading partners, including China and the EU.",
+   "tags": []
+  },
+  {
+   "title": "Why tiny cars are taking off across Europe",
+   "link": "https://www.bbc.co.uk/news/articles/cmwy9jne0g7qo?at_medium=RSS&at_campaign=rss",
+   "src": "BBC News",
+   "region": "World",
+   "time": "2026-11-25T00:34:05.000Z",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2edb/live/5d054030-ddcf-11f1-b441-2b33b063138f.jpg",
+   "summary": "Once seen as a car for elderly, rural people, tiny cars are being embraced by a younger demographic.",
+   "tags": []
+  },
+  {
+   "title": "What will the energy cap changes mean for my bills?",
+   "link": "https://www.bbc.co.uk/news/articles/cdd29v8mp9jo?at_medium=RSS&at_campaign=rss",
+   "src": "BBC News",
+   "region": "World",
+   "time": "2026-11-25T00:33:25.000Z",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4155/live/6d965910-59d2-11f1-8b8c-6d33e1d5abb6.jpg",
+   "summary": "Regulator Ofgem is raising the cap affecting the energy bills of millions of households.",
+   "tags": []
+  },
+  {
+   "title": "Raja Venkatraman recommends three stocks for 25 November",
+   "link": "https://www.livemint.com/market/stock-market-news/raja-venkatraman-recommends-three-stocks-for-25-november-11795522828180.html",
+   "src": "Mint",
+   "region": "India",
+   "time": "2026-11-25T00:31:06.000Z",
+   "img": "https://www.livemint.com/lm-img/img/2026/11/22/1600x900/logo/RAJA_IMG1_1733139557630_1773677587730_177845889149_1795350843656_Zhdv_1795350843812_6S6S_b865047f-9956-455a-b14e-ccda9663af91_sfCX.jpg",
+   "summary": "Market expert Raja Venkatraman shares his top stock picks for 25 November. Here’s his technical outlook and trade strategy.",
+   "tags": []
+  },
+  {
+   "title": "'I only use the washing machine on a Sunday' - how we're keeping our energy bills down",
+   "link": "https://www.bbc.co.uk/news/articles/c820qnznkrn4o?at_medium=RSS&at_campaign=rss",
+   "src": "BBC News",
+   "region": "World",
+   "time": "2026-11-25T00:30:52.000Z",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4a8e/live/565f9af0-e806-11f1-a094-5fdc692f3e33.jpg",
+   "summary": "The BBC speaks to three people about steps they take to keep their energy bills under control.",
+   "tags": []
+  },
+  {
+   "title": "Chalet Hotels: is the worst behind it?",
+   "link": "https://www.livemint.com/market/mark-to-market/chalet-hotels-growth-plan-fy31-athiva-expansion-11795501814725.html",
+   "src": "Mint",
+   "region": "India",
+   "time": "2026-11-25T00:30:46.000Z",
+   "img": "https://www.livemint.com/lm-img/img/2026/11/24/1600x900/logo/g759aa16c1db82141515794123c744051163dce2059e694ba8_1747382277520_1795505019104_1ngj_00f2b713-fc5d-4005-9a8a-74bbd2f6758d_st86.jpg",
+   "summary": "An ambitious FY31 expansion plan has revived investor optimism, but Chalet Hotels must overcome demand weakness, execution delays and rising investment costs to sustain growth.",
+   "tags": []
+  },
+  {
+   "title": "Dalal Street may face test from AI trade revival",
+   "link": "https://www.livemint.com/market/nvidia-ai-stocks-rally-impact-sensex-nifty-11795513010920.html",
+   "src": "Mint",
+   "region": "India",
+   "time": "2026-11-25T00:30:26.000Z",
+   "img": "https://www.livemint.com/lm-img/img/2026/11/24/1600x900/logo/ZETWERK-LISTING--0_1793716682661_vgFz_179371669385_1795530158436_PPdz_1795530158595_hXIw_ec48e100-a295-4318-ab86-e3674a34c471_HnbK.JPG",
+   "summary": "Foreign portfolio investors, who had been pouring money into India following the sell-off in the AI-heavy markets since 29 October, could temper capital flows into India if the global rally sustains, market experts say.",
+   "tags": []
+  },
+  {
+   "title": "Stock recommendations for 25 November from MarketSmith India",
+   "link": "https://www.livemint.com/market/stock-market-news/stock-recommendations-for-25-november-from-marketsmith-india-11795451274049.html",
+   "src": "Mint",
+   "region": "India",
+   "time": "2026-11-25T00:30:23.000Z",
+   "img": "https://www.livemint.com/lm-img/img/2026/03/04/1600x900/logo/MS_1755693310577_1755693317448_1756904694597_1772627086309.png",
+   "summary": "MarketSmith India reveals its top stock recommendations for today, 25 November. Get expert insights into the best-performing stocks to guide your investment decisions.",
+   "tags": []
+  },
+  {
+   "title": "Households braced for soaring energy bills with new price cap to be announced",
+   "link": "https://www.bbc.co.uk/news/articles/cm20qnq33e90o?at_medium=RSS&at_campaign=rss",
+   "src": "BBC News",
+   "region": "World",
+   "time": "2026-11-25T00:29:58.000Z",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8ca0/live/03fac650-e7fb-11f1-ab60-79086b6495b8.jpg",
+   "summary": "Domestic gas prices will rise significantly in January under regulator Ofgem's new price cap.",
+   "tags": []
+  },
+  {
+   "title": "Valuation, debt worries overshadow Tata Steel-APL Apollo deal’s strategic gains",
+   "link": "https://www.livemint.com/market/mark-to-market/tata-steel-apl-apollo-acquisition-deal-review-11795510022151.html",
+   "src": "Mint",
+   "region": "India",
+   "time": "2026-11-25T00:25:43.000Z",
+   "img": "https://www.livemint.com/lm-img/img/2026/11/24/1600x900/logo/2-0-1262546722-Copy-of-tatasteel2-0_1679551695189_1795515052464_VRfq_20730e66-4fcb-4218-a072-de2918d1f5ae_4UGN.jpg",
+   "summary": "While the two-part asset-sale and buyout deal will eventually triple Tata Steel’s downstream capacity, shares of both companies slid on Monday as shareholders face a 3-to-3.5-year wait for earnings accretion.",
+   "tags": [
+    "TATASTEEL"
+   ]
+  },
+  {
+   "title": "Japan Stocks’ Rebound Threatened as Retail Margin Losses Balloon",
+   "link": "https://www.livemint.com/market/japan-stocks-rebound-threatened-as-retail-margin-losses-balloon-11795565829046.html",
+   "src": "Mint",
+   "region": "India",
+   "time": "2026-11-25T00:17:08.000Z",
+   "img": "https://www.livemint.com/lm-img/img/2024/12/06/1600x900/logo/market1_1733465997762_1733466008348.jpg",
+   "summary": "Japanese stocks may struggle to extend their rebound as ballooning unrealized losses among leveraged retail investors threaten to unleash further selling pressure.",
+   "tags": []
+  },
+  {
+   "title": "Gold Slips as Investors Weigh Fed Outlook, US Tariff Plans",
+   "link": "https://www.livemint.com/market/gold-slips-as-investors-weigh-fed-outlook-us-tariff-plans-11795564730725.html",
+   "src": "Mint",
+   "region": "India",
+   "time": "2026-11-24T23:58:50.000Z",
+   "img": "https://www.livemint.com/lm-img/img/2024/12/06/1600x900/logo/market1_1733465997762_1733466008348.jpg",
+   "summary": "Gold slumped, erasing most of Monday’s dramatic rebound as investors bet on further interest-rate hikes while a tariff-driven rout in equities prompted some traders to sell bullion to cover losses elsewhere.",
+   "tags": []
+  },
+  {
+   "title": "Jensen Huang tells staff that Nvidia doesn't need a succession plan",
+   "link": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-employee-meeting.html",
+   "src": "CNBC Markets",
+   "region": "US",
+   "time": "2026-11-24T23:13:49.000Z",
+   "img": null,
+   "summary": "Nvidia CEO Jensen Huang resigned after multiple reported affairs, including one with a Chinese businesswoman who is alleged to be a spy for Beijing.",
+   "tags": []
+  },
+  {
+   "title": "Kalshi daily volume of ‘perps’ trading begins to top its prediction markets",
+   "link": "https://www.cnbc.com/2026/11/24/kalshi-perps-volume-prediction-markets.html",
+   "src": "CNBC",
+   "region": "US",
+   "time": "2026-11-24T23:03:24.000Z",
+   "img": null,
+   "summary": "The product, the first one beyond event contracts, was introduced in May.",
+   "tags": []
+  },
+  {
+   "title": "US stocks slide as Nvidia rally fizzles out, dollar falls",
+   "link": "https://www.livemint.com/market/us-stocks-slide-as-nvidia-rally-fizzles-out-dollar-falls-11795561223195.html",
+   "src": "Mint",
+   "region": "India",
+   "time": "2026-11-24T23:00:22.000Z",
+   "img": "https://www.livemint.com/lm-img/img/2024/12/06/1600x900/logo/market1_1733465997762_1733466008348.jpg",
+   "summary": "GLOBAL-MARKETS:US stocks slide as Nvidia rally fizzles out, dollar falls",
+   "tags": []
+  },
+  {
+   "title": "Trump Account contributions from friends and family pass $1 billion mark, Treasury says",
+   "link": "https://www.cnbc.com/2026/11/24/trump-accounts-family-contributions-billion.html",
+   "src": "CNBC Markets",
+   "region": "US",
+   "time": "2026-11-24T22:18:47.000Z",
+   "img": null,
+   "summary": "Trump Account contributions from friends and family have passed $1 billion, according to the Treasury Department. Here's what families need to know.",
+   "tags": []
+  },
+  {
+   "title": "Dell earnings beat on AI strength, company authorizes $25 billion buyback",
+   "link": "https://www.cnbc.com/2026/11/24/dell-earnings-report-q3-2027.html",
+   "src": "CNBC Markets",
+   "region": "US",
+   "time": "2026-11-24T22:07:45.000Z",
+   "img": null,
+   "summary": "The company's overall sales more than doubled on an annual basis during the third quarter, driven by AI server demand.",
+   "tags": []
+  },
+  {
+   "title": "Saudi national charged in OpenAI bugging to be released on $1 million bond",
+   "link": "https://www.cnbc.com/2026/11/24/openai-bugging-aflozan-release-saudi.html",
+   "src": "CNBC Markets",
+   "region": "US",
+   "time": "2026-11-24T22:03:01.000Z",
+   "img": null,
+   "summary": "Abdulrahman Alfozan is accused of planting a recording device in an executive conference room at OpenAI's headquarters.",
+   "tags": []
+  },
+  {
+   "title": "TSX ends lower as tech and mining shares fall",
+   "link": "https://www.livemint.com/market/tsx-ends-lower-as-tech-and-mining-shares-fall-11795556702667.html",
+   "src": "Mint",
+   "region": "India",
+   "time": "2026-11-24T21:45:02.000Z",
+   "img": "https://www.livemint.com/lm-img/img/2024/12/06/1600x900/logo/market_2_1733466021722_1733466033367.jpg",
+   "summary": "CANADA-STOCKS/ (UPDATE 2):CANADA STOCKS-TSX ends lower as tech and mining shares fall",
+   "tags": []
+  },
+  {
+   "title": "Nvidia Option Trader Scores 1,984% Gain After CEO Huang’s Return",
+   "link": "https://www.livemint.com/market/nvidia-option-trader-scores-1-984-gain-after-ceo-huang-s-return-11795556330313.html",
+   "src": "Mint",
+   "region": "India",
+   "time": "2026-11-24T21:38:49.000Z",
+   "img": "https://www.livemint.com/lm-img/img/2024/12/06/1600x900/logo/market_4_1733466069237_1733466076549.png",
+   "summary": "Reddit user Outrageous-Voice1459 made a lot of money on Monday.",
+   "tags": []
+  },
+  {
+   "title": "US attorney general dodges questions about Nvidia investigation",
+   "link": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
+   "src": "BBC News",
+   "region": "World",
+   "time": "2026-11-24T21:19:42.000Z",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/067a/live/dc6baca0-e839-11f1-a094-5fdc692f3e33.png",
+   "summary": "Nvidia's share price have fallen 7% as lawmakers demand answers about President Donald Trump's involvement in Huang's reinstatement.",
+   "tags": []
+  },
+  {
+   "title": "Nvidia shares fall more than 5% as Huang comeback rally cools",
+   "link": "https://www.cnbc.com/2026/11/24/nvidia-stock-jensen-huang-return.html",
+   "src": "CNBC Markets",
+   "region": "US",
+   "time": "2026-11-24T21:15:23.000Z",
+   "img": null,
+   "summary": "Jensen Huang was reinstated as CEO of Nvidia after he resigned following an acknowledgement of an extramarital affair.",
+   "tags": []
+  },
+  {
+   "title": "Trump wanted Jensen Huang back. Now, the president is all alone in Washington",
+   "link": "https://www.cnbc.com/2026/11/24/trump-jensen-huang-nvidia.html",
+   "src": "CNBC Markets",
+   "region": "US",
+   "time": "2026-11-24T21:13:39.000Z",
+   "img": null,
+   "summary": "Republicans worry Nvidia CEO Jensen Huang's affairs with a suspected Chinese spy jeopardized U.S. national security.",
+   "tags": []
+  },
+  {
+   "title": "Nasdaq, S&P 500 end lower as investors assess Jensen Huang's return to Nvidia",
+   "link": "https://economictimes.indiatimes.com/markets/us-stocks/news/nasdaq-sp-500-end-lower-as-investors-assess-jensen-huangs-return-to-nvidia/articleshow/136141893.cms",
+   "src": "Economic Times",
+   "region": "India",
+   "time": "2026-11-24T21:09:28.000Z",
+   "img": null,
+   "summary": "The Nasdaq and S&P 500 indices experienced a drop as Nvidia and other tech shares fell. Investors reacted to potential new tariffs, raising concerns about market stability. Nvidia's CEO Jensen Huang was reinstated, which",
+   "tags": []
+  },
+  {
+   "title": "Drugmaker Insmed shares rally 14% after Sanofi agrees to buy it in pharma’s biggest deal in three years",
+   "link": "https://www.cnbc.com/2026/11/24/insmed-sanofi-deal-stock-pharma.html",
+   "src": "CNBC Markets",
+   "region": "US",
+   "time": "2026-11-24T21:07:19.000Z",
+   "img": null,
+   "summary": "Sanofi faces a revenue drop toward the end of the decade as top-selling drugs lose exclusivity and open up for generic drugmakers to compete.",
+   "tags": []
+  },
+  {
+   "title": "Anthropic closes below $83 IPO price, but analysts are still largely positive",
+   "link": "https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html",
+   "src": "CNBC Markets",
+   "region": "US",
+   "time": "2026-11-24T21:04:03.000Z",
+   "img": null,
+   "summary": "Anthropic has been sinking steadily since the stock opened at $111.50 on the Nasdaq on Nov. 19.",
+   "tags": []
+  },
+  {
+   "title": "Bitcoin Surrenders Most Gains Amid Sustained ETF Outflows",
+   "link": "https://www.livemint.com/market/bitcoin-surrenders-most-gains-amid-sustained-etf-outflows-11795554238437.html",
+   "src": "Mint",
+   "region": "India",
+   "time": "2026-11-24T21:03:57.000Z",
+   "img": "https://www.livemint.com/lm-img/img/2024/12/06/1600x900/logo/market_4_1733466069237_1733466076549.png",
+   "summary": "Bitcoin pared just about all of the gains posted earlier when Jensen Huang was reinstated as chief executive officer of Nvidia Corp., with investors continuing to exit the digital-asset sector following weeks of heavy se",
+   "tags": []
+  },
+  {
+   "title": "Utah drops criminal charges against Kalshi founders after company suspended operations in state",
+   "link": "https://www.cnbc.com/2026/11/24/utah-drops-charges-against-kalshi-after-it-halted-operations-in-state.html",
+   "src": "CNBC",
+   "region": "US",
+   "time": "2026-11-24T20:45:57.000Z",
+   "img": null,
+   "summary": "Co-founders of the prediction market platform were slated to appear in a state district court in December.",
+   "tags": []
+  },
+  {
+   "title": "How Meta is using Instagram to get an ad boost from its Muse personal AI agent",
+   "link": "https://www.cnbc.com/2026/11/24/meta-instagram-muse-ad-revenue.html",
+   "src": "CNBC Markets",
+   "region": "US",
+   "time": "2026-11-24T20:37:40.000Z",
+   "img": null,
+   "summary": "Meta doesn't serve ads in its Muse personal agent, but the tool is already boosting the company's ad business, a senior executive told CNBC.",
+   "tags": []
+  },
+  {
+   "title": "Will I get the £100 energy payment and when will I receive it?",
+   "link": "https://www.bbc.co.uk/news/articles/c35yn8x748e9o?at_medium=RSS&at_campaign=rss",
+   "src": "BBC News",
+   "region": "World",
+   "time": "2026-11-24T20:16:24.000Z",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c06e/live/66b0c920-d2ed-11f1-8d86-83eebc838351.jpg",
+   "summary": "Here is what you need to know about the payment that millions will receive from January.",
+   "tags": []
+  },
+  {
+   "title": "Op-ed: Trump’s Nvidia board intervention put a price on national security. Our adversaries will take note",
+   "link": "https://www.cnbc.com/2026/11/24/trump-nvidia-jensen-huang-national-security-china-chips.html",
+   "src": "CNBC Markets",
+   "region": "US",
+   "time": "2026-11-24T20:02:49.000Z",
+   "img": null,
+   "summary": "President Trump's decision to force Nvidia's board to bring back Jensen Huang as CEO is exactly what Beijing, Tehran, and Moscow would want to see.",
+   "tags": []
+  },
+  {
+   "title": "US yields little changed as AI rally fades",
+   "link": "https://www.livemint.com/market/us-yields-little-changed-as-ai-rally-fades-11795550412000.html",
+   "src": "Mint",
+   "region": "India",
+   "time": "2026-11-24T20:00:11.000Z",
+   "img": "https://www.livemint.com/lm-img/img/2024/12/06/1600x900/logo/market_4_1733466069237_1733466076549.png",
+   "summary": "USA-BONDS/ (UPDATE 1, GRAPHICS):TREASURIES-US yields little changed as AI rally fades",
+   "tags": []
+  },
+  {
+   "title": "Anthropic shares fall below IPO price. Traders see even more pain",
+   "link": "https://www.cnbc.com/2026/11/24/anthropic-options-trading-ipo-price.html",
+   "src": "CNBC Markets",
+   "region": "US",
+   "time": "2026-11-24T19:47:42.000Z",
+   "img": null,
+   "summary": "Anthropic shares fell below the $83 IPO price as options activity surged, with large put buys, call buys and put sales pointing to a divided market.",
+   "tags": []
+  },
+  {
+   "title": "Retail turnarounds are taking hold just in time for the holiday season",
+   "link": "https://www.cnbc.com/2026/11/24/retail-turnarounds-holiday-season.html",
+   "src": "CNBC Markets",
+   "region": "US",
+   "time": "2026-11-24T19:26:39.000Z",
+   "img": null,
+   "summary": "Retail earnings reports on Tuesday pointed to a mix of factors behind the strong results, including a resilient consumer and stronger execution.",
+   "tags": []
+  },
+  {
+   "title": "Gold is doing something strange. Here's one way to play it",
+   "link": "https://www.cnbc.com/2026/11/24/gold-is-doing-something-strange-heres-one-way-to-play-it-.html",
+   "src": "CNBC Markets",
+   "region": "US",
+   "time": "2026-11-24T19:25:13.000Z",
+   "img": null,
+   "summary": "Gold is not acting like the traditional safe haven. How one trader is playing the move.",
+   "tags": []
+  },
+  {
+   "title": "Who qualifies for Costco’s $30-per-share dividend — plus, Meta puts share plan on hold",
+   "link": "https://www.cnbc.com/investingclub/2026/11/24/who-qualifies-for-costcos-dividend-plus-meta-pauses-share-plan.html",
+   "src": "CNBC Markets",
+   "region": "US",
+   "time": "2026-11-24T19:23:59.000Z",
+   "img": null,
+   "summary": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
+   "tags": [
+    "COST"
+   ]
+  },
+  {
+   "title": "AG Blanche, FBI’s Patel dodge questions about Jensen Huang investigation",
+   "link": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-fbi-doj-patel-blanche.html",
+   "src": "CNBC Markets",
+   "region": "US",
+   "time": "2026-11-24T19:19:12.000Z",
+   "img": null,
+   "summary": "The AG and FBI director evaded answering reporters' questions about details of an investigation Trump said resolved security concerns about Jensen Huang.",
+   "tags": []
+  },
+  {
+   "title": "Consumer confidence shoots up after Democrats' midterm victories — though inflation worries persist",
+   "link": "https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html",
+   "src": "CNBC Markets",
+   "region": "US",
+   "time": "2026-11-24T18:34:43.000Z",
+   "img": null,
+   "summary": "The Conference Board survey released Tuesday showed improvement across the board, with the headline confidence index jumping to 103.3.",
+   "tags": []
+  },
+  {
+   "title": "Faisal Islam: Fears over the AI boom haven't gone away",
+   "link": "https://www.bbc.co.uk/news/articles/c6894evgpel5o?at_medium=RSS&at_campaign=rss",
+   "src": "BBC News",
+   "region": "World",
+   "time": "2026-11-24T18:21:43.000Z",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7ec8/live/8b0c59c0-e831-11f1-917e-35f1674fb52c.jpg",
+   "summary": "There were legitimate fears before Huang's abrupt exit from Nvidia - and his return won't fix it",
+   "tags": []
+  },
+  {
+   "title": "Hewlett Packard Enterprise shares crash 16%, set for biggest 1-day fall in 18 months; what went wrong?",
+   "link": "https://www.livemint.com/market/stock-market-news/hewlett-packard-enterprise-shares-crash-16-set-for-biggest-1-day-fall-in-18-months-what-went-wrong-11795542211868.html",
+   "src": "Mint",
+   "region": "India",
+   "time": "2026-11-24T18:12:39.000Z",
+   "img": "https://www.livemint.com/lm-img/img/2026/11/24/1600x900/logo/JUNIPER-NETWORKS-M-A-HPE-0_1751529664573_1751529677463_1795542229867_oJ1D_e8cb4351-d1b1-4ef5-92ae-f84d63496081_9c0L.JPG",
+   "summary": "Hewlett Packard Enterprise shares fell 16% Tuesday, erasing much of the prior day’s rally, despite beating quarterly estimates and issuing stronger-than-expected fiscal 2027 guidance.",
+   "tags": []
+  },
+  {
+   "title": "Jensen Huang to face DC grilling the same day Nvidia releases new products at GTC",
+   "link": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-congress-gtc.html",
+   "src": "CNBC Markets",
+   "region": "US",
+   "time": "2026-11-24T17:51:45.000Z",
+   "img": null,
+   "summary": "Jensen Huang is back as CEO of Nvidia and immediately faces the challenge of leading the chip giant and defending himself in Washington.",
+   "tags": []
+  },
   {
    "title": "Nvidia shares tumble 9% after biggest rally in over two decades as AI-related concerns return",
    "link": "https://www.livemint.com/market/stock-market-news/nvidia-shares-tumble-9-after-biggest-rally-in-over-two-decades-as-ai-related-concerns-return-11795537721863.html",
@@ -9,26 +483,6 @@
    "time": "2026-11-24T17:06:21.000Z",
    "img": "https://www.livemint.com/lm-img/img/2026/11/24/1600x900/logo/NVIDIA_Stock_23_1795539906405_Fd7X_1795539913238_kt1v_37dfde18-f514-4af1-a708-1f592b81b8fe_8484.png",
    "summary": "Nvidia shares fell 9% on Tuesday, surrendering some of their record rally after investors reassessed AI investment returns, regulatory risks and the prospect of higher interest rates.",
-   "tags": []
-  },
-  {
-   "title": "Anthropic sinks 12%, falling below $83 IPO price, but analysts are still largely positive",
-   "link": "https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html",
-   "src": "CNBC Markets",
-   "region": "US",
-   "time": "2026-11-24T16:48:49.000Z",
-   "img": null,
-   "summary": "Anthropic has been sinking steadily since the stock opened at $111.50 on the Nasdaq on Nov. 19.",
-   "tags": []
-  },
-  {
-   "title": "Jensen Huang to face DC grilling the same day Nvidia releases new products at GTC",
-   "link": "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-congress-gtc.html",
-   "src": "CNBC Markets",
-   "region": "US",
-   "time": "2026-11-24T16:42:57.000Z",
-   "img": null,
-   "summary": "Jensen Huang is back as CEO of Nvidia and immediately faces the challenge of leading the chip giant and defending himself in Washington.",
    "tags": []
   },
   {
@@ -52,26 +506,6 @@
    "tags": []
   },
   {
-   "title": "Nvidia shares fall 8% as Huang comeback rally cools",
-   "link": "https://www.cnbc.com/2026/11/24/nvidia-stock-jensen-huang-return.html",
-   "src": "CNBC Markets",
-   "region": "US",
-   "time": "2026-11-24T16:38:21.000Z",
-   "img": null,
-   "summary": "Jensen Huang was reinstated as CEO of Nvidia after he resigned following an acknowledgement of an extramarital affair.",
-   "tags": []
-  },
-  {
-   "title": "Consumer confidence shoots up after Democrats' midterm victories — though inflation worries persist",
-   "link": "https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html",
-   "src": "CNBC Markets",
-   "region": "US",
-   "time": "2026-11-24T16:06:07.000Z",
-   "img": null,
-   "summary": "The Conference Board survey released Tuesday showed improvement across the board, with the headline confidence index jumping to 103.3.",
-   "tags": []
-  },
-  {
    "title": "Anthropic shares crash below IPO price of $83 after record Nasdaq debut, down 31% from peak. What is spooking investors?",
    "link": "https://www.livemint.com/market/stock-market-news/anthropic-shares-crash-below-ipo-price-of-83-after-record-nasdaq-debut-down-31-from-peak-what-is-spooking-investors-11795533362689.html",
    "src": "Mint",
@@ -79,16 +513,6 @@
    "time": "2026-11-24T16:02:54.000Z",
    "img": "https://www.livemint.com/lm-img/img/2026/11/24/1600x900/logo/Anthropic_Stock_1795535985068_4Cer_1795535990653_lnFS_aeeedcc3-2fdc-4e4f-a3d4-331988a6cb60_p5YK.png",
    "summary": "Anthropic shares fell below their $83 IPO price, dropping to $79.42 after an early post-listing rally faded. The reversal has renewed concerns about AI valuations, infrastructure costs, competition and investment risks.",
-   "tags": []
-  },
-  {
-   "title": "Drugmaker Insmed shares rally 14% after Sanofi agrees to buy it in pharma’s biggest deal in three years",
-   "link": "https://www.cnbc.com/2026/11/24/insmed-sanofi-deal-stock-pharma.html",
-   "src": "CNBC Markets",
-   "region": "US",
-   "time": "2026-11-24T15:49:27.000Z",
-   "img": null,
-   "summary": "Sanofi faces a revenue drop toward the end of the decade as top-selling drugs lose exclusivity and open up for generic drugmakers to compete.",
    "tags": []
   },
   {
@@ -112,26 +536,6 @@
    "tags": []
   },
   {
-   "title": "Quitting can actually be the key to success, says expert: It's one of the 'most courageous moves you can make'",
-   "link": "https://www.cnbc.com/make-it/2026/11/24/how-to-know-when-to-quit.html",
-   "src": "CNBC Markets",
-   "region": "US",
-   "time": "2026-11-24T15:25:37.000Z",
-   "img": null,
-   "summary": "'\"Never give up\" is bad advice, according to author Lindsay Crouse. Here's what she recommends instead.",
-   "tags": []
-  },
-  {
-   "title": "What Jensen Huang’s return means for Nvidia’s Colette Kress",
-   "link": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-returns-colette-kress-cfo.html",
-   "src": "CNBC Markets",
-   "region": "US",
-   "time": "2026-11-24T15:19:46.000Z",
-   "img": null,
-   "summary": "Kress led the company for 11 days during Huang’s sudden departure and steered Nvidia through billions in AI financing deals before that. Now she's back to CFO.",
-   "tags": []
-  },
-  {
    "title": "Commercial real estate activity falls 14% in October, as interest rates rise",
    "link": "https://www.cnbc.com/2026/11/24/commercial-real-estate-activity-falls-14percent-in-october.html",
    "src": "CNBC Markets",
@@ -139,16 +543,6 @@
    "time": "2026-11-24T15:05:14.000Z",
    "img": null,
    "summary": "Commercial real estate activity dropped 14% in October from September, according to an index from LightBox, a commercial real estate data platform.",
-   "tags": []
-  },
-  {
-   "title": "Nvidia brought Jensen Huang back. But the investigations aren’t over",
-   "link": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-ceo-return.html",
-   "src": "CNBC Markets",
-   "region": "US",
-   "time": "2026-11-24T15:03:36.000Z",
-   "img": null,
-   "summary": "Jensen Huang is back as Nvidia CEO, but the company still faces an internal investigation and California and federal scrutiny.",
    "tags": []
   },
   {
@@ -162,28 +556,6 @@
    "tags": [
     "BBY"
    ]
-  },
-  {
-   "title": "Signal joins United Airlines, banks in limiting AI agents over customer risks",
-   "link": "https://www.cnbc.com/2026/11/24/signal-airlines-banks-ai-limit.html",
-   "src": "CNBC Markets",
-   "region": "US",
-   "time": "2026-11-24T14:46:01.000Z",
-   "img": null,
-   "summary": "Privacy-focused messaging application Signal has joined United Airlines and JPMorgan Chase in implementing restrictions around artificial intelligence agents.",
-   "tags": [
-    "UAL"
-   ]
-  },
-  {
-   "title": "Jim Cramer's top 10 things to watch in the stock market Tuesday",
-   "link": "https://www.cnbc.com/investingclub/2026/11/24/jim-cramers-top-10-things-to-watch-in-the-stock-market-tuesday.html",
-   "src": "CNBC Markets",
-   "region": "US",
-   "time": "2026-11-24T13:53:37.000Z",
-   "img": null,
-   "summary": "Nvidia is giving back some of Monday's surge and Anthropic is below its IPO price of $83.",
-   "tags": []
   },
   {
    "title": "South Indian Bank shares in focus as RBI approves SBI Mutual Fund to acquire up to 9.99% stake; stock up 612% in 5 years",
@@ -203,16 +575,6 @@
    "time": "2026-11-24T13:47:50.000Z",
    "img": null,
    "summary": "Private equity and venture capital investments in India surged to USD 8.7 billion in October 2026. This monthly figure is the highest recorded in the past five years, supported by eight large deals totaling USD 7.3 billi",
-   "tags": []
-  },
-  {
-   "title": "Russia accuses NATO member Estonia of hostile actions ‘on the verge of unleashing open war’",
-   "link": "https://www.cnbc.com/2026/11/24/russia-estonia-ukraine-war-nato-finland.html",
-   "src": "CNBC Markets",
-   "region": "US",
-   "time": "2026-11-24T13:42:55.000Z",
-   "img": null,
-   "summary": "Russia accused Estonia of “hostile actions” and warned its border measures risk open war, as Tallinn prepares to close road crossings from Dec. 1.",
    "tags": []
   },
   {
@@ -253,16 +615,6 @@
    "time": "2026-11-24T13:03:20.000Z",
    "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/87ca/live/b659c4e0-e7fb-11f1-ab60-79086b6495b8.jpg",
    "summary": "The company says an \"excellent World Cup\" helped drive strong trading as annual profits rose by 18%.",
-   "tags": []
-  },
-  {
-   "title": "Nasdaq drops over 2% as Nvidia-fueled AI rally fades, Anthropic tanks 11%: US Stock Market Live Updates",
-   "link": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/stock-market-live-updates-dow-jones-nasdaq-sp-500-nvidia-anthropic-iphone-google-meta-tesla-earnings-treasury-yield-news-24-nov-2026/liveblog/136131363.cms",
-   "src": "Economic Times",
-   "region": "India",
-   "time": "2026-11-24T13:00:48.000Z",
-   "img": null,
-   "summary": "",
    "tags": []
   },
   {
@@ -326,23 +678,13 @@
    "tags": []
   },
   {
-   "title": "Some U.S. food banks see demand top pandemic levels",
-   "link": "https://www.cnbc.com/2026/11/24/us-food-banks-demand-snap.html",
+   "title": "Does the Nvidia-led rip mark the market bottom? Maybe not",
+   "link": "https://www.cnbc.com/2026/11/24/does-the-nvidia-led-rip-mark-the-market-bottom-maybe-not.html",
    "src": "CNBC Markets",
    "region": "US",
-   "time": "2026-11-24T12:00:01.000Z",
+   "time": "2026-11-24T12:10:59.000Z",
    "img": null,
-   "summary": "A combination of high costs and restrictions to federal aid have led to soaring demand at many food banks in the U.S.",
-   "tags": []
-  },
-  {
-   "title": "U.S. court clears the way for Army’s planned ammunition detonation in Iowa",
-   "link": "https://www.cnbc.com/2026/11/24/iowa-detonation-bomb-court-.html",
-   "src": "CNBC Markets",
-   "region": "US",
-   "time": "2026-11-24T11:56:49.000Z",
-   "img": null,
-   "summary": "A U.S. court cleared the Army to detonate degraded explosives at an Iowa ammunition plant amid public concern over contamination and health risks.",
+   "summary": "The standard market playbook is to assume that we’ve put in “a low, not the final low.”",
    "tags": []
   },
   {
@@ -373,26 +715,6 @@
    "time": "2026-11-24T11:37:14.000Z",
    "img": null,
    "summary": "Dario Amodei, CEO of Anthropic, sold shares worth USD 280.41 million after the company's IPO. He reported holding 202.8 million shares and additional shares through trusts. Anthropic's initial public offering raised USD ",
-   "tags": []
-  },
-  {
-   "title": "Why France is at risk of recession — and what could keep it out of one",
-   "link": "https://www.cnbc.com/2026/11/24/france-recession-risk-pmi.html",
-   "src": "CNBC Markets",
-   "region": "US",
-   "time": "2026-11-24T11:15:30.000Z",
-   "img": null,
-   "summary": "Bank of France Governor Emmanuel Moulin told CNBC he still expects growth, pointing to resilience in sectors including defense, aerospace and electricity.",
-   "tags": []
-  },
-  {
-   "title": "Jensen Huang is ‘too big to fire,’ putting Nvidia’s governance in focus: analysts",
-   "link": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-governance.html",
-   "src": "CNBC Markets",
-   "region": "US",
-   "time": "2026-11-24T10:56:56.000Z",
-   "img": null,
-   "summary": "Jensen Huang’s return has underscored Nvidia’s deep reliance on its founder, putting the company's board oversight and corporate governance under scrutiny.",
    "tags": []
   },
   {
@@ -483,333 +805,6 @@
    "time": "2026-11-24T07:48:34.000Z",
    "img": "https://www.livemint.com/lm-img/img/2026/11/24/1600x900/logo/Wall_Street_Thanksgiving_Trading_Hours_17955063244_1795506344261_Adb7_1795506344403_jyzk_6c787214-d464-47e8-beb5-6be22d90a0f7_RJuq.png",
    "summary": "US stock markets will close for Thanksgiving on November 26 and reopen with an early 1 p.m. ET close on Black Friday. The article also outlines holiday trading hours for bonds and year-end market closures, while reportin",
-   "tags": []
-  },
-  {
-   "title": "RBI’s Rohit Jain wants primary dealers to become architects of G-Sec market development",
-   "link": "https://www.livemint.com/market/bonds/rbi-deputy-governor-urges-primary-dealers-to-boost-g-sec-market-11795501774694.html",
-   "src": "Mint",
-   "region": "India",
-   "time": "2026-11-24T07:38:34.000Z",
-   "img": "https://www.livemint.com/lm-img/img/2026/11/24/1600x900/logo/PTI_1795505507861_pxLY_1795505508007_U3yI_652e676a-702f-44c6-bf8f-7944a79b59a4_lqCF.jpg",
-   "summary": "Jain said primary dealers could contribute towards building a partnership that continues to serve the government securities market well.",
-   "tags": []
-  },
-  {
-   "title": "Gold rate today, 24 November 2026: Gold price rebounds from 14-month low; is it the right time to buy? Experts' explain",
-   "link": "https://www.livemint.com/market/commodities/gold-rate-today-24-november-2026-gold-price-rebounds-from-14-month-low-is-it-the-right-time-to-buy-experts-explain-11795498644088.html",
-   "src": "Mint",
-   "region": "India",
-   "time": "2026-11-24T06:54:34.000Z",
-   "img": "https://www.livemint.com/lm-img/img/2026/11/24/1600x900/logo/MCX_Gold_price_Today_Gold_Rate_Today_Gold_USD_pric_1795499149368_YYnC_1795499149562_iIYQ_12dfe778-5b0c-4fc4-91af-520a3e3ac5b9_xytd.png",
-   "summary": "Gold price today: The MCX gold rate finished at  ₹1,26,021 per 10 gm, whereas in the international market gold USD rate is around $3,635 per ounce",
-   "tags": []
-  },
-  {
-   "title": "Jensen Huang is back $1 trn m-cap; Nvidia's  ₹92.84 lakh cr comeback - 70% losses recovered; Baird is bullish; target",
-   "link": "https://www.livemint.com/market/stock-market-news/jensen-huang-is-back-1-trn-m-cap-nvidias-rs-92-84-lakh-cr-comeback-70-losses-recovered-baird-is-bullish-target-11795500713599.html",
-   "src": "Mint",
-   "region": "India",
-   "time": "2026-11-24T06:54:30.000Z",
-   "img": "https://www.livemint.com/lm-img/img/2026/11/24/1600x900/logo/Jensen_Huang_Leads_NVIDIA_Stock_Rally_179550322228_1795503234582_COHu_1795503234721_mTIk_232c9133-5b4e-49ef-a93b-519002e39d58_01gJ.png",
-   "summary": "Nvidia shares surged 31.5% after Jensen Huang returned as CEO, recovering about 70% of recent losses and adding more than $1 trillion to the company’s market value. Several brokerages turned more positive, though export ",
-   "tags": []
-  },
-  {
-   "title": "HDFC Bank, Reliance Industries among 10 stocks with highest DII holding in Q2. See full list",
-   "link": "https://economictimes.indiatimes.com/markets/stocks/news/hdfc-bank-reliance-industries-among-10-stocks-with-highest-dii-holding-in-q2-see-full-list/slideshow/136126992.cms",
-   "src": "Economic Times",
-   "region": "India",
-   "time": "2026-11-24T06:15:03.000Z",
-   "img": null,
-   "summary": "With the rise in the share of MFs and also an overall net investment of  Rs 1.69 lakh crore during the quarter, the share of Domestic Institutional Investors (DIIs) as a whole increased to an all-time high of 19.31% as o",
-   "tags": [
-    "RELIANCE",
-    "HDFCBANK"
-   ]
-  },
-  {
-   "title": "The LTCG debate: Why markets need tax stability and not ad-hoc fixes",
-   "link": "https://economictimes.indiatimes.com/markets/stocks/news/the-ltcg-debate-why-markets-need-tax-stability-and-not-ad-hoc-fixes/articleshow/136121257.cms",
-   "src": "Economic Times",
-   "region": "India",
-   "time": "2026-11-24T06:08:55.000Z",
-   "img": null,
-   "summary": "Foreign Institutional Investor capital is leaving Indian markets, raising concerns over the unpredictability of tax policies. Investors are urging for the reconsideration of Long-Term Capital Gains tax provisions. Histor",
-   "tags": []
-  },
-  {
-   "title": "Of 30 Sensex stocks, 22 closed in the red - These 8 shares defied stock market crash | Full list of 22 red and 8 green",
-   "link": "https://www.livemint.com/market/stock-market-news/of-30-sensex-stocks-22-closed-in-the-red-these-8-shares-defied-stock-market-crash-full-list-of-22-red-and-8-green-11795496983398.html",
-   "src": "Mint",
-   "region": "India",
-   "time": "2026-11-24T06:07:49.000Z",
-   "img": "https://www.livemint.com/lm-img/img/2026/11/24/1600x900/logo/Sensex_Crash__8_Gainers_22_Losers_1795500437341_OAtX_1795500443770_6kQY_467e2494-ee41-496d-ab96-79bf54d3845e_py7F.png",
-   "summary": "A broad sell-off drove the Sensex to its worst daily performance in over four months and pushed the Nifty below 25,350. Banking and metal stocks led losses, while technology shares gained. Indian markets were closed on T",
-   "tags": []
-  },
-  {
-   "title": "Jensen Huang reinstated NVIDIA CEO! How may it impact Sensex, Nifty recovery as bets are high for AI trade revival?",
-   "link": "https://www.livemint.com/market/stock-market-news/jensen-huang-reinstated-nvidia-ceo-how-may-it-impact-sensex-nifty-recovery-as-bets-are-high-for-ai-trade-revival-11795493533422.html",
-   "src": "Mint",
-   "region": "India",
-   "time": "2026-11-24T05:26:48.000Z",
-   "img": "https://www.livemint.com/lm-img/img/2026/11/24/1600x900/logo/Jensen_Huang_reinstated_CEO_Sensex_Nifty_today_1795494406693_RAL6_1795494406875_XzRa_1a6e4fab-8bc3-495a-8c6f-b8865e8683af_1Az1.png",
-   "summary": "Jensen Huang reinstated as NVIDIA CEO means revival of the AI trade, which may jeopardize the foreign money flow to the Indian stock market, say experts",
-   "tags": [
-    "NVDA"
-   ]
-  },
-  {
-   "title": "Iran says three tankers hit mines in Hormuz despite U.S. escort, as Treasury widens sanctions",
-   "link": "https://www.cnbc.com/2026/11/24/iran-trump-hormuz-crude-.html",
-   "src": "CNBC Markets",
-   "region": "US",
-   "time": "2026-11-24T05:05:08.000Z",
-   "img": null,
-   "summary": "Iran said three oil tankers caught fire after hitting naval mines in the Strait of Hormuz, as the U.S. escalates sanctions aimed at cutting off Tehran's financial lifelines.",
-   "tags": []
-  },
-  {
-   "title": "5 energy stocks with attractive dividend yield - Hindustan Petroleum, Indian Oil, Bharat Petroleum, ONGC, to Gulf Oil",
-   "link": "https://www.livemint.com/market/stock-market-news/5-energy-stocks-with-attractive-dividend-yield-hindustan-petroleum-indian-oil-bharat-petroleum-ongc-to-gulf-oil-11795467131434.html",
-   "src": "Mint",
-   "region": "India",
-   "time": "2026-11-24T05:00:22.000Z",
-   "img": "https://www.livemint.com/lm-img/img/2026/11/23/1600x900/logo/Energy_Stocks_and_Dividend_Growth_1795467459920_nKfT_1795467473251_ZXtn_2fb0fe23-1919-44b2-9bec-453b4fab5914_tDm2.png",
-   "summary": "HPCL, Indian Oil, BPCL, ONGC and Gulf Oil Lubricants are highlighted for dividend income. HPCL delivered a 7.1% FY26 dividend yield, while HPCL, Indian Oil, BPCL and Gulf Oil were reported to have yields above 4.5%.",
-   "tags": []
-  },
-  {
-   "title": "Mahanadi Coalfields IPO: Allotment date, status check online by PAN number on BSE, NSE, Kfin Tech websites; listing date",
-   "link": "https://www.livemint.com/market/ipo/coal-indias-mahanadi-coalfields-ipo-allotment-likely-nov-25-heres-how-to-check-status-online-on-bse-nse-kfin-tech-11795494163132.html",
-   "src": "Mint",
-   "region": "India",
-   "time": "2026-11-24T05:00:18.000Z",
-   "img": "https://www.livemint.com/lm-img/img/2026/11/24/1600x900/logo/Coal_IPO_Allotment_Status_Thumbnail_1795496378018_WjMm_1795496383099_lXro_f2d101ed-3740-4539-9657-69450b5e2f59_4tdQ.png",
-   "summary": "Mahanadi Coalfields’  ₹8,981.12 crore IPO was subscribed 1.52 times. Allotment is expected on November 25, 2026, ahead of the November 27 listing. Investors can check results through KFin Technologies, NSE, BSE, or their",
-   "tags": []
-  },
-  {
-   "title": "Bitcoin fails to hold Nvidia bump with crypto headwinds in focus",
-   "link": "https://economictimes.indiatimes.com/markets/cryptocurrency/bitcoin-fails-to-hold-nvidia-bump-with-crypto-headwinds-in-focus/articleshow/136119619.cms",
-   "src": "Economic Times",
-   "region": "India",
-   "time": "2026-11-24T04:40:09.000Z",
-   "img": null,
-   "summary": "Bitcoin's recent 1% decline has overshadowed positive developments from Nvidia, leading to a dip in investor confidence. The fallout from the Binance hack and notable ETF outflows has further complicated the situation. W",
-   "tags": []
-  },
-  {
-   "title": "China has changed tactics but is still thwarting India's rise, a U.S. panel says",
-   "link": "https://www.cnbc.com/2026/11/24/us-china-thwarting-india-growth.html",
-   "src": "CNBC Markets",
-   "region": "US",
-   "time": "2026-11-24T04:27:38.000Z",
-   "img": null,
-   "summary": "China is increasingly focused on containing India economically rather than through military actions.",
-   "tags": []
-  },
-  {
-   "title": "Only a handful of stocks near 52-week highs despite November's rebound",
-   "link": "https://www.livemint.com/market/stock-market-news/indian-stock-market-rally-november-sensex-bse-500-11795489292786.html",
-   "src": "Mint",
-   "region": "India",
-   "time": "2026-11-24T04:21:50.000Z",
-   "img": "https://www.livemint.com/lm-img/img/2026/11/24/1600x900/logo/market_1733939870783_1795493930454_cWkr_15a30dc2-353b-4a2c-8172-acc1d5987c8f_DsZS.jpg",
-   "summary": "A  ₹1.3 trillion wave of foreign inflows and strong Q2 profits have sparked a nearly 12% jump in the Sensex, yet around a quarter of BSE 500 stocks remain more than 30% below their one-year highs.",
-   "tags": []
-  },
-  {
-   "title": "Dividend, Buyback, rights issue record date Nov 25: Zee, Vraj Iron, Bonlon, and more: 5 stocks to turn ex-date tomorrow",
-   "link": "https://www.livemint.com/market/stock-market-news/dividend-buyback-rights-issue-record-date-nov-25-zee-vraj-iron-bonlon-and-more-5-stocks-to-turn-ex-date-tomorrow-11795491976798.html",
-   "src": "Mint",
-   "region": "India",
-   "time": "2026-11-24T04:20:54.000Z",
-   "img": "https://www.livemint.com/lm-img/img/2026/11/24/1600x900/logo/Dividend_Buyback_Rights_Issue_Graphic_179549361146_1795493622760_vVZP_1795493622914_ekvr_bc2fded6-cd29-482d-826d-9a3d53ce7db1_FYfg.png",
-   "summary": "Five companies have corporate actions to track on November 25, 2026: Zee Entertainment’s  ₹600 crore buyback at  ₹91 per share, Vraj Iron and Steel’s  ₹0.60 interim dividend, and rights issues by Bonlon Industries, Inder",
-   "tags": []
-  },
-  {
-   "title": "Dividend vs fixed deposits: 5 high yield stocks generating better income than FDs - CyberTech, Majestic Auto, to Premco",
-   "link": "https://www.livemint.com/market/stock-market-news/dividend-vs-fixed-deposits-5-high-yield-stocks-generating-better-income-than-fds-cybertech-majestic-auto-to-premco-11795463444218.html",
-   "src": "Mint",
-   "region": "India",
-   "time": "2026-11-24T03:34:20.000Z",
-   "img": "https://www.livemint.com/lm-img/img/2026/11/23/1600x900/logo/Dividend_Stocks_vs_Fixed_Deposits_1795465934890_nXdc_1795465948581_nUs4_7031afb9-6094-44a1-9df4-ed569029088a_PvnQ.png",
-   "summary": "Investors seeking income from equities may note that CyberTech Systems, Majestic Auto, Jagran Prakashan, IL&amp;FS Investment Managers, and Premco Global recorded yields as high as 19.6%, exceeding the roughly 8%–8.6% of",
-   "tags": []
-  },
-  {
-   "title": "Persistent Systems, Ather Energy shares: Top 2 stocks to buy on 25 Nov; check expected returns, stop loss, target price",
-   "link": "https://www.livemint.com/market/stock-market-news/persistent-systems-ather-energy-shares-top-2-stocks-to-buy-on-25-nov-check-expected-returns-stop-loss-target-price-11795486721247.html",
-   "src": "Mint",
-   "region": "India",
-   "time": "2026-11-24T03:15:46.000Z",
-   "img": "https://www.livemint.com/lm-img/img/2026/11/24/1600x900/logo/Chandan_Taparia_1788834234050_af1895d2-d413-4eaa-9_1795488510554_1rlV_1795488510753_eeqp_2ba3ba50-e9e8-4201-9f9f-37562806fd98_oA8C.png",
-   "summary": "Indian stock market will be closed on Tuesday, 24 November, for Prakash Gurpurb Sri Guru Nanak Dev. The closure follows steep losses on Monday, as the Sensex fell 1.77% and the Nifty 1.75%. Analyst Chandan Taparia recomm",
-   "tags": []
-  },
-  {
-   "title": "South Korea’s Kospi rockets 8% as AI-linked stocks get breather after Jensen Huang’s return as Nvidia CEO. Worst over?",
-   "link": "https://economictimes.indiatimes.com/markets/us-stocks/news/south-korean-shares-rebound-as-huangs-nvidia-return-lifts-ai-stocks/articleshow/136118071.cms",
-   "src": "Economic Times",
-   "region": "India",
-   "time": "2026-11-24T03:05:02.000Z",
-   "img": null,
-   "summary": "South Korean shares have bounced back sharply after previously hitting a ten-month low, with the KOSPI index climbing 7.19%. This surge was largely driven by a rebound in technology stocks, particularly following Nvidia ",
-   "tags": []
-  },
-  {
-   "title": "Japanese bond yields fall as lower oil prices ease inflation concerns",
-   "link": "https://economictimes.indiatimes.com/markets/bonds/japanese-bond-yields-fall-as-lower-oil-prices-ease-inflation-concerns/articleshow/136118046.cms",
-   "src": "Economic Times",
-   "region": "India",
-   "time": "2026-11-24T03:04:17.000Z",
-   "img": null,
-   "summary": "Japanese government bond yields declined due to falling oil prices that eased inflation concerns. The 10-year JGB yield reached a two-week low of 2.715%. Meanwhile, Japan's benchmark Nikkei 225 index experienced a brief ",
-   "tags": []
-  },
-  {
-   "title": "Dollar climbs as renewed AI euphoria fuels Fed hike bets",
-   "link": "https://economictimes.indiatimes.com/markets/forex/dollar-climbs-as-renewed-ai-euphoria-fuels-fed-hike-bets/articleshow/136118031.cms",
-   "src": "Economic Times",
-   "region": "India",
-   "time": "2026-11-24T03:02:32.000Z",
-   "img": null,
-   "summary": "The dollar is approaching a 20-month peak, thanks to the reinstatement of Nvidia's CEO, which has instilled confidence in the markets. Meanwhile, the euro and sterling struggle against the strong dollar, with the euro ho",
-   "tags": []
-  },
-  {
-   "title": "Asian stocks rally as Huang's Nvidia return revives AI trade",
-   "link": "https://economictimes.indiatimes.com/markets/us-stocks/news/asian-stocks-rally-as-huangs-nvidia-return-revives-ai-trade/articleshow/136117829.cms",
-   "src": "Economic Times",
-   "region": "India",
-   "time": "2026-11-24T02:44:53.000Z",
-   "img": null,
-   "summary": "Asian shares saw significant gains as Nvidia's CEO Jensen Huang made a return that relieved market fears. The MSCI Asia-Pacific index rose by 4.6%, while Japan's Nikkei gained 4.5% after a local holiday. This movement fo",
-   "tags": []
-  },
-  {
-   "title": "SEBI issues upcoming IPOs GMP advisory - ‘publication of such pre-listing premium figures may be detrimental’",
-   "link": "https://www.livemint.com/market/ipo/sebi-issues-upcoming-ipos-gmp-advisory-publication-of-such-pre-listing-premium-figures-may-be-detrimental-11795482712234.html",
-   "src": "Mint",
-   "region": "India",
-   "time": "2026-11-24T02:42:22.000Z",
-   "img": "https://www.livemint.com/lm-img/img/2026/11/24/1600x900/logo/SEBI_IPO_GMP_Prohibition_Graphic_1795486385518_MQmP_1795486395948_GOeR_cda2ff80-ade8-406d-ae3a-4a5c189126b2_ILgk.png",
-   "summary": "SEBI urged intermediaries and market participants to stop publishing grey market premium (GMP) figures for IPOs, warning that these unregulated estimates are unverified and cannot reliably predict listing prices or retur",
-   "tags": []
-  },
-  {
-   "title": "Jensen Huang cheered by Nvidia employees after return, pledges to be a better CEO",
-   "link": "https://www.cnbc.com/2026/11/23/jensen-huang-nvidia-ceo-return.html",
-   "src": "CNBC Markets",
-   "region": "US",
-   "time": "2026-11-24T02:20:44.000Z",
-   "img": null,
-   "summary": "Nvidia's Jensen Huang admitted to an affair in a note to employees on Nov. 8 and resigned as CEO on Nov. 12.",
-   "tags": []
-  },
-  {
-   "title": "Asian markets follow Wall Street: Nikkei, Kospi jump up to 8% as Jensen Huang’s return sparks rally in AI stocks",
-   "link": "https://www.livemint.com/market/stock-market-news/asian-markets-follow-wall-street-nikkei-kospi-jump-up-to-8-as-jensen-huang-s-return-sparks-rally-in-ai-stocks-11795485047635.html",
-   "src": "Mint",
-   "region": "India",
-   "time": "2026-11-24T02:04:36.000Z",
-   "img": "https://www.livemint.com/lm-img/img/2026/11/24/1600x900/logo/Nvidia_AI_Stock_Rally_in_Asia_1795485741907_pRNj_1795485746357_dSPR_4348853f-b781-4c62-a2e5-e7fc2ea49265_4pQB.png",
-   "summary": "Asian stocks rose on Tuesday as Nvidia’s 31.5% surge on Wall Street revived confidence in AI-related shares. South Korea’s KOSPI rose 7.5%, Taiwan’s benchmark gained 9.1% and Japan’s Nikkei climbed 4.5%. Investors remain",
-   "tags": []
-  },
-  {
-   "title": "India’s rupee has become an accidental carry star",
-   "link": "https://economictimes.indiatimes.com/markets/stocks/news/indias-rupee-has-become-an-accidental-carry-star/articleshow/136117132.cms",
-   "src": "Economic Times",
-   "region": "India",
-   "time": "2026-11-24T01:43:12.000Z",
-   "img": null,
-   "summary": "The Reserve Bank of India has made moves that temporarily attract carry traders to the rupee. Recent factors include decreasing oil prices and a shift in foreign investment from artificial intelligence stocks to Indian m",
-   "tags": []
-  },
-  {
-   "title": "AI Trade Resurgence Drives 9% Rally in Taiwanese Stock Index",
-   "link": "https://www.livemint.com/market/ai-trade-resurgence-drives-9-rally-in-taiwanese-stock-index-11795484279756.html",
-   "src": "Mint",
-   "region": "India",
-   "time": "2026-11-24T01:37:59.000Z",
-   "img": "https://www.livemint.com/lm-img/img/2024/12/06/1600x900/logo/market_2_1733466021722_1733466033367.jpg",
-   "summary": "Asian semiconductor-related stocks climbed after Nvidia Corp.’s board reinstated Jensen Huang, resuscitating investor appetite for the artificial intelligence trade.",
-   "tags": []
-  },
-  {
-   "title": "Stock market open today or not? BSE, NSE closed on 24 Nov for Guru Nanak Jayanti? Check holiday calendar",
-   "link": "https://www.livemint.com/market/stock-market-news/stock-market-open-today-or-not-bse-nse-closed-on-24-nov-for-guru-nanak-jayanti-check-holiday-calendar-11795480929821.html",
-   "src": "Mint",
-   "region": "India",
-   "time": "2026-11-24T01:10:03.000Z",
-   "img": "https://www.livemint.com/lm-img/img/2026/11/24/1600x900/logo/Market_Closed_Guru_Nanak_Jayanti_1795481917293_6ev1_1795481921685_Vjcy_10e96662-aee8-4e85-a53a-2b8538e242f2_jMUF.png",
-   "summary": "Indian equity markets will close on 24 November for Guru Nanak Jayanti. MCX will pause morning trading and reopen from 5 pm to 11:30 pm, while NCDEX remains closed all day. Christmas is the final scheduled market holiday",
-   "tags": []
-  },
-  {
-   "title": "Amazon faces FAA probe after delivery drone strikes Michigan fiber cable, garage",
-   "link": "https://www.cnbc.com/2026/11/23/amazon-drone-crash-michigan-faa-investigation.html",
-   "src": "CNBC Markets",
-   "region": "US",
-   "time": "2026-11-24T00:56:10.000Z",
-   "img": null,
-   "summary": "An Amazon drone \"struck a fiber cable, a residential garage, and became entangled in power lines during takeoff,\" a preliminary FAA report stated.",
-   "tags": [
-    "AMZN"
-   ]
-  },
-  {
-   "title": "Wall Street soars on Huang's return to Nvidia, Treasury yields rise",
-   "link": "https://economictimes.indiatimes.com/markets/us-stocks/news/global-markets-wall-street-soars-on-huangs-return-to-nvidia-treasury-yields-rise/articleshow/136116751.cms",
-   "src": "Economic Times",
-   "region": "India",
-   "time": "2026-11-24T00:54:33.000Z",
-   "img": null,
-   "summary": "US stocks rebounded sharply on Monday after Nvidia reinstated Jensen Huang as chief executive following pressure from President Donald Trump, reversing part of last week’s tech-led market rout. Nvidia jumped 31%, helping",
-   "tags": []
-  },
-  {
-   "title": "334% return in 3 years! Smallcap textile stock's  ₹5 to  ₹2 stock split record date nears - Check eligibility, ratio",
-   "link": "https://www.livemint.com/market/stock-market-news/334-return-in-3-years-smallcap-textile-stocks-rs-5-to-rs-2-stock-split-record-date-nears-check-eligibility-ratio-11795460896819.html",
-   "src": "Mint",
-   "region": "India",
-   "time": "2026-11-24T00:39:15.000Z",
-   "img": "https://www.livemint.com/lm-img/img/2026/11/23/1600x900/logo/Varvee_Global_Stock_Split_Graphic_1795462462804_YXW3_1795462476003_oOq7_856b1288-3ecd-4d5b-9315-a19ac8f10911_0C4N.png",
-   "summary": "Varvee Global shares rose 1% to  ₹54.37 on November 23, ahead of the November 27 record date for a stock split that will reduce the face value from  ₹5 to  ₹2 per share. The stock has fallen 28% over one year.",
-   "tags": []
-  },
-  {
-   "title": "Four AI stocks with multi-year growth plans to watch for the long term",
-   "link": "https://www.livemint.com/market/stock-market-news/four-ai-stocks-with-multi-year-growth-plans-to-watch-for-the-long-term-11795433747191.html",
-   "src": "Mint",
-   "region": "India",
-   "time": "2026-11-24T00:31:12.000Z",
-   "img": "https://www.livemint.com/lm-img/img/2026/11/23/1600x900/logo/futuristic-robot-interacting-with-money_1771489573_1795437903072_uGRS_1795437903189_JiIw_71b4009f-87e8-4fa7-b533-610cc6a96704_2mQK.jpg",
-   "summary": "Nvidia's latest results show AI spending is still rising. Here are four Indian AI stocks with multi-year growth plans.",
-   "tags": []
-  },
-  {
-   "title": "The shake-up facing renters as a new kind of landlord emerges",
-   "link": "https://www.bbc.co.uk/news/articles/c6n90g2l82d1o?at_medium=RSS&at_campaign=rss",
-   "src": "BBC News",
-   "region": "World",
-   "time": "2026-11-24T00:28:48.000Z",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8db7/live/089748f0-e7e7-11f1-99b6-a35a62fa4264.jpg",
-   "summary": "Companies building flats that they then rent out could usher in big changes for renters.",
-   "tags": []
-  },
-  {
-   "title": "BBC secret filming shows dog breeder selling sick puppies for £2k each",
-   "link": "https://www.bbc.co.uk/news/articles/c8d36d43y8po?at_medium=RSS&at_campaign=rss",
-   "src": "BBC News",
-   "region": "World",
-   "time": "2026-11-24T00:11:08.000Z",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bbbd/live/db7cd3b0-e7d4-11f1-939f-471cde339c0e.jpg",
-   "summary": "The breeder's rating was downgraded but he continued to advertise as five-star, investigation finds.",
    "tags": []
   }
  ]
