@@ -127,7 +127,7 @@ function renderTop() {
   const pos = rangePosition(l);
   const first = s?.pts[0]?.[1], r1 = l && first ? (l.price / first - 1) * 100 : null;
   const stat = (label, inner) => `<div class="stat"><small>${label}</small><b>${inner}</b></div>`;
-  $('#top').innerHTML = `<div class="th-row"><div><h1>${esc(c.name)}</h1><div class="chips"><span class="chip">${esc(YAHOO[c.id])}</span><span class="chip">${esc(c.exchange)}</span><span class="chip">${esc(c.market)}</span><span class="chip">${esc(c.currency)}</span></div></div>
+  $('#top').innerHTML = `<div class="th-row"><div><h1>${esc(c.name)}</h1><div class="chips"><span class="chip">${esc(YAHOO[c.id])}</span><span class="chip">${esc(c.exchange)}</span><span class="chip">${esc(c.market)}</span><span class="chip">${esc(c.currency)}</span>${c.totalOnly ? '<span class="chip">Total revenue only</span>' : ''}</div></div>
   <div class="bigpx">${l ? `<div class="n">${px(l.price, c.currency)}</div><div class="chgrow">${ch != null ? `<span class="chgpill ${ch >= 0 ? 'up' : 'dn'}">${ch >= 0 ? '+' : ''}${ch.toFixed(2)} (${pct(chp, 2)})</span><span class="vs">vs previous close</span>` : '<span class="vs">Previous close unavailable</span>'}</div>${badge(c.id)}` : '<div class="err">No price data</div>'}</div></div>
   ${l ? `<div class="statstrip">${stat('Previous close', l.prev ? px(l.prev, c.currency) : '-')}${stat('52-week high', l.hi ? px(l.hi, c.currency) : '-')}${stat('52-week low', l.lo ? px(l.lo, c.currency) : '-')}${stat('1-year return', r1 != null ? `<span class="${r1 >= 0 ? 'up' : 'dn'}">${pct(r1)}</span>` : '-')}<div class="stat"><small>Position in 52w range</small><b>${pos != null ? pos.toFixed(0) + '%' : '-'}</b>${pos != null ? `<div class="meter"><i style="left:${Math.max(2, Math.min(98, pos))}%"></i></div>` : ''}</div>${stat('Exchange', `${esc(c.exchange)} &middot; ${esc(c.currency)}`)}</div>` : ''}`;
 }
@@ -168,6 +168,7 @@ function renderChart() {
 }
 function renderLadder() {
   const c = cur(), a = analyse(c);
+  if (c.totalOnly) { const s = c.segments[0]; $('#ladderCard').innerHTML = `<h2>Total revenue only</h2><p class="sub">${esc(c.period)} &middot; ${esc(c.unit)}</p><p>${esc(c.name)} reported <b>${money(s.cur, c)}</b> of revenue, ${s.growth != null ? `<b class="${s.growth >= 0 ? 'up' : 'dn'}">${pct(s.growth)}</b> vs the prior year (${money(s.prev, c)})` : 'with no prior-year figure'}.</p><p class="sub">We have not added this company's product or segment split yet, so there is no ranking of weak and strong lines here, and no acquisition pitch. The total comes straight from the filing.</p>`; return; }
   const rows = [...a.segs].sort(state.sort === 'growth' ? (p, q) => (p.growth ?? 1e9) - (q.growth ?? 1e9) : (p, q) => p.cur - q.cur);
   const mx = Math.max(...a.segs.map(s => s.cur));
   $('#ladderCard').innerHTML = `<div class="seg"><button data-s="growth" class="${state.sort === 'growth' ? 'on' : ''}">By growth</button><button data-s="rev" class="${state.sort === 'rev' ? 'on' : ''}">By revenue</button></div>
@@ -195,7 +196,7 @@ function renderStats() {
 }
 function pitch(c) {
   const a = analyse(c), l = latest(c.id), s = series(c.id);
-  if (!a.weak) return null;
+  if (c.totalOnly || !a.weak) return null;
   const w = a.weak, st = a.strong, per = c.periodType === 'quarter' ? 'quarter' : 'year';
   const gap = a.avg != null ? w.growth - a.avg : null;
   const atAvg = a.avg != null && w.prev ? w.prev * (1 + a.avg / 100) - w.cur : null; // revenue missing vs growing at company pace
@@ -222,7 +223,7 @@ function pitch(c) {
 }
 function renderPitch() {
   const c = cur(), p = pitch(c), el = $('#pitchCard');
-  if (!p) { el.innerHTML = '<h2>Acquisition pitch</h2><p class="sub">Not enough growth data to find a weak spot.</p>'; return; }
+  if (!p) { el.innerHTML = `<h2>Acquisition pitch</h2><p class="sub">${c.totalOnly ? 'No pitch for total-revenue-only companies: there is no product or segment split to find a weak spot in.' : 'Not enough growth data to find a weak spot.'}</p>`; return; }
   el.innerHTML = `<span class="tag">AUTO-WRITTEN FROM THE NUMBERS ABOVE</span><h3>Why a buyer should look at ${esc(c.name)}: the case built on ${esc(p.w.name)}</h3>
   <ol>${p.items.map(i => `<li>${i}</li>`).join('')}</ol><h4>Risks and honest limits</h4><ul>${p.risks.map(r => `<li>${esc(r)}</li>`).join('')}</ul>
   <div class="acts"><button class="ghost" id="copyP">Copy pitch</button><button class="ghost" onclick="window.print()">Print / save PDF</button></div>`;
@@ -247,7 +248,7 @@ function renderHonest() {
   <li><b>Share price:</b> tries a live Yahoo Finance quote in your browser every minute. If that is blocked, it shows the last saved price and says so in the badge (saved ${esc(g)}). The "in discussion today" strip is computed from the two latest saved closes - it changes when the daily price snapshot changes, and it is not a recommendation.</li>
   <li><b>Product revenue:</b> companies only publish this when they report (quarterly or yearly), so it cannot be live. US data is read straight from SEC EDGAR 10-K filings by a script; India and global companies are copied by hand from their official results releases.</li>
   <li><b>Pitch:</b> the numbers and ranking are computed, the wording is a template. It finds the weak spot, it does not know why the product is weak.</li>
-  <li><b>Coverage:</b> ${state.companies.length} companies for now. Adding a US company is one entry in <code>scripts/config.mjs</code>.</li></ul>`;
+  <li><b>Coverage:</b> ${state.companies.length} companies (${state.companies.filter(c => c.totalOnly).length} of them total revenue only, with no segment split). Adding a US company is one entry in <code>scripts/config.mjs</code>.</li></ul>`;
 }
 const cur = () => state.companies.find(c => c.id === state.id);
 function renderAll() { localStorage.setItem('xray_last', state.id); renderTabs(); renderList(); renderTrending(); renderTop(); renderChart(); renderLadder(); renderSrc(); renderStats(); renderPitch(); renderHonest(); renderResearch(cur()); }
@@ -296,7 +297,7 @@ window.addEventListener('hashchange', () => { const h = location.hash.slice(1); 
 (async function init() {
   try {
     const [co, pr] = await Promise.all([fetch('data/companies.json').then(r => r.json()), fetch('data/prices.json').then(r => r.json())]);
-    state.companies = co.companies; state.generated = pr.generated || co.generated;
+    state.companies = co.companies; state.companies.forEach(c => { if (c.symbol) YAHOO[c.id] = c.symbol; }); state.generated = pr.generated || co.generated;
     for (const [k, v] of Object.entries(pr.series)) state.prices[k] = v;
     const chip = $('#statusChip');
     if (chip) chip.textContent = `Prices: Yahoo closes · saved ${state.generated ? new Date(state.generated).toLocaleString([], { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) : 'unknown'}`;
