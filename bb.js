@@ -25,7 +25,7 @@ function renderNews() {
 }
 function renderScreener() {
   const mid = document.getElementById('bbMid'); if (!mid) return;
-  const rows = state.companies.map(c => { const a = analyse(c); return a.weak && a.avg != null ? { c, a } : null; }).filter(Boolean).sort((x, y) => x.a.weak.growth - y.a.weak.growth).slice(0, 9);
+  const rows = state.companies.map(c => { const a = analyse(c); return a.weak && a.avg != null && !c.totalOnly ? { c, a } : null; }).filter(Boolean).sort((x, y) => x.a.weak.growth - y.a.weak.growth).slice(0, 9);
   mid.innerHTML = `<h3 class="bb-h">Weak-spot screener <small>slowest segment (3%+ of revenue) across ${state.companies.length} companies</small></h3><table class="bb-tbl"><thead><tr><th>Company</th><th>Weakest segment</th><th class="r">Growth</th><th class="r">Share</th></tr></thead><tbody>${rows.map(({ c, a }) => `<tr data-id="${c.id}"><td><b>${esc(c.name)}</b><small>${esc(c.id)}</small></td><td>${esc(a.weak.name)}</td><td class="r dn">${pct(a.weak.growth)}</td><td class="r">${a.weak.share.toFixed(0)}%</td></tr>`).join('')}</tbody></table><p class="bb-fine">Click a row to open the segment ladder and the acquisition pitch. Reported figures only, periods differ by company.</p>`;
 }
 function renderRight() {
