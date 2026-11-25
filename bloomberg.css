@@ -156,3 +156,40 @@ dialog{background:var(--panel);color:var(--tx);border:1px solid var(--line2);bor
   .card h2{font-size:17px}
 }
 @media(max-width:640px){.tk-row{scroll-padding-left:16px}.bigpx{display:flex;flex-direction:column;align-items:flex-start;gap:6px}.bigpx .n{margin:0}}
+/* theme-safe overrides for colours hard-coded in styles.css / research.css */
+body{background:var(--bg)!important}
+::selection{background:var(--ice-dim)}
+.research-heading .tag{color:var(--ice);border-color:var(--ice-dim)}
+.research-heading a{border-color:var(--line2);color:var(--tx)}
+.research-heading a:hover{border-color:var(--ice)}
+.verification-note{font-family:var(--sans);font-size:12.5px;color:var(--tx2);border-left:3px solid var(--ice);background:var(--panel3)}
+.research-totals{background:var(--line);border-color:var(--line)}
+.research-totals>div{background:var(--panel)}
+.research-totals b,.research-totals strong,.research-totals span{color:var(--tx)}
+.research-totals small{color:var(--mut);font-family:var(--sans);font-weight:600}
+.research-table caption{color:var(--mut)}
+.research-table th,.research-table td{border-bottom-color:var(--line);font-family:var(--sans);color:var(--tx)}
+.research-table thead th{color:var(--mut);font-weight:600}
+.research-table tbody tr:hover{background:var(--panel3)}
+.research-table th[scope="row"]{color:var(--tx);font-weight:600}
+.research-fields textarea{background:var(--panel3);color:var(--tx);border-color:var(--line2)}
+.research-fields textarea:focus{outline-color:var(--ice)}
+.research-fields label,.research-fields span{color:var(--tx2)}
+#researchCard hr{border-top-color:var(--line)}
+.research-scroll{border-color:var(--line)}
+.lrow{color:var(--tx)}
+.lrow.weak{border-color:var(--dn);background:linear-gradient(90deg,var(--dnbg),transparent)}
+.lrow.strong{border-color:var(--up);background:linear-gradient(90deg,var(--upbg),transparent)}
+.lrow .bar,.bar{background:var(--panel3)}
+.bar i{background:linear-gradient(90deg,var(--ice-dim),var(--ice))}
+.lrow.weak .bar i{background:linear-gradient(90deg,var(--dnbg),var(--dn))}
+.lrow.strong .bar i{background:linear-gradient(90deg,var(--upbg),var(--up))}
+.bar em{color:var(--tx)}
+.memo{background:var(--panel);border-color:var(--line)}
+.memo .tag{border-color:var(--dn)}
+.chgpill.up{color:#fff;background:var(--up)}.chgpill.dn{color:#fff;background:var(--dn)}
+:root[data-theme=dark] .chgpill.up{color:#04180f}:root[data-theme=dark] .chgpill.dn{color:#1d0704}
+dialog input{background:var(--panel3);color:var(--tx)}
+dialog button{background:var(--ice);color:#fff}
+:root[data-theme=dark] dialog button{color:#04121f}
+.trend-chip.on{background:var(--ice-dim)}
