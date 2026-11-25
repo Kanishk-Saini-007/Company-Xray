@@ -4538,6 +4538,70 @@
      "growth": 3.1
     }
    ]
+  },
+  {
+   "id": "ADANIENT",
+   "name": "Adani Enterprises",
+   "market": "India",
+   "exchange": "NSE",
+   "currency": "INR",
+   "unit": "Rs crore",
+   "period": "Q2 FY2026-27 (Jul-Sep 2026), consolidated segment revenue",
+   "periodType": "quarter",
+   "source": "Adani Enterprises unaudited consolidated financial results Q2 FY2026-27 (NSE integrated filing)",
+   "sourceUrl": "https://nsearchives.nseindia.com/corporate/ixbrl/INTEGRATED_FILING_INDAS_205974_28102026223427_iXBRL_WEB.html",
+   "filed": "2026-10-28",
+   "note": "Curated by hand from Adani Enterprises' official Q2 FY27 consolidated results. Copper is newly reported as its own segment in FY27 as the Kutch copper plant ramps up (sales volume 11.8 KT in Q2 FY26 to 80.6 KT in Q2 FY27, per the company's media release); in FY26 its revenue sat inside Others, so no prior-year value is shown for Copper and Others' small decline is not like-for-like. Integrated Resources Management is coal trading, logistics and handling; New Energy Ecosystem is the ANIL solar/wind manufacturing chain; Airport is Adani Airport Holdings; Mining Services is the MDO contract-mining business; Commercial Mining is captive coal blocks. Rs 116 cr of inter-segment revenue bridges the segment total of Rs 37,331 cr to consolidated revenue from operations of Rs 37,216 cr (+75.1% YoY).",
+   "segments": [
+    {
+     "name": "Copper",
+     "cur": 14772,
+     "prev": 0,
+     "growth": null
+    },
+    {
+     "name": "Integrated Resources Management",
+     "cur": 7097,
+     "prev": 6658,
+     "growth": 6.6
+    },
+    {
+     "name": "Others",
+     "cur": 4287,
+     "prev": 4507,
+     "growth": -4.9
+    },
+    {
+     "name": "Airport",
+     "cur": 3698,
+     "prev": 3207,
+     "growth": 15.3
+    },
+    {
+     "name": "New Energy Ecosystem",
+     "cur": 3572,
+     "prev": 3156,
+     "growth": 13.2
+    },
+    {
+     "name": "Commercial Mining",
+     "cur": 2489,
+     "prev": 1712,
+     "growth": 45.4
+    },
+    {
+     "name": "Mining Services",
+     "cur": 985,
+     "prev": 1061,
+     "growth": -7.1
+    },
+    {
+     "name": "Road",
+     "cur": 430,
+     "prev": 1664,
+     "growth": -74.2
+    }
+   ]
   }
  ]
 }
