@@ -30,7 +30,7 @@ for (const [t, cfg] of Object.entries(US)) {
   await sleep(400);
 }
 const cur = JSON.parse(fs.readFileSync(new URL('../data/curated.json', import.meta.url)));
-const all = [...out, ...cur];
+const all = [...out, ...cur, ...prevCompanies.companies.filter(c => c.totalOnly)]; // total-revenue-only entries are refreshed by build_extra.mjs
 for (const c of all) for (const s of c.segments) { if (s.prev == null && s.growth != null) s.prev = Math.round(s.cur / (1 + s.growth / 100)); if (s.growth == null && s.prev) s.growth = +(((s.cur / s.prev) - 1) * 100).toFixed(1); }
 fs.writeFileSync(new URL('../data/companies.json', import.meta.url), JSON.stringify({ generated: new Date().toISOString(), companies: all }, null, 1));
 
@@ -48,4 +48,5 @@ for (const [id, y] of Object.entries(YAHOO)) {
   } catch (e) { const old = prevPrices.series[id]; if (old) { prices.series[id] = old; console.log('PXKEEP', id, '- previous series kept after fetch failure:', e.message); } else { console.log('PXFAIL', id, e.message); } }
   await sleep(500);
 }
+for (const c of prevCompanies.companies) if (c.totalOnly && prevPrices.series[c.id]) prices.series[c.id] = prevPrices.series[c.id];
 if (Object.keys(prices.series).length) fs.writeFileSync(new URL('../data/prices.json', import.meta.url), JSON.stringify(prices));
