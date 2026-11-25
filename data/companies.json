@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T14:58:34.405Z",
+ "generated": "2026-11-25T21:55:44.809Z",
  "companies": [
   {
    "id": "AAPL",
@@ -5644,7 +5644,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2026-01-31, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "Autodesk, Inc. Form 10-K (SEC EDGAR)",
+   "source": "AUTODESK, INC. Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/769397/000076939726000015/",
    "filed": "2026-03-03",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"RevenueFromContractWithCustomerExcludingAssessedTax\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Information Technology.",
@@ -6244,7 +6244,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2025-12-31, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "C.H. ROBINSON WORLDWIDE, INC. Form 10-K (SEC EDGAR)",
+   "source": "C.H. Robinson Worldwide, Inc. Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1043277/000104327726000009/",
    "filed": "2026-02-13",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"RevenueFromContractWithCustomerExcludingAssessedTax\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Industrials.",
@@ -10492,7 +10492,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2026-01-30, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "LOWES COMPANIES INC Form 10-K (SEC EDGAR)",
+   "source": "LOWE’S COMPANIES, INC. Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/60667/000006066726000029/",
    "filed": "2026-03-23",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"RevenueFromContractWithCustomerExcludingAssessedTax\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Consumer Discretionary.",
