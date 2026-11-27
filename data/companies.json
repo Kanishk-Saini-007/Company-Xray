@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-27T08:53:20.469Z",
+ "generated": "2026-11-27T21:33:31.617Z",
  "companies": [
   {
    "id": "AAPL",
@@ -4644,6 +4644,58 @@
    ]
   },
   {
+   "id": "DRREDDY",
+   "name": "Dr Reddy's Laboratories",
+   "market": "India",
+   "exchange": "NSE",
+   "currency": "INR",
+   "unit": "Rs crore",
+   "period": "Q2 FY2026-27 (Jul-Sep 2026), consolidated segment revenue",
+   "periodType": "quarter",
+   "source": "Dr Reddy's Laboratories Q2 & H1 FY2026-27 earnings release (revenue mix by segment)",
+   "sourceUrl": "https://www.drreddys.com/cms/sites/default/files/2026-10/FINAL_EarningsRelease_Q2FY27_231026.pdf",
+   "filed": "2026-10-23",
+   "note": "Curated by hand from Dr Reddy's official Q2 FY27 earnings release (consolidated, reported in Rs million, converted to Rs crore; growth rates are company-reported YoY). The first four lines are the geography split of Global Generics: North America fell 23% as Lenalidomide (gRevlimid) sales normalized, while Emerging Markets (+24%) and India (+17%) grew strongly. PSAI is Pharmaceutical Services and Active Ingredients, the API and custom pharma services business. Others' +357% growth is on a very small base. Rounded to Rs crore, the lines sum to Rs 8,672 cr vs the rounded reported total of Rs 8,671 cr (-2% YoY), a Rs 1 cr rounding difference.",
+   "segments": [
+    {
+     "name": "Generics: North America",
+     "cur": 2489,
+     "prev": 3241,
+     "growth": -23
+    },
+    {
+     "name": "Generics: Emerging Markets",
+     "cur": 2060,
+     "prev": 1655,
+     "growth": 24
+    },
+    {
+     "name": "Generics: India",
+     "cur": 1851,
+     "prev": 1578,
+     "growth": 17
+    },
+    {
+     "name": "Generics: Europe",
+     "cur": 1394,
+     "prev": 1376,
+     "growth": 1
+    },
+    {
+     "name": "PSAI",
+     "cur": 831,
+     "prev": 945,
+     "growth": -12
+    },
+    {
+     "name": "Others",
+     "cur": 47,
+     "prev": 10,
+     "growth": 357
+    }
+   ]
+  },
+  {
    "id": "MMM",
    "name": "3M",
    "market": "US",
@@ -4988,7 +5040,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2025-12-31, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "ALIGN TECHNOLOGY,\u00a0INC. Form 10-K (SEC EDGAR)",
+   "source": "ALIGN TECHNOLOGY, INC. Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1097149/000109714926000014/",
    "filed": "2026-02-27",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"RevenueFromContractWithCustomerExcludingAssessedTax\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Health Care.",
@@ -5588,7 +5640,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2025-12-31, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "Arista Networks,\u00a0Inc. Form 10-K (SEC EDGAR)",
+   "source": "Arista Networks, Inc. Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000013/",
    "filed": "2026-02-17",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"RevenueFromContractWithCustomerExcludingAssessedTax\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Information Technology.",
@@ -5708,7 +5760,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2026-08-29, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "AutoZone,\u00a0Inc. Form 10-K (SEC EDGAR)",
+   "source": "AutoZone, Inc. Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/866787/000110465926118791/",
    "filed": "2026-10-26",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"Revenues\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Consumer Discretionary.",
@@ -6205,7 +6257,7 @@
   },
   {
    "id": "BF-B",
-   "name": "Brown\u2013Forman",
+   "name": "Brown–Forman",
    "market": "US",
    "exchange": "NYSE",
    "currency": "USD",
@@ -6356,7 +6408,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2025-12-31, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "CAPITAL\u00a0ONE\u00a0FINANCIAL\u00a0CORP Form 10-K (SEC EDGAR)",
+   "source": "CAPITAL ONE FINANCIAL CORP Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/927628/000092762826000024/",
    "filed": "2026-02-19",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"Revenues\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Financials.",
@@ -6452,7 +6504,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2026-04-30, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "CASEY\u2019S GENERAL STORES, INC. Form 10-K (SEC EDGAR)",
+   "source": "CASEY’S GENERAL STORES, INC. Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/726958/000072695826000046/",
    "filed": "2026-06-22",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"Revenues\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Consumer Staples.",
@@ -6620,7 +6672,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2025-12-31, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "CF INDUSTRIES HOLDINGS,\u00a0INC. Form 10-K (SEC EDGAR)",
+   "source": "CF INDUSTRIES HOLDINGS, INC. Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1324404/000132440426000007/",
    "filed": "2026-02-25",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"Revenues\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Materials.",
@@ -6644,7 +6696,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2025-12-27, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "CHARLES RIVER LABORATORIES INTERNATIONAL,\u00a0INC. Form 10-K (SEC EDGAR)",
+   "source": "CHARLES RIVER LABORATORIES INTERNATIONAL, INC. Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1100682/000110068226000022/",
    "filed": "2026-02-18",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"RevenueFromContractWithCustomerExcludingAssessedTax\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Health Care.",
@@ -7052,7 +7104,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2025-12-31, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "COMCAST\u00a0CORPORATION Form 10-K (SEC EDGAR)",
+   "source": "COMCAST CORPORATION Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1166691/000162828026004994/",
    "filed": "2026-02-03",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"RevenueFromContractWithCustomerExcludingAssessedTax\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Communication Services.",
@@ -7076,7 +7128,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2025-12-31, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "COMFORT SYSTEMS USA,\u00a0INC. Form 10-K (SEC EDGAR)",
+   "source": "COMFORT SYSTEMS USA, INC. Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1035983/000110465926017530/",
    "filed": "2026-02-19",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"Revenues\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Industrials.",
@@ -7652,7 +7704,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2025-12-28, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "Domino\u2019s Pizza, Inc. Form 10-K (SEC EDGAR)",
+   "source": "Domino’s Pizza, Inc. Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1286681/000119312526062321/",
    "filed": "2026-02-23",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"Revenues\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Consumer Discretionary.",
@@ -8149,7 +8201,7 @@
   },
   {
    "id": "EL",
-   "name": "Est\u00e9e Lauder Companies (The)",
+   "name": "Estée Lauder Companies (The)",
    "market": "US",
    "exchange": "NYSE",
    "currency": "USD",
@@ -9356,7 +9408,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2026-02-01, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "HOME DEPOT,\u00a0INC. Form 10-K (SEC EDGAR)",
+   "source": "HOME DEPOT, INC. Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/354950/000162828026019436/",
    "filed": "2026-03-18",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"RevenueFromContractWithCustomerExcludingAssessedTax\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Consumer Discretionary.",
@@ -9812,7 +9864,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2025-12-31, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "INTERNATIONAL FLAVORS\u00a0& FRAGRANCES INC Form 10-K (SEC EDGAR)",
+   "source": "INTERNATIONAL FLAVORS & FRAGRANCES INC Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/51253/000005125326000006/",
    "filed": "2026-02-27",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"RevenueFromContractWithCustomerExcludingAssessedTax\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Materials.",
@@ -10148,7 +10200,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2025-10-31, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "KEYSIGHT TECHNOLOGIES,\u00a0INC. Form 10-K (SEC EDGAR)",
+   "source": "KEYSIGHT TECHNOLOGIES, INC. Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1601046/000160104625000127/",
    "filed": "2025-12-17",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"Revenues\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Information Technology.",
@@ -10220,7 +10272,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2025-12-31, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "KKR\u00a0&\u00a0CO.\u00a0INC. Form 10-K (SEC EDGAR)",
+   "source": "KKR & CO. INC. Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1404912/000140491226000007/",
    "filed": "2026-02-27",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"Revenues\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Financials.",
@@ -10532,7 +10584,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2026-01-30, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "LOWE\u2019S COMPANIES,\u00a0INC. Form 10-K (SEC EDGAR)",
+   "source": "LOWE’S COMPANIES, INC. Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/60667/000006066726000029/",
    "filed": "2026-03-23",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"RevenueFromContractWithCustomerExcludingAssessedTax\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Consumer Discretionary.",
@@ -10724,7 +10776,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2025-11-30, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "McCORMICK\u00a0& COMPANY, INCORPORATED Form 10-K (SEC EDGAR)",
+   "source": "McCORMICK & COMPANY, INCORPORATED Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000037/",
    "filed": "2026-01-22",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"Revenues\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Consumer Staples.",
@@ -10796,7 +10848,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2025-12-31, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "Merck\u00a0& Co., Inc. Form 10-K (SEC EDGAR)",
+   "source": "Merck & Co., Inc. Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/310158/000031015826000063/",
    "filed": "2026-02-24",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"Revenues\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Health Care.",
@@ -10916,7 +10968,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2026-09-03, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "Micron Technology,\u00a0Inc. Form 10-K (SEC EDGAR)",
+   "source": "Micron Technology, Inc. Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/",
    "filed": "2026-10-09",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"RevenueFromContractWithCustomerExcludingAssessedTax\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Information Technology.",
@@ -11108,7 +11160,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2025-12-31, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "MOTOROLA SOLUTIONS,\u00a0INC. Form 10-K (SEC EDGAR)",
+   "source": "MOTOROLA SOLUTIONS, INC. Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/68505/000006850526000010/",
    "filed": "2026-02-12",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"RevenueFromContractWithCustomerExcludingAssessedTax\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Information Technology.",
@@ -11972,7 +12024,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2025-12-31, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "PRINCIPAL FINANCIAL GROUP,\u00a0INC Form 10-K (SEC EDGAR)",
+   "source": "PRINCIPAL FINANCIAL GROUP, INC Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1126328/000110465926017031/",
    "filed": "2026-02-18",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"Revenues\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Financials.",
@@ -12716,7 +12768,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2025-12-31, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "SIMON PROPERTY GROUP,\u00a0INC. Form 10-K (SEC EDGAR)",
+   "source": "SIMON PROPERTY GROUP, INC. Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1063761/000110465926019419/",
    "filed": "2026-02-25",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"Revenues\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Real Estate.",
@@ -12740,7 +12792,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2024-12-31, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "Skydance Corporation Form 10-K (SEC EDGAR)",
+   "source": "Skydance Corp Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2041610/000204161026000011/",
    "filed": "2026-02-25",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"RevenueFromContractWithCustomerExcludingAssessedTax\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Communication Services.",
@@ -13100,7 +13152,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2026-03-31, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "TAKE-TWO INTERACTIVE SOFTWARE,\u00a0INC. Form 10-K (SEC EDGAR)",
+   "source": "TAKE-TWO INTERACTIVE SOFTWARE, INC. Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/946581/000162828026037434/",
    "filed": "2026-05-22",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"RevenueFromContractWithCustomerExcludingAssessedTax\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Communication Services.",
@@ -13388,7 +13440,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2025-12-31, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "Travelers Companies,\u00a0Inc. Form 10-K (SEC EDGAR)",
+   "source": "Travelers Companies, Inc. Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/86312/000008631226000065/",
    "filed": "2026-02-12",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"Revenues\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Financials.",
@@ -13772,7 +13824,7 @@
    "unit": "USD million",
    "period": "Fiscal year ended 2025-12-31, total revenue only (no product or segment split)",
    "periodType": "year",
-   "source": "Ventas,\u00a0Inc. Form 10-K (SEC EDGAR)",
+   "source": "Ventas, Inc. Form 10-K (SEC EDGAR)",
    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/740260/000074026026000006/",
    "filed": "2026-02-06",
    "note": "Total revenue only: this company's tagged segment split was not added, so there is no weak-spot ranking or acquisition pitch. Figure is the 10-K \"Revenues\" value for two consecutive fiscal years, read automatically from SEC EDGAR. Sector: Real Estate.",
@@ -14432,58 +14484,6 @@
      "cur": 8232,
      "prev": 7679,
      "growth": 7.2
-    }
-   ]
-  },
-  {
-   "id": "DRREDDY",
-   "name": "Dr Reddy's Laboratories",
-   "market": "India",
-   "exchange": "NSE",
-   "currency": "INR",
-   "unit": "Rs crore",
-   "period": "Q2 FY2026-27 (Jul-Sep 2026), consolidated segment revenue",
-   "periodType": "quarter",
-   "source": "Dr Reddy's Laboratories Q2 & H1 FY2026-27 earnings release (revenue mix by segment)",
-   "sourceUrl": "https://www.drreddys.com/cms/sites/default/files/2026-10/FINAL_EarningsRelease_Q2FY27_231026.pdf",
-   "filed": "2026-10-23",
-   "note": "Curated by hand from Dr Reddy's official Q2 FY27 earnings release (consolidated, reported in Rs million, converted to Rs crore; growth rates are company-reported YoY). The first four lines are the geography split of Global Generics: North America fell 23% as Lenalidomide (gRevlimid) sales normalized, while Emerging Markets (+24%) and India (+17%) grew strongly. PSAI is Pharmaceutical Services and Active Ingredients, the API and custom pharma services business. Others' +357% growth is on a very small base. Rounded to Rs crore, the lines sum to Rs 8,672 cr vs the rounded reported total of Rs 8,671 cr (-2% YoY), a Rs 1 cr rounding difference.",
-   "segments": [
-    {
-     "name": "Generics: North America",
-     "cur": 2489,
-     "prev": 3241,
-     "growth": -23
-    },
-    {
-     "name": "Generics: Emerging Markets",
-     "cur": 2060,
-     "prev": 1655,
-     "growth": 24
-    },
-    {
-     "name": "Generics: India",
-     "cur": 1851,
-     "prev": 1578,
-     "growth": 17
-    },
-    {
-     "name": "Generics: Europe",
-     "cur": 1394,
-     "prev": 1376,
-     "growth": 1
-    },
-    {
-     "name": "PSAI",
-     "cur": 831,
-     "prev": 945,
-     "growth": -12
-    },
-    {
-     "name": "Others",
-     "cur": 47,
-     "prev": 10,
-     "growth": 357
     }
    ]
   }
